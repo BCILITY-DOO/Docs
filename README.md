@@ -1,2 +1,1 @@
-# Docs
-BCILITY Documentation
+# Documentation
