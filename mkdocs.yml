@@ -1,7 +1,6 @@
 site_name: BCILITY DOCS
 theme:
   name: material
-  color_mode: dark
   features:
     - navigation.tabs
     - navigation.sections
