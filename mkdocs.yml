@@ -1,31 +1,52 @@
 site_name: BCILITY DOCS
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      default_language: sh
+      languages:
+        en: English
+        sr: Srpski
 theme:
   name: material
+  logo: /assets/logo.png
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - toc.integrate
+    - navigation.expand
+    - navigation.path
+    - toc.follow
     - navigation.top
     - search.suggest
     - search.highlight
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: sr
-  palette:
+  language: sh
+  palette: 
+    # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/brightness-7 
         name: Switch to dark mode
-      primary: teal
-      accent: purple 
-    - scheme: slate 
+
+    # Palette toggle for dark mode
+    - scheme: slate
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: teal
-      accent: lime
+        icon: material/brightness-4
+        name: Switch to light mode
+extra_css:
+  - overrides/extra.css     
 extra:
+  extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Srpski
+      link: /sr/
+      lang: sr
   status:
     new: Recently added
     deprecated: Deprecated
@@ -39,6 +60,8 @@ extra:
       link: https://www.instagram.com/bcility/
     - icon: fontawesome/brands/linkedin
       link: https://rs.linkedin.com/company/bcility
-  
+
+        
+
 copyright: |
   &copy; 2025 <a href="https://bcility.com/"  target="_blank" rel="noopener">BCILITY</a>
