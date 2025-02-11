@@ -10,6 +10,7 @@ plugins:
 theme:
   name: material
   logo: /assets/logo.png
+  favicon: assets/favicon.ico
   features:
     - navigation.tabs
     - navigation.tabs.sticky
