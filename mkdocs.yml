@@ -1,7 +1,7 @@
 site_name: BCILITY DOCS
 plugins:
   - search
--  i18n:
+  - i18n:
     docs_structure: folder
     fallback_to_default: true
     languages:
