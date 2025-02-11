@@ -25,8 +25,7 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install \
-            mkdocs-material 
-      - run: python docs/snippets/script.py "./mkdocs.yml"
-      - run: mkdocs-static-i18n
+            mkdocs-material \
+            mkdocs-static-i18n
       
       - run: mkdocs gh-deploy --force
