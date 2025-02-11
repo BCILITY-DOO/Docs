@@ -5,13 +5,13 @@ plugins:
     docs_structure: folder
     fallback_to_default: true
     languages:
-      - build: true
-        default: true
-        locale: en
+      - locale: en
         name: English
-      - build: true
-        locale: sr
+        default: true
+        build: true
+      - locale: sr
         name: Srpski
+        build: true
 theme:
   name: material
   logo: /assets/logo.png
