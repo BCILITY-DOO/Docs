@@ -27,5 +27,5 @@ jobs:
       - run: pip install \
             mkdocs-material \
             mkdocs-static-i18n==0.56 
-      - run: $ python config_update_to_v1.py mkdocs.yml
+      - run: python config_update_to_v1.py mkdocs.yml
       - run: mkdocs gh-deploy --force
