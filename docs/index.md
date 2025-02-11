@@ -1,49 +1,61 @@
 
 # WooCommerce Setup
 
-WooCommerce Setup omogućava povezivanje Business Central ERP sistema sa WooCommerce online prodavnicom, čime se automatski sinhronizuju podaci o proizvodima, kategorijama, zalihama i narudžbinama. Cilj podešavanja je da omogući nesmetan protok podataka između ova dva sistema, smanjujući potrebu za ručnim unosom i smanjujući rizik od grešaka.
+WooCommerce Setup allows the connection of the Business Central ERP system with the WooCommerce online store, automatically synchronizing data about products, categories, stocks, and orders. The goal of the setup is to enable seamless data flow between these two systems, reducing the need for manual input and minimizing the risk of errors.
 
-Pre nego što započnete podešavanje WooCommerce integracije, potrebno je da imate: 
+Before starting the WooCommerce integration setup, you need to have:
 
-- Aktivno okruženje Business Central  
-- WordPress sa instaliranim WooCommerce-om  
-- API ključeve generisane u WooCommerce-u  
-- Administratorski pristup oba sistema
+- An active Business Central environment
+- WordPress with WooCommerce installed
+- API keys generated in WooCommerce
+- Administrator access to both systems
 
-## 1. Povezivanje Business Central-a i WooCommerce-a
-- Korisnik unosi API kredencijale (**Consumer Key** & **Customer Secret**) koji omogućavaju sigurnu komunikaciju između Business Central-a i WooCommerce-a.  
-- **Base URL** definiše na kojoj WooCommerce prodavnici će se izvršiti sinhronizacija.  
+## API Keys in WooCommerce
 
-Ova konfiguracija omogućava povezivanje dva sistema, eliminiše potrebu za ručnim unosom podataka u obe platforme i smanjuje mogućnost grešaka.  
+API keys (**Consumer Key** and **Consumer Secret**) allow secure communication between Business Central and WooCommerce, authenticating requests and enabling data synchronization. They are used to access information about products, orders, and stocks, ensuring automatic updates between the two systems.
 
-## 2. WordPress autentifikacija
-- Unesite korisničko ime i lozinku administratora WordPress-a za pristup i ažuriranje podataka u WooCommerce-u.  
+### Generating API Keys in WooCommerce
 
-Ovaj korak obezbeđuje kontrolisan pristup podacima i sinhronizaciju bez potrebe za ručnim unosom.  
+1. In the WordPress admin panel, go to **WooCommerce → Settings → Advanced → REST API**.
+2. Click **Add Key**, enter a name, choose the user for whom you want to generate the key, select **Read/Write** permissions, and click **Generate API Key**.
+    ![image](image/api.png)
+3. Save the generated **Consumer Key** and **Consumer Secret**.
 
-## 3. Podešavanja šablona (Template Settings)
-- **Default Customer & Customer Template** – Definišu se pravila dodeljivanja kupaca za nove narudžbine.  
-- **Item Template** – Određuje kako će se artikli prikazivati u WooCommerce prodavnici.  
-- **Manufacturer Attribute** – Postavlja atribute proizvođača kako bi se proizvodima dodale dodatne informacije.  
+    ![image](image/key.png)
 
-Ova konfiguracija obezbeđuje standardizovano kreiranje proizvoda i olakšava upravljanje kupcima i zalihama.  
+## 1. Connecting Business Central and WooCommerce
+- Enter the API credentials (**Consumer Key** & **Customer Secret**) that enable secure communication between Business Central and WooCommerce.  
+- **Base URL** defines the WooCommerce store where synchronization will occur.  
+     Example URL: https://YourDomain
 
-## 4. Upravljanje Woo ID-em i dodatne opcije
-- **Allow Update Woo ID** – Kada je omogućeno, sistem može automatski ažurirati WooCommerce ID proizvoda kako bi se sprečili konflikti u bazi podataka.  
+This configuration enables the connection of the two systems, eliminates the need for manual data entry in both platforms, and reduces the possibility of errors.  
+    ![image](image/wooCom.png)
 
-Ova opcija osigurava dosledno mapiranje podataka između dva sistema, sprečavajući greške u sinhronizaciji.
+## 2. WordPress Authentication
+To create an Application Password, follow these steps:
 
-## 5. Automatska sinhronizacija podataka
-- **Auto Sync Item** – Omogućava automatsko ažuriranje proizvoda između ERP-a i WooCommerce-a.  
-- **Auto Sync Item Category** – Sinhronizuje kategorije proizvoda.  
-- **Auto Sync Item Attribute** – Sinhronizuje dodatne atribute proizvoda, kao što su proizvođač, boja, dimenzije. 
-- **Auto Sync Item Attribute Value** -  Sinhronizuje vrednosti atributa.
+1. Go to **WordPress Admin → Users → Your Profile**
+2. Scroll down to the "Application Passwords" section
+3. Enter a name for the new Application Password 
+4. Click "Add New Application Password"
+   
+     ![image](image/Password.png)
 
-Obezbeđuje da su svi podaci o proizvodima i zalihama uvek ažurirani u WooCommerce prodavnici bez potrebe za ručnim unosom.  
-  
+Enter your WordPress administrator username and password to access and update data in the WooCommerce Setup.  
+This step ensures controlled access to data and synchronization without the need for manual input.
+    ![image](image/.png)
 
-## 6. Testiranje povezivanja
-- **Connection Test Success** - Označava da li je veza bila uspešna, pružajući trenutne povratne informacije o statusu integracije.
-- **Last Connection Test Time** - Pokazuje kada je poslednji put uspešno testirana veza između Business Central-a i WooCommerce-a.
 
-Omogućava korisniku da samostalno proveri da li integracija funkcioniše i da brzo identifikuje eventualne probleme.
+## 3. Managing Woo ID and Additional Options
+- **Allow Update Woo ID** – When enabled, this option allows you to manually update this field on item/attribute/category tabs.
+
+This option ensures consistent data mapping between the two systems, preventing synchronization errors.
+
+## 4. Automatic Data Synchronization
+- **Auto Sync Item** – Allows automatic product updates between ERP and WooCommerce.
+- **Auto Sync Item Category** – Allows automatic synchronization of product categories between ERP and WooCommerce.
+- **Auto Sync Item Attribute** – Allows automatic synchronization of additional product attributes such as manufacturer, color, dimensions.
+- **Auto Sync Item Attribute Value** – Allows automatic synchronization of attribute values between ERP and WooCommerce.
+
+This ensures that all product and stock data is always up-to-date in the WooCommerce store without the need for manual input.  
+When this option is enabled, any changes made to Items, Categories, and Attributes will automatically be reflected on the WooCommerce side.
