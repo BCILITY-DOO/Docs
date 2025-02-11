@@ -10,3 +10,7 @@
     padding-left: 0px !important; /* Možeš smanjiti ako je potrebno */
     margin-left: 0px !important;
 }
+
+.md-nav__link--active {
+    color: teal !important; /* Promeni u željenu boju */
+}

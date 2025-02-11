@@ -3,7 +3,7 @@ plugins:
   - search
   - i18n:
       docs_structure: folder
-      default_language: sh
+      default_language: en
       languages:
         en: English
         sr: Srpski
@@ -23,23 +23,26 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: sh
+  language: en
   palette: 
     # Palette toggle for light mode
     - scheme: default
+      primary: white
+      accent: teal
       toggle:
-        icon: material/brightness-7 
+        icon: material/lightbulb 
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: black
+      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/lightbulb-outline
         name: Switch to light mode
 extra_css:
   - overrides/extra.css     
 extra:
-  extra:
   alternate:
     - name: English
       link: /en/
