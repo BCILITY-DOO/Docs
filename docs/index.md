@@ -43,7 +43,7 @@ To create an Application Password, follow these steps:
 
 Enter your WordPress administrator username and password to access and update data in the WooCommerce Setup.  
 This step ensures controlled access to data and synchronization without the need for manual input.
-    ![image](image/.png)
+    ![image](image/setup.png)
 
 
 ## 3. Managing Woo ID and Additional Options
