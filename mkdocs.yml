@@ -10,11 +10,8 @@ plugins:
         locale: en
         name: English
       - build: true
-        default: false
         locale: sr
         name: Srpski
-    reconfigure_material: true
-    reconfigure_search: true
 theme:
   name: material
   logo: /assets/logo.png
