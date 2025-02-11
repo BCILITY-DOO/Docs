@@ -24,7 +24,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: python docs/snippets/script.py ./mkdocs.yml            
+      - run: python docs/snippets/script.py "./mkdocs.yml"
       - run: pip install \
             mkdocs-material \
             mkdocs-static-i18n
