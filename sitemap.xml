@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="Nonesr/"/>
+    </url>
+    <url>
+        <loc>Nonepage1/</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepage1/"/>
+        <xhtml:link rel="alternate" hreflang="sr" href="Nonesr/page1/"/>
+    </url>
+    <url>
+        <loc>Nonesr/</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="sr" href="Nonesr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+    </url>
+    <url>
+        <loc>Nonesr/page1/</loc>
+        <lastmod>2025-02-12</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="sr" href="Nonesr/page1/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonepage1/"/>
+    </url>
 </urlset>
