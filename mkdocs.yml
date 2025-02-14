@@ -3,15 +3,10 @@ plugins:
   - search
   - i18n:
       docs_structure: folder
-      fallback_to_default: true
+      default_language: en
       languages:
-        - locale: en
-          name: English
-          default: true
-          build: true
-        - locale: sr
-          name: Srpski
-          build: true
+        en: English
+        sr: Srpski
 theme:
   name: material
   logo: /assets/logo.png
@@ -22,6 +17,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path
+    - navigation.footer
     - toc.follow
     - navigation.top
     - search.suggest
