@@ -9,7 +9,7 @@ plugins:
           name: English
           default: true
           build: true
-        - locale: Lt-sr-SP
+        - locale: sr-Latn-RS
           name: Srpski
           build: true
 theme:
