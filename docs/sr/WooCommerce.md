@@ -18,10 +18,10 @@ API keys (**Consumer Key** and **Consumer Secret**) allow secure communication b
 
 1. In the WordPress admin panel, go to **WooCommerce → Settings → Advanced → REST API**.
 2. Click **Add Key**, enter a name, choose the user for whom you want to generate the key, select **Read/Write** permissions, and click **Generate API Key**.
-    ![image](image/api.png)
+    ![image](assets/WooCommerce/api.png)
 3. Save the generated **Consumer Key** and **Consumer Secret**.
 
-    ![image](image/key.png)
+    ![image](assets/WooCommerce/key.png)
 
 ## 1. Connecting Business Central and WooCommerce
 - Enter the API credentials (**Consumer Key** & **Customer Secret**) that enable secure communication between Business Central and WooCommerce.  
@@ -29,7 +29,7 @@ API keys (**Consumer Key** and **Consumer Secret**) allow secure communication b
      Example URL: https://YourDomain
 
 This configuration enables the connection of the two systems, eliminates the need for manual data entry in both platforms, and reduces the possibility of errors.  
-    ![image](image/wooCom.png)
+    ![image](assets/WooCommerce/wooCom.png)
 
 ## 2. WordPress Authentication
 To create an Application Password, follow these steps:
@@ -39,11 +39,11 @@ To create an Application Password, follow these steps:
 3. Enter a name for the new Application Password 
 4. Click "Add New Application Password"
    
-     ![image](image/Password.png)
+     ![image](assets/WooCommerce/Password.png)
 
 Enter your WordPress administrator username and password to access and update data in the WooCommerce Setup.  
 This step ensures controlled access to data and synchronization without the need for manual input.
-    ![image](image/setup.png)
+    ![image](assets/WooCommerce/setup.png)
 
 
 ## 3. Managing Woo ID and Additional Options

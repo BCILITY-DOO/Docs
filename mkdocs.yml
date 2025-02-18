@@ -4,7 +4,6 @@ plugins:
   - i18n:
       docs_structure: folder	      
       fallback_to_default: true
-      default_language: en
       languages:    
         - locale: en       
           name: English
