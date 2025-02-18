@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <DataExchDef Code="RAIF2_DINARSKI_XML" Name="schema-definition.xsd" Type="0" ReadingWritingXMLport="1220" ExternalDataHandlingCodeunit="1240" FileType="0" ReadingWritingCodeunit="1200">
+    <DataExchLineDef LineType="1" Code="RAIF2-HEADER" ColumnCount="1" DataLineTag="/TransakcioniRacunPrivredaIzvod/Zaglavlje">
+      <DataExchMapping TableId="274" Name="" MappingCodeunit="1248" />
+    </DataExchLineDef>
+    <DataExchLineDef LineType="0" Code="RAIF2-LINES" Name="schema-definition-lines.xsd" ColumnCount="17" DataLineTag="/TransakcioniRacunPrivredaIzvod/Stavke">
+      <DataExchColumnDef ColumnNo="24" Name="/Stavke[@NalogKorisnik]" Show="false" DataType="0" Description="NalogKorisnik" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@NalogKorisnik]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="25" Name="/Stavke[@Mesto]" Show="false" DataType="0" Description="Mesto" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Mesto]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="26" Name="/Stavke[@VasBrojNaloga]" Show="false" DataType="0" Description="VasBrojNaloga" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@VasBrojNaloga]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="27" Name="/Stavke[@BrojRacunaPrimaocaPosiljaoca]" Show="false" DataType="0" Description="BrojRacunaPrimaocaPosiljaoca" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@BrojRacunaPrimaocaPosiljaoca]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="28" Name="/Stavke[@Opis]" Show="false" DataType="0" Description="Opis" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Opis]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="29" Name="/Stavke[@SifraPlacanja]" Show="false" DataType="0" Description="SifraPlacanja" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@SifraPlacanja]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="30" Name="/Stavke[@SifraPlacanjaOpis]" Show="false" DataType="0" Description="SifraPlacanjaOpis" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@SifraPlacanjaOpis]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="31" Name="/Stavke[@Duguje]" Show="false" DataType="2" Description="Duguje" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Duguje]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="32" Name="/Stavke[@Potrazuje]" Show="false" DataType="0" Description="Potrazuje" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Potrazuje]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="33" Name="/Stavke[@ModelZaduzenjaOdobrenja]" Show="false" DataType="0" Description="ModelZaduzenjaOdobrenja" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@ModelZaduzenjaOdobrenja]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="34" Name="/Stavke[@PozivNaBrojZaduzenjaOdobrenja]" Show="false" DataType="0" Description="PozivNaBrojZaduzenjaOdobrenja" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@PozivNaBrojZaduzenjaOdobrenja]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="35" Name="/Stavke[@ModelKorisnika]" Show="false" DataType="0" Description="ModelKorisnika" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@ModelKorisnika]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="36" Name="/Stavke[@PozivNaBrojKorisnika]" Show="false" DataType="0" Description="PozivNaBrojKorisnika" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@PozivNaBrojKorisnika]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="37" Name="/Stavke[@BrojZaReklamaciju]" Show="false" DataType="0" Description="BrojZaReklamaciju" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@BrojZaReklamaciju]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="38" Name="/Stavke[@Referenca]" Show="false" DataType="0" Description="Referenca" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Referenca]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="39" Name="/Stavke[@Objasnjenje]" Show="false" DataType="0" Description="Objasnjenje" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@Objasnjenje]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchColumnDef ColumnNo="40" Name="/Stavke[@DatumValute]" Show="false" DataType="1" DataFormat="dd.MM.yyyy" Description="DatumValute" Path="/TransakcioniRacunPrivredaIzvod/Stavke[@DatumValute]" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" BlankZero="false" ExportIfNotBlank="false" />
+      <DataExchMapping TableId="274" Name="" MappingCodeunit="1248">
+        <DataExchFieldMapping ColumnNo="28" FieldID="6" Optional="true" />
+        <DataExchFieldMapping ColumnNo="31" FieldID="7" Optional="true" />
+        <DataExchFieldMapping ColumnNo="40" FieldID="5" Optional="true" />
+      </DataExchMapping>
+    </DataExchLineDef>
+  </DataExchDef>
+</root>

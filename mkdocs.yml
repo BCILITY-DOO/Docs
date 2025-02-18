@@ -2,15 +2,16 @@ site_name: BCILITY DOCS
 plugins:
   - search
   - i18n:
-      docs_structure: folder
+      docs_structure: folder	      
       fallback_to_default: true
-      languages:
-        - locale: en
+      default_language: en
+      languages:    
+        - locale: en       
           name: English
-          default: true
-          build: true
-        - locale: sr
-          name: Srpski
+          default: true	
+          build: true	
+        - locale: sr	
+          name: Srpski	
           build: true
 theme:
   name: material
