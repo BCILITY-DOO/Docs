@@ -7,9 +7,9 @@ plugins:
       languages:
         - locale: en
           name: English
-          default: true
           build: true
-        - locale: sr
+        - locale: sh
+          default: true
           name: Srpski
           build: true
 theme:
@@ -22,6 +22,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path
+    - navigation.footer
     - toc.follow
     - navigation.top
     - search.suggest
