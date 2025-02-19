@@ -469,5 +469,11 @@ Dodavanjem artikala u nabavni dokument povećava se ukupan iznos fakture. Ako je
 
 ![pod-nabav](../assets/nabavka/Nabavka24.png)
 
+## 4. Troškovi artikla u nabavci 
 
+Troškovi povezani s artiklima obuhvataju špediciju, carinu, transport, ambalažu, kao i troškove utovara i istovara robe, zajedno s ostalim relevantnim izdacima. Ovi troškovi mogu biti prisutni ne samo na nabavnim dokumentima, već i na prodajnim, gde doprinose preciznijem obračunu direktnog troška artikla.
+
+### 4.1 Podešavanje troška artikla
+
+Kada su troškovi povezani s nabavkom artikala, potrebno ih je uključiti u vrednovanje zaliha i obračun troškova prodate robe. Moguće je definisati različite vrste troškova artikala kako bi se preciznije razlikovali troškovni elementi, što poboljšava analizu troškova i statistiku prodaje.
 
