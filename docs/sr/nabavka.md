@@ -477,3 +477,67 @@ Troškovi povezani s artiklima obuhvataju špediciju, carinu, transport, ambala�
 
 Kada su troškovi povezani s nabavkom artikala, potrebno ih je uključiti u vrednovanje zaliha i obračun troškova prodate robe. Moguće je definisati različite vrste troškova artikala kako bi se preciznije razlikovali troškovni elementi, što poboljšava analizu troškova i statistiku prodaje.
 
+![pod-nabav](../assets/nabavka/Nabavka25.png)
+
+Poput artikla, trošak artikla takođe mora imati Opštu knjižnu grupu proizvoda i Grupa knjiženja proizvoda za PDV. Njihova kombinacija određuje račun glavne knjige na koji se knjiži trošak artikla. Nakon što se postave troškovi artikla, mogu se koristiti na redovima nabavnih i prodajnih dokumenata. 
+
+### 4.2 Dodela troška artikla
+
+Trošak artikla može se dodeliti na dva načina:  
+
+&nbsp;&nbsp;- **Na nabavnom dokumentu** koji sadrži artikle na koje se odnose troškovi. Ovaj način se obično koristi na dokumentima koji još nisu proknjiženi.  
+&nbsp;&nbsp;- **Na odvojenoj fakturi**, gde se trošak artikla povezuje s proknjiženom nabavnom priznanicom koja sadrži relevantne artikle.  
+
+Kada se trošak artikla dodeljuje direktno na nabavnom dokumentu, potrebno je dodati novi red i kao **Vrstu** izabrati **Trošak (artikal)**. Za ovaj red treba uneti vrednosti u polja **Količina** i **Direktni jedinični trošak**. Nakon toga, potrebno je selektovati red s troškom i izabrati opciju **Red -> Dodela troška artikla**.
+
+![pod-nabav](../assets/nabavka/Nabavka26.png)
+
+Klikom na "Dodela troška artikla", otvara se prozor za raspodelu troškova artikala na kojoj su prikazani redovi narudžbenice s artiklima. Business Central nudi raspodelu troškova artikala na redove narudžbenice funkcijom "Predloži" dodelu troška artikla… (preko dugmeta Trošak artikla): 
+
+![pod-nabav](../assets/nabavka/Nabavka27.png)
+
+Klikom na funkciju "Predloži dodelu troška artikla…" otvara se prozor s opcijama raspodele troška: 
+
+&nbsp;&nbsp;- Jednako – trošak artikla dodeljen je jednako na sve redove na prozoru Dodela troška artikla. 
+&nbsp;&nbsp;- Po iznosu – trošak artikla dodeljen je i izračunat prema iznosu svakog reda. 
+&nbsp;&nbsp;- Po težini – trošak artikla dodeljen je prema zbiru težina artikala definisanih na kartici svakog artikla. 
+&nbsp;&nbsp;- Po volumenu – trošak artikla dodeljen je prema zbiru volumena artikala definisanih na kartici svakog artikla. 
+
+ ![pod-nabav](../assets/nabavka/Nabavka28.png)
+
+Odabirom jedne od opcija, na primer "Po iznosu", sistem će na redovima popuniti polja *"Kol. za dodelu"* i *"Iznos za dodelu"*. 
+
+Moguće je i ručno izmeniti *"Kol. za dodelu"*, čime će se ažurirati polje *"Iznos za dodelu"*. 
+
+Nakon zatvaranja stranice za raspodelu troškova artikla, troškovi se automatski dodeljuju redovima narudžbenice, omogućavajući knjiženje nabavne porudžbine. Kada se dokument proknjiži, u analitičkim stavkama artikla pojaviće se novi unos, gde će polje "Iznos troška" (stvarni) sadržavati i dodeljeni trošak artikla. Ovaj trošak biće vidljiv na stavkama vrednosti, gde će se pored postojeće stavke direktnog troška nabavke generisati dodatna stavka direktnog troška, ali specifično vezana za trošak artikla.
+
+Trošak artikla može se dodeliti i putem zasebne ***fakture***. U ovom slučaju, na ulaznoj fakturi dodaje se samo red vrste Trošak (artikal), bez artikala iz nabavne porudžbine. Ovaj pristup se često koristi kada troškove, poput transporta i špedicije, fakturiše treća strana, npr. špediter. Kao i kod dodele troška na nabavnoj porudžbini, potrebno je uneti *Količinu* i *Direktni jedinični trošak*.
+
+Ako se ovako kreirana ulazna faktura pokuša proknjižiti bez prethodne dodele troška artikla, sistem će prikazati grešku. Da bi se trošak pravilno dodelio, potrebno je selektovati red s troškom, zatim iz menija odabrati Red -> Povezane informacije-> ***"Dodela troška artikla"***. 
+
+![pod-nabav](../assets/nabavka/Nabavka29.png)
+
+Kada se otvori prozor biramo opciju ***"Učitaj redove prijemnice"***
+
+![pod-nabav](../assets/nabavka/Nabavka30.png)
+
+Otvoriće se redovi priznanice nabavke. Potrebno je označiti sve redove za koje se želi vezati trošak artikla i kliknuti *U redu*. 
+
+![pod-nabav](../assets/nabavka/Nabavka31.png)
+
+Nakon potvrde, na stranici za dodelu troška artikla prikazaće se samo prethodno označeni redovi. Kao i u ranijem primeru, potrebno je kliknuti na opciju Predloži dodelu troška artikla, odabrati jednu od ponuđenih metoda raspodele i potvrditi klikom na U redu. Time će se trošak ravnomerno raspodeliti po odgovarajućim redovima dokumenta.
+
+Pored opcije *"Učitaj redove prijemnice"*, putem dugmeta *Akcije*, moguće je koristiti i sledeće funkcije za učitavanje redova iz različitih tipova dokumenata:
+
+&nbsp;&nbsp;- Učitaj redove prijemnice prenosa
+&nbsp;&nbsp;- Učitaj redove isporuke povrata
+&nbsp;&nbsp;- Učitaj redove izlazne isporuke
+&nbsp;&nbsp;- Učitaj redove prijemnice povrata
+  
+Princip rada za ove funkcije je isti kao kod učitavanja redova prijemnice nabavke – korisnik označava željene redove i potvrđuje izbor klikom na *U redu*. Nakon toga, označeni redovi će se prikazati na stranici za dodelu troška artikla.
+
+Poslednji korak je dodela troškova artiklima u učitanim redovima i zatvaranje stranice. Kada je trošak uspešno dodeljen, sistem će omogućiti knjiženje ulazne fakture, jer su svi troškovi artikala pravilno raspoređeni.
+
+
+
+
