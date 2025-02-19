@@ -298,7 +298,7 @@ Proces povrata u prodaji započinje kreiranjem **Naloga za povrat prodate robe**
 
 #### **3.6.1 Nalog za povraćaj prodatog**
 
-U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranjem i knjiženjem **Naloga za povrat prodate robe**.  
+U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranjem i knjiženjem **Prodajnog povraćaja**.  
 
 1. **Kreiranje Naloga za povrat prodate robe**  
    - Dokument se kreira kako bi se evidentirao povrat artikala od kupca.  
@@ -311,7 +311,7 @@ U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranj
 
 3. **Očuvanje originalnog troška povrata**  
    - Kako bi se osiguralo da se povrat knjiži sa istim troškom, koristi se funkcija:  
-     - **Učitaj redove proknjiženog dokumenta za storniranje**  
+     - **Učitaj redove proknjiženog dokumenta za obrtanje**  
    - Ova funkcija omogućava učitavanje originalnih redova iz proknjiženog dokumenta prodaje, čime se osigurava da se vrednosti i troškovi povrata poklapaju sa originalnom prodajom.  
 
 4. **Knjiženje povrata novca kupcu**  
@@ -319,3 +319,10 @@ U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranj
      - **Karticu kupca**  
      - **Račun glavne knjige (GK)**  
 
+![pod-prodaje](../assets/Prodaja/Prodaja15.png)
+
+Ova funkcija kopira redove s jednog ili više proknjiženih dokumenata kupca definisanog na zaglavlju. Klikom na akciju, otvara se prozor s redovima proknjiženih dokumenata one vrste koja se odabere u filteru. Moguće opcije su *Proknjižene otpremnice*, *Proknjižene fakture*, *Proknjižene prijemnice povrata* i *Proknjižena odobrenja*: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja16.png)
+
+Na taj način, u redovima se popuni polje *Izvorna stavka artikla za zatvaranje*, čime se osigurava ispravan trošak artikla. Nakon toga, knjiži se prijem ili se prima i fakturiše, čime nastane i proknjiženo izlazno odobrenje. 
