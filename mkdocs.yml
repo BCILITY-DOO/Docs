@@ -55,8 +55,8 @@ extra:
       link: /en/
       lang: en
     - name: Srpski
-      link: /sr/
-      lang: sr
+      link: /sh/
+      lang: sh
   status:
     new: Recently added
     deprecated: Deprecated
