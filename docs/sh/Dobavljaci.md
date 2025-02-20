@@ -23,9 +23,9 @@ Dodatni podaci o dobavljaču nalaze se na desnoj strani kartice u činjeničnom 
 
 ## Dodatne funkcionalnosti za rad sa dobavljačima
 
-- Bankovni računi
+- **Bankovni računi**
 
-Unos bankovnih računa je ključan za automatsko prepoznavanje uplata i obavezni je element naloga plaćanja. Pristup ovoj akciji vrši se praćenjem putanje: **Dobavljač -> Računi u banci**
+Unos bankovnih računa je ključan za automatsko prepoznavanje uplata i obavezni je element naloga plaćanja. Pristup ovoj akciji vrši se praćenjem putanje: **Dobavljač -> Računi u banci**.
 
 ![slika](DobavljaciSlike/BankovniRacun.png)
 
@@ -37,9 +37,9 @@ U otvorenom prozoru unose se podaci o novom bankovnom računu.
 
 ![slika](DobavljaciSlike/NoviRacun.png)
 
-- Adrese isporuke
+- **Adrese isporuke**
 
-Dodavanje nove adrese na koju će se vršiti dostava srtikala od strane dobavljača vrši se praćenjem putanje **Povezano -> Dobavljač -> Adrese porudžbine**.
+Dodavanje nove adrese na koju će se vršiti dostava artikala od strane dobavljača vrši se praćenjem putanje **Povezano -> Dobavljač -> Adrese porudžbine**.
 
 ![slika](DobavljaciSlike/Adrese.png)
 
@@ -47,14 +47,14 @@ U otvorenom prozoru unose se podaci o adresi na koju će se vršiti dostava.
 
 ![slika](DobavljaciSlike/Adrese2.png)
 
-- Stavke
+- **Stavke knjige dobavljača**
 
 Akcija Stavke prikazuje sve transakcije vezane za dobavljača, uključujući proknjižene dokumente i promene u zalihama.
 
 Pristup ovoj akciji vrši se praćenjem putanje: **Povezano -> Istorija -> Stavke**.
 
-![slika](DobavljaciSlke/Stavke.png)
+![slika](DobavljaciSlike/Stavke.png)
 
 Po otvaranju, lista je filtrirana za izabranog dobavljača, ali filter se može ukloniti kako bi se prikazale stavke svih dobavljača. Takođe, moguće je dodati dodatne filtere za analizu podataka.
 
-![slika](DobavljaciSlke/Stavke2.png)
+![slika](DobavljaciSlike/Stavke2.png)
