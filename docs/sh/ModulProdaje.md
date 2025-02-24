@@ -1,4 +1,4 @@
-# Modul prodaje
+# **Modul prodaje**
 
 Modul prodaje u programu Microsoft Dynamics 365 Business Central omogućava praćenje celokupnog procesa prodaje robe kupcima. Ovaj modul obuhvata upravljanje informacijama o artiklima, kupcima, kontaktima i različitim prodajnim dokumentima, uključujući prodajne ponude, naloge za prodaju, izlazne fakture i odobrenja.
 
@@ -279,45 +279,45 @@ Proces povrata u prodaji započinje kreiranjem **Naloga za povrat prodate robe**
 
 *Koraci u procesu povrata*:  
 
-1. **Knjiženje zaprimanja povrata**  
+**Knjiženje zaprimanja povrata**  
    - Nakon što se roba vrati, knjiži se prijem robe putem **Naloga za povrat prodate robe**.  
    - Time nastaje **Proknjižena prijemnica povrata**.  
    - Količina artikla na zalihama se povećava.  
 
-2. **Knjiženje odobrenja**  
+**Knjiženje odobrenja**  
    - Nakon obrade povrata, izdaje se **Proknjiženo izlazno odobrenje**.  
    - Ažuriraju se sledeći podaci:  
-     - Kartica kupca  
-     - Stanje artikla  
-     - Račun glavne knjige (GK)  
+    &nbsp;&nbsp; - Kartica kupca  
+    &nbsp;&nbsp; - Stanje artikla  
+    &nbsp;&nbsp; - Račun glavne knjige (GK)  
 
-3. **Knjiženje povrata novca kupcu**  
+**Knjiženje povrata novca kupcu**  
    - Kada se izvrši povrat novca, sistem ažurira:  
-     - Karticu kupca  
-     - Račun GK  
+    &nbsp;&nbsp; - Karticu kupca  
+    &nbsp;&nbsp; - Račun GK  
 
 #### **3.6.1 Nalog za povraćaj prodatog**
 
 U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranjem i knjiženjem **Prodajnog povraćaja**.  
 
-1. **Kreiranje Naloga za povrat prodate robe**  
+**Kreiranje Naloga za povrat prodate robe**  
    - Dokument se kreira kako bi se evidentirao povrat artikala od kupca.  
 
-2. **Knjiženje Naloga za povrat prodate robe**  
+**Knjiženje Naloga za povrat prodate robe**  
    - Knjiženjem ovog naloga nastaju:  
-     - **Proknjiženo izlazno odobrenje**  
-     - **Proknjižena prijemnica povrata**  
+    &nbsp;&nbsp; - **Proknjiženo izlazno odobrenje**  
+    &nbsp;&nbsp; - **Proknjižena prijemnica povrata**  
    - Količina artikala na zalihama se povećava.  
 
-3. **Očuvanje originalnog troška povrata**  
+**Očuvanje originalnog troška povrata**  
    - Kako bi se osiguralo da se povrat knjiži sa istim troškom, koristi se funkcija:  
-     - **Učitaj redove proknjiženog dokumenta za obrtanje**  
+    &nbsp;&nbsp; - **Učitaj redove proknjiženog dokumenta za obrtanje**  
    - Ova funkcija omogućava učitavanje originalnih redova iz proknjiženog dokumenta prodaje, čime se osigurava da se vrednosti i troškovi povrata poklapaju sa originalnom prodajom.  
 
-4. **Knjiženje povrata novca kupcu**  
+**Knjiženje povrata novca kupcu**  
    - Kada se izvrši povrat novca, sistem automatski ažurira:  
-     - **Karticu kupca**  
-     - **Račun glavne knjige (GK)**  
+    &nbsp;&nbsp; - **Karticu kupca**  
+    &nbsp;&nbsp; - **Račun glavne knjige (GK)**  
 
 ![pod-prodaje](../assets/Prodaja/Prodaja15.png)
 
@@ -326,3 +326,247 @@ Ova funkcija kopira redove s jednog ili više proknjiženih dokumenata kupca def
 ![pod-prodaje](../assets/Prodaja/Prodaja16.png)
 
 Na taj način, u redovima se popuni polje *Izvorna stavka artikla za zatvaranje*, čime se osigurava ispravan trošak artikla. Nakon toga, knjiži se prijem ili se prima i fakturiše, čime nastane i proknjiženo izlazno odobrenje. 
+
+![pod-prodaje](../assets/Prodaja/Prodaja17.png)
+
+Ukoliko se vrši paćenja artikla ( po serijskom broju ili šarži ) taj podatak će biti vidljiv na redovima praćenja artikla.  
+
+#### **3.6.2 Prodajno odobrenje**
+
+Prodajno odobrenje se obično kreira u slučajevima kada kupcu želimo naknadno odobriti određeni popust zbog različitih razloga, kao što su:  
+- Oštećenje robe  
+- Nezadovoljstvo rokom isporuke  
+- Drugi opravdani razlozi  
+
+***Kreiranje prodajnog odobrenja***  
+
+**Odabir vrste stavke u redovima odobrenja**  
+   - Ako je stavka **artikal**, tada će se artikal vratiti na stanje.  
+   - Ako se želi kupcu odobriti popust bez povrata artikla, koristi se:  
+     &nbsp;&nbsp; - **Trošak (artikal)** – ažurira se trošak artikla  
+     &nbsp;&nbsp; - **Račun glavne knjige (GK)**  
+
+**Metode kreiranja prodajnog odobrenja**  
+   - **Direktno sa *Naloga za povrat prodate robe***  
+   - **Korišćenjem funkcije *Učitaj redove prijemnica povraćaja***  
+     &nbsp;&nbsp; - Ova opcija je korisna kada postoji više prijemnica povraćaja i želi se napraviti jedno &nbsp;&nbsp;objedinjeno prodajno odobrenje.  
+
+**Knjiženje prodajnog odobrenja**  
+   - Nakon knjiženja, sistem automatski ažurira:  
+     &nbsp;&nbsp;- **Karticu kupca**  
+     &nbsp;&nbsp;- **Račun glavne knjige (GK)**  
+     &nbsp;&nbsp;- **Stanje zaliha (ako je uključen artikal u odobrenju)**  
+
+![pod-prodaje](../assets/Prodaja/Prodaja18.png)
+
+Kao i kod naloga za povrat prodate robe, popunjavaju se redovi izlaznog odobrenja koje je onda potrebno knjižiti, čime će nastati proknjiženo izlazno odobrenje.   
+
+Osim toga, moguće je direktno sa same proknjižene izlazne fakture napraviti odobrenje tako što se koriste akcije na alatnoj traci pod trakom Ispravi > Kreiraj korekciju odobrenja. 
+
+![pod-prodaje](../assets/Prodaja/Prodaja19.png)
+
+### **3.7 Opoziv isporuke**
+
+Osim što se povrat može knjižiti koristeći gore navedene dokumente, u slučaju da ste određenu isporuku knjižili pogrešno a niste je još uvek fakturisali, istu možete stornirati na vrlo jednostavan način koristeći akciju Opozovi isporuku.  
+
+![pod-prodaje](../assets/Prodaja/Prodaja20.png)
+
+Navedena akcija opoziva odabrani red , tako da ako se hoće poništiti cela isporuka, potrebno je označiti sve redove. Nakon što se proknjiži storno isporuke, u redovima iste otpremnice dodaće se novi red s negativnom količinom. 
+
+## **4. Prodajne cene**
+
+U programu **Microsoft Dynamics 365 Business Central** moguće je definisati prodajne cene na nekoliko načina. Prodajne cene predstavljaju alternativne cene artikala na osnovu kombinacije **broja artikla** i **dobavljača**, uz sledeće kriterijume:  
+
+**Kriterijumi za određivanje prodajne cene**  
+
+Svaka prodajna cena može biti definisana na osnovu:  
+- **Šifre varijante** – varijanta artikla u kojoj se prodaje  
+- **Šifre JM (jedinica mere)** – jedinica mere u kojoj se prodaje artikal  
+- **Minimalne količine** – najmanja količina potrebna za određenu cenu  
+- **Početnog datuma** – datum od kojeg cena postaje važeća  
+- **Krajnjeg datuma** – datum do kojeg cena važi  
+- **Šifre valute** – valuta u kojoj je cena izražena  
+
+**Unos prodajne cene**  
+
+Prodajna cena artikla definiše se u polju **Jedinična cena**, koje određuje iznos po jedinici mere u izabranoj valuti.  
+
+![pod-prodaje](../assets/Prodaja/Prodaja21.png)
+
+**Dodatne napomene**  
+
+- Sistem automatski primenjuje najpovoljniju cenu za kupca na osnovu definisanih kriterijuma.  
+- Prodajne cene mogu se postaviti i kroz **cenovne liste** ili prilagođene **cena ugovore** sa kupcima.  
+
+### **4.1 Podešavanje prodajnih cena**
+
+Prodajne cene mogu se postaviti s liste artikala za označeni artikal ili s kartice artikala. Potrebno je kliknuti na traci akcija na Cene i popusti -> Prodajne cene.
+
+![pod-prodaje](../assets/Prodaja/Prodaja22.png)
+
+Prodajne cene je moguće postaviti i preko kartice kupca. Na traci akcija kliknuti na Cene i popusti -> Cene.
+
+![pod-prodaje](../assets/Prodaja/Prodaja23.png)
+
+U Business Central-u prodajne cene mogu se definisati po kupcu, grupi kupaca, svim kupcima ili u okviru kampanje. Cena se određuje prema artiklu, varijanti, jedinici mere, minimalnoj količini, datumu važenja i valuti.  
+
+Ako se cena odnosi na grupu kupaca, potrebno je prvo kreirati cenovnu grupu i dodeliti je kupcima. Sistem automatski primenjuje najpovoljniju cenu, a cene se mogu postaviti i kroz cenovne liste ili ugovore.  
+
+![pod-prodaje](../assets/Prodaja/Prodaja24.png)
+
+Zatim se redovi cena unose za navedeni cenovnik i artikle: 
+
+![pod-prodaje](../assets/Prodaja/prodaja25.png)
+
+### **4.2 Upotreba prodajnih cena**
+
+Ako kupac ima više definisanih prodajnih cena, Microsoft Dynamics 365 Business Central automatski primenjuje najpovoljniju cenu, pod uslovom da su ispunjeni definisani kriterijumi.
+
+Napomena: Microsoft planira uvođenje nove funkcionalnosti koja će omogućiti izbor metode obračuna cene, pored trenutno važeće opcije "Najniža cena".
+
+Nakon unosa artikla u red prodajnog dokumenta za kupca koji ima postavljenu prodajnu cenu, moguće je proveriti sve prodajne cene na informacionom okviru pod *Detalji reda prodaje*: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja26.png)
+
+Na slici iznad vidljivo je da za označeni red prodajnoj porudžbini postoji dve prodajna cena za tog kupca. Klikom na vrednost 2, otvara se prozor s redovima prodajnih cena: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja27.png)
+
+Na ovaj način referent prodaje može proveriti sve prodajne cene za kupca, može pričekati nekoliko dana, može predložiti kupcu kupovinu veće količine ako će biti povoljnija cena.
+
+## **5. Popusti u prodaji**
+
+U programu **Microsoft Dynamics 365 Business Central** popusti u prodaji funkcionišu slično kao prodajne cene i primenjuju se samo ako su ispunjeni određeni uslovi.  
+
+Postoje dve vrste popusta:  
+
+- **Popusti na red** – primenjuju se na pojedinačne stavke u prodajnom dokumentu.  
+- **Popusti na fakturu** – obračunavaju se na ukupnu vrednost fakture.  
+
+Kao i kod cena, sistem automatski bira najpovoljniju opciju za kupca na osnovu definisanih uslova.  
+
+### **5.1 Popusti na red**
+
+**Popusti na red** primenjuju se na pojedinačne stavke u prodajnom dokumentu.  
+
+Iznos popusta biće automatski upisan u redove prodaje ako su ispunjeni sledeći uslovi:  
+
+- Kupac odgovara definisanom popustu  
+- Artikal je obuhvaćen popustom  
+- Minimalna količina artikla je dostignuta  
+- Odgovara jedinica mere  
+- Valuta je ispravna  
+- Datum transakcije je u okviru početnog i završnog datuma popusta  
+
+Sistem automatski bira i primenjuje najpovoljniji popust za kupca.
+
+![pod-prodaje](../assets/Prodaja/Prodaja28.png)
+
+#### **5.1.1 Postavka popusta na red**
+
+Postavku popusta na red moguće je napraviti koristeći pretraživač ili direktno preko kartice artikla, tako da se klikne na Cene i popusti -> Popusti na prodaju.
+
+![pod-prodaje](../assets/Prodaja/Prodaja29.png)
+
+Takođe, istu postavku moguće je napraviti preko kartice kupca, klikom na Cene i popusti -> Popusti na redove:
+
+![pod-prodaje](../assets/Prodaja/Prodaja30.png)
+
+Klikom na akciju **"Popusti na redove"**, otvara se prozor u kojem je moguće definisati popust za određenu kombinaciju kupaca i artikala.  
+ 
+U okviru ovog prozora, popust se unosi u polje **"% popusta na red"**, uz mogućnost dodavanja sledećih dodatnih uslova:  
+
+- **Minimalna količina** – minimalna količina artikala potrebna za ostvarivanje popusta  
+- **Jedinica mere** – određuje u kojoj meri se primenjuje popust  
+- **Šifra valute** – definiše valutu u kojoj se obračunava popust  
+- **Početni datum** – datum od kojeg popust postaje aktivan  
+- **Završni datum** – datum do kojeg popust važi  
+
+Sistem automatski primenjuje popust na prodajni dokument ako su ispunjeni definisani uslovi.  
+
+![pod-prodaje](../assets/Prodaja/Prodaja31.png)
+
+#### **5.1.2 Upotreba popusta na red**
+
+Nakon postavljanja popusta na red prodaje, oni se primenjuju u prodajnim dokumentima kao i prodajne cene. Sistem će primeniti popust na red ako su svi uslovi zadovoljeni. Ukoliko postoji više popusta koji zadovoljavaju uslove, sistem će koristiti najveći popust. Kada se artikal unese na red prodaje, u činjeničnom okviru može se proveriti da li postoje popusti na red za kombinaciju kupca i artikla.
+
+![pod-prodaje](../assets/Prodaja/Prodaja32.png)
+
+Klikom na vrednost 1, otvara se prozor s detaljnim prikazom popusta na red prodaje: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja33.png)
+
+### **5.2 Popusti na fakturu**
+
+Drugi tip popusta u prodaji je popust na fakturu. Ovaj popust se obračunava tako što se procenat popusta oduzima od ukupnog iznosa dokumenta, pod uslovom da ukupan iznos svih redova na prodajnom dokumentu prelazi određeni minimum.
+
+#### **5.2.1 Podešavanje popusta na fakturu**
+
+Popust na fakturu moguće je postaviti s kartice kupca (Povezano -> Cene i popusti -> Popusti na fakturu) i primenjuje se na fakture za kupca: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja34.png)
+
+Klikom na akciju *Popusti na fakture* otvara se prozor gde se definišu procenti popusta na fakture za kupce. Popust na fakturu upisuje se u polje % popusta: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja35.png)
+
+Na kartici kupca, u brzoj kartici Fakturisanje, polje **Šifra popusta na fakturu** automatski se popunjava brojem kupca prilikom njegovog kreiranja i dodeljuje odgovarajuću šifru popusta na fakturu. Takođe, moguće je definisati globalnu šifru koja se koristi za više kupaca, čime se omogućava brza dodela uslova popusta različitim kupcima.
+
+#### **5.2.2 Upotreba popusta na fakturu**
+
+Dodavanjem artikala na redove prodajnog dokumenta povećava se ukupan iznos fakture. Popust na ukupan iznos fakture neće se automatski izračunati; za to je potreban dodatni korak. Kada ukupan iznos na prodajnom dokumentu premaši neki od iznosa definisanih na stranici **Popusti na fakture za kupce**, popust na fakturu će se obračunati klikom na akciju **Izračunaj popust na fakturu**.
+
+![pod-prodaje](../assets/Prodaja/Prodaja36.png)
+
+## **6. Troškovi artikla u prodaji**
+
+Kao i u nabavci, u prodaji se može koristiti artikal troška za povezivanje dodatnih troškova, kao što su trošak špedicije, carine, transporta, ambalaže, utovara i istovara robe, kao i drugih troškova s artiklima. Na taj način se dobija tačan uvid i proračun direktnog troška artikla.
+
+### **6.1 Podešavanje troška artikla**
+
+Moguće je postaviti više različitih troškova artikla kako bi se razlikovale vrste troškova i poboljšala statistika troškova i prodaje. 
+
+![pod-prodaje](../assets/Prodaja/Prodaja37.png)
+
+Poput artikla, trošak artikla takođe mora imati postavljene *Opštu grupu knjiženja proizvoda* i *Grupu knjiženja proizvoda za PDV*. Kombinacija ovih parametara određuje račun glavne knjige na koji se knjiži trošak artikla. Nakon što se postave troškovi artikla, mogu se koristiti na redovima nabavnih i prodajnih dokumenata.
+
+## **7. Dodela troška artikla**
+
+Trošak artikla može se dodeliti na dva načina:
+
+- Na prodajnim dokumentima koji nisu proknjiženi, a na kojima se nalaze artikli za koje je potrebno dodeliti određeni dodatni trošak.
+- Na odvojenoj fakturi povezivanjem troška artikla s proknjiženom izlaznom otpremnicom na kojoj se nalaze artikli na koje se odnose troškovi artikla.
+
+Kada se dodeljuje trošak artikla na prodajnom dokumentu koji sadrži artikle, potrebno je dodati novi red i kao vrstu odabrati **Trošak (artikal)**. Za red s troškom treba popuniti polja **Količina** i **Direktni jedinični trošak**. Nakon toga, pozicionirajte se u red s troškom, odaberite **Red -> Povezane informacije -> Dodela troška artikla**.
+
+![pod-prodaje](../assets/Prodaja/Prodaja38.png)
+
+Klikom na *Dodela troška artikla*, otvara se prozor za raspodelu troškova artikala. Potrebno je prvo preko akcije *Dohvati redove otpremnice* dohvatiti za koje artikle se želi dodeliti trošak, a onda nakon toga preko akcije *Predloži dodelu troška artikla* dodeliti trošak po artiklima: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja39.png)
+
+Klikom na funkciju **Predloži dodelu troška artikla**, otvara se prozor s opcijama raspodele troška:
+
+- **Jednako** – trošak artikla dodeljen je jednako na sve redove na prozoru **Dodela troška artikla**.
+- **Po iznosu** – trošak artikla dodeljen je i izračunat prema iznosu svakog reda.
+- **Po težini** – trošak artikla dodeljen je prema zbiru težina artikala definisanih na kartici svakog artikla.
+- **Po volumenu** – trošak artikla dodeljen je prema zbiru volumena artikala definisanih na kartici svakog artikla.
+
+![pod-prodaje](../assets/Prodaja/Prodaja40.png)
+
+Odabirom jedne od opcija, na primer Po iznosu, sistem će na redovima popuniti polja *Kol. za dodelu* i *Iznos za dodelu*: 
+
+![pod-prodaje](../assets/Prodaja/Prodaja41.png)
+
+Trošak artikla može se ručno prilagoditi promenom **Kol. za dodelu**, čime se automatski ažurira polje **Iznos za dodelu**. Pored funkcije **Učitaj redove isporuke**, moguće je koristiti sledeće opcije putem dugmeta **Akcije**:
+
+- **Učitaj redove prijemnice prenosa**
+- **Učitaj redove otpremnice povrata**
+- **Učitaj redove isporuke**
+- **Dohvati redove prijemnice povrata**
+
+Nakon što se stranica za raspodelu troškova zatvori, trošak će biti raspodeljen na redove prodajnog naloga, te će dokument biti spreman za knjiženje. Knjiženjem će nastati nova stavka u analitici artikla, u kojoj će polje **Iznos troška (stvarni)** uključivati trošak artikla. Ovo je vidljivo na stavkama vrednosti, gde se pored direktnog troška prodaje pojavljuje još jedna stavka direktnog troška vezana za trošak artikla.
+
+![pod-prodaje](../assets/Prodaja/Prodaja42.png)
+
+Dodela troška može se dodeliti i preko zasebne fakture, gde će se kao u primeru gore u redovima nalaziti samo red vrste *Trošak (artikal)*. Dodavanje stavke *Trošak (artikal)* radi se na identičan način. 
