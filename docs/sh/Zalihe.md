@@ -133,3 +133,70 @@ U slučaju da ste pogrešno evidentirali prenos sa jednog magacina na drugi, pot
 
 Kada to uradite, možete otvoriti novi nalog za prenos sa ispravnim podacima.  
 
+## **3. Nalog preklasifikacije artikala**
+
+Još jedan način prenosa zaliha na drugu lokaciju jeste korišćenje **naloga preklasifikacije artikala**. Ovaj nalog omogućava da se:  
+
+- Prebaci artikal sa jedne lokacije na drugu  
+- Promeni dimenzija artikla  
+- Postavi artikal na drugi regal  
+
+Za ovu vrstu prenosa potrebno je samo popuniti odgovarajuće kolone i proknjižiti nalog.  
+
+![zalihe](../assets/Zalihe/Zalihe12.png)
+
+S obzirom da se radi o nalogu, ne postoji nikakav dokument koji ćete imati nakon knjiženja, jedino stavke glavne knjige te stavke analitike artikla. 
+
+## **4. Nalog artikla**
+
+Za knjiženje naloga poput naloga manjka, viška, promene šifre artikla i korekcije zaliha na stanju koristi se funkcionalnost **Nalog artikla**.
+
+### **4.1 Obrasci naloga artikla**
+
+Obrasce naloga artikla možemo da otvorimo ukoliko u pretrazi ukucamo obrasci naloga artikla. Nakon otvaranja prikazaće nam se svi obrasci koje smo do sada kreirali.
+
+![zalihe](../assets/Zalihe/Zalihe13.png)
+
+1. Stanite u kolonu **Ime** i pritisnite dugme **Novo**.  
+2. U polje **Ime** unesite oznaku obrasca naloga artikla koji kreirate.  
+3. U polje **Opis** upišite naziv obrasca naloga artikla.  
+4. U polje **Vrsta** izaberite opciju **Artikal**.  
+5. U polju **Šifra izvora** izaberite **NAL_ART**.  
+
+Nakon što popunite ova polja, budite i dalje pozicionirani u istom redu i kliknite na dugme **Grupe**, kako biste mogli da vidite koje su grupe naloga povezane sa ovim nalogom artikla.  
+
+![zalihe](../assets/Zalihe/Zalihe14.png)
+
+### **4.2 Nalog artikla**
+
+Pretpostavimo da smo primili robu na punu količinu, ali kasnije, prilikom prebrojavanja, utvrdili manjak. U tom slučaju, želimo da količinu u ERP-u prilagodimo stvarnom stanju.  
+
+Da bismo to postigli, potrebno je izvršiti korekciju u sistemu, kako bi se ažurirale zalihe prema stvarnoj količini u skladištu. Biramo obrazac artikla i pristupamo njegovom knjiženju.
+
+#### **4.2.1 Postavljanje naloga za korekciju zaliha**  
+
+1. **Ime grupe** – Biramo ime grupe naloga. U našem slučaju, izabrali smo **Roba**.  
+2. **Datum** – Unosimo datum na koji želimo da proknjižimo nalog.  
+3. **Vrsta stavke** – Ovo je vrlo bitno polje. Uz pomoć njega određujemo da li želimo da povećamo ili smanjimo količinu na zalihama. U našem slučaju, pošto je manjak, izabraćemo **Negativnu Korekciju**.  
+4. **Broj dokumenta** – Unosimo broj pod kojim želimo da proknjižimo nalog.  
+5. **Br. artikla** – Unosimo broj artikla za koji vršimo korekciju.  
+6. **Šifra lokacije** – Unosimo lokaciju sa koje vršimo korekciju.  
+7. **Količina** – Unosimo količinu koja se korektuje.  
+8. **Br. stavka za zatvaranje** – Biramo stavku iz stavke knjige artikala sa kojom želimo da povežemo ovo knjiženje.  
+
+## **5. Nalog popisa zaliha**  
+
+Popis zaliha je jedan od ključnih procesa svakog preduzeća, a sistem **Dynamics 365 Business Central** ima implementiranu funkcionalnost za ovaj proces putem **naloga popisa zaliha**.  
+
+**Nalog popisa zaliha** u magacinu omogućava periodično upoređivanje količine zaliha evidentiranih u sistemu sa fizičkom količinom zaliha u magacinu, kako bi se u svakom trenutku imao tačan podatak o stanju zaliha.  
+
+Da biste izračunali zalihe na određeni datum, izaberite opciju **Radnja → Funkcije → Izračunaj zalihe**, nakon čega možete izabrati datum na koji želite da izračunate zalihe na osnovu stanja u sistemu.  
+
+Nakon pokretanja akcije, nalog se popuni s artiklima i njihovim zalihama. 
+
+Kada promenite polje **Kol. (fizička zaliha)**, sistem automatski menja **Vrstu stavke**. Ako je fizička količina veća od izračunate, biće postavljena **Pozitivna korekcija**, dok će u suprotnom biti odabrana **Negativna korekcija**.  
+
+Pre nego što izvršite knjiženje, potrebno je još da popunite sledeća polja:
+
+- **Opšta poslovna grupa knjiženja**  
+- **Opšta grupa knjiženja proizvoda**  
