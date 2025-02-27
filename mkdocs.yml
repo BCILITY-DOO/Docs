@@ -9,8 +9,8 @@ plugins:
           name: English
           build: true
         - locale: sh
-          default: true
           name: Srpski
+          default: true
           build: true
 theme:
   name: material
