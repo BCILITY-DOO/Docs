@@ -58,3 +58,24 @@ This option ensures consistent data mapping between the two systems, preventing 
 
 This ensures that all product and stock data is always up-to-date in the WooCommerce store without the need for manual input.  
 When this option is enabled, any changes made to Items, Categories, and Attributes will automatically be reflected on the WooCommerce side.
+
+## WooCommerce Integration in Business Central
+
+WooCommerce Integration enables the automatic synchronization of items from Business Central with the WooCommerce store, making it easier to manage products, prices, and inventory.  
+
+![image](assets/WooCommerce/Integration.png)
+
+**Key Fields:**
+
+- **WooCommerce ID** – Unique item ID in WooCommerce.  
+- **Publish Item to WooCommerce** – Triggers item publishing to the WooCommerce site.  
+- **Woo Item Type** – Product type (Simple, Variable, Grouped, External).  
+- **Prices Synced on Woo** – Automatic price synchronization.  
+
+This section is essential for businesses that want to manage their WooCommerce store directly from Business Central.  
+
+**By enabling this integration:**  
+
+- Items are automatically published or updated on WooCommerce.  
+- Product data remains synchronized between the ERP system and the online store.  
+- Stock quantities, prices, and other attributes are always up to date without the need for manual entry in both systems.
