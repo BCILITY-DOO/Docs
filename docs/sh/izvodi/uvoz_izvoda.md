@@ -210,5 +210,3 @@ Sada su bankovni izvodi uneti, a ostvarene transakcije i njihovi detalji se mogu
 - Sledeći objekat predstavlja **.xml fajl sa podacima za DINARSKE izvode Raiffeisen Bank**, koji se ubacuje u **Definicije za razmenu podataka**.  
   
   [Otvorite XML šablon za **dinarske izvode** Raiffeisen banke](assets/raiff/RSD Data Exch. Def. import template.xml)
-
-
