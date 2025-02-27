@@ -1,12 +1,13 @@
-#**Artikli**
+# Artikli
 
 U programu Microsoft Dynamics 365 Business Central postoje tri vrste artikala:
 
 - Fizički artikli koji se drže na zalihama – proizvodi koji se skladište i prate kroz sistem zaliha.
-- Fizički artikli koji se ne drže na zaliha – proizvodi koji se ne skladište, ali se evidentiraju u sistemu.
+- Fizički artikli koji se ne drže na zalihama – proizvodi koji se ne skladište, ali se evidentiraju u sistemu.
 - Uslužni artikli – nematerijalne stavke koje predstavljaju usluge.
 
-Sa liste artikala korisnik može pristupiti kartici artikla radi pregleda, izmene postojećih ili unosa novih artikala. Kartica artikla sadrži detaljne informacije o konkretnom artiklu kao delu matičnih podataka.
+Sa liste artikala korisnik može pristupiti kartici artikla radi pregleda, izmene postojećih ili unosa novih artikala. 
+Kartica artikla sadrži detaljne informacije o konkretnom artiklu.
 
 Postoji nekoliko načina prikaza liste artikala:
 
@@ -22,11 +23,13 @@ gornjem desnom delu ekrana prikazanom na sledećoj slici:
 
 ![Opcije raspodele](assets/Artikli/Pregled.png)
 
-Za svaki artikal koji se evidentira u programu potrebno je otvoriti analitičku karticu. Ova kartica sadrži osnovne podatke o artiklu. Novi artikal se kreira sa liste artikala izborom opcije **Novi**.
+Za svaki artikal koji se evidentira u programu potrebno je otvoriti analitičku karticu. Ova kartica sadrži osnovne podatke o artiklu. 
+Novi artikal se kreira sa liste artikala izborom opcije **Novi**.
 
 ![Novi artikal](assets/Artikli/Novo.png)
 
-Ako su unapred definisani obrasci sa osnovnim podacima, prikazaće se odgovarajuća lista. Potrebno je odabrati željeni obrazac i potvrditi izbor klikom na U redu, nakon čega se otvara prozor za unos podataka.
+Ako su unapred definisani obrasci sa osnovnim podacima, prikazaće se odgovarajuća lista. Potrebno je odabrati željeni obrazac i 
+potvrditi izbor klikom na U redu, nakon čega se otvara prozor za unos podataka.
 
 ![Obrazci](assets/Artikli/Obrazci.png)
 
@@ -57,14 +60,16 @@ Ova sekcija sadrži osnovne informacije o artiklu, uključujući:
 - **Osnovna jedinica mere** (mogućnost izbora ili kreiranja nove jedinice)
   ![Novi artikal](assets/Artikli/jMere.png)
 
-Ako na listi ne postoji potrebna jedinica mere, možete je kreirati. Da biste to uradili, kliknite na strelicu u polju Osnovna jedinica mere, a zatim u otvorenom prozoru odaberite opciju Novo, kao što je prikazano na prethodnoj slici.
+Ako na listi ne postoji potrebna jedinica mere, možete je kreirati. Da biste to uradili, kliknite na strelicu u polju Osnovna jedinica mere, 
+a zatim u otvorenom prozoru odaberite opciju **Novo**, kao što je prikazano na prethodnoj slici.
 
-Svaki artikal može imati više jedinica mere, ali samo jedna od njih može biti osnovna. Zalihe se uvek vode u osnovnoj jedinici mere. Ukoliko artikal ima više jedinica mere, potrebno je uspostaviti odnos između njih.
-Odaberete Povezano->Artikal->Jedinice mere.
+Svaki artikal može imati više jedinica mere, ali samo jedna od njih može biti osnovna. 
+Zalihe se uvek vode u osnovnoj jedinici mere. Ukoliko artikal ima više jedinica mere, potrebno je uspostaviti odnos između njih.
+Odaberete **Povezano->Artikal->Jedinice mere**.
 
 ![Osnovana jedinica](assets/Artikli/OsnJedinica.png)
 
-Ako pretpostavimo da neki artikl vodimo u komadima, ali ga nabavljamo u paketu i da pri tome jedan 
+Ako pretpostavimo da neki artikal vodimo u komadima, ali ga nabavljamo u paketu i da pri tome jedan 
 paket sadrži 10 komada, tada prozor treba biti popunjen na sledeći način:
 
 ![slika](assets/Artikli/komad.png)
@@ -72,23 +77,25 @@ paket sadrži 10 komada, tada prozor treba biti popunjen na sledeći način:
 - **Šifra kategorije artikla**
 
 U polju Šifra kategorije artikla klikom na strelicu možete izabrati kategoriju kojoj pripada artikl. 
-Ukoliko ne postoji kategorija artikla u koju biste želeli staviti artikl, možete sami kreirati novu 
+Ukoliko ne postoji kategorija artikla u koju biste želeli staviti artikal, možete sami kreirati novu 
 kategoriju. Postupak je sličan kao kod kreiranja nove Osnovne jedinice mere.
 
 ![slika](assets/Artikli/kategorija.png)
 
-- **Automatski prošireni tekstovi** omogućava dodavanje dodatnog opisa na prodajne i nabavne dokumente. Prošireni tekst se dodaje praćenjem sledeće putanje: 
-  
-    Povezano-Artikal-Prošireni tekstovi. 
+- **Automatski prošireni tekstovi** 
+
+Ova akcija omogućava dodavanje dodatnog opisa na prodajne i nabavne dokumente. Prošireni tekst se dodaje praćenjem sledeće putanje: 
+  **Povezano-Artikal-Prošireni tekstovi**.
   
 ![slika](assets/Artikli/PTekstovi.png)
 
-U otvorenom prozoru potrebno je odabrati akciju Novo i popuniti polja kao u sledećem primeru.
+U otvorenom prozoru potrebno je odabrati akciju **Novo** i popuniti data polja.
 
 ![slika](assets/Artikli/prTekst.png)
 
-- **Zajednički broj artikla** (jedinstveni broj artikla unutar preduzeća ili grupacije)
-- **Šifra za nabavku** (Direktna – isporuka direktno kupcu, Posebna – isporuka preko skladišta)
+- **Zajednički broj artikla**
+
+Ovo polje označava jedinstveni broj artikla unutar preduzeća ili grupacije.
 
 ## 2. Zalihe
 
@@ -114,15 +121,20 @@ U polju **Način obračuna troška** potrebno je izabrati metodu koja će se pri
 
 Polje **Trošak po jedinici** prikazuje prosečan trošak nabavke, nezavisno od izabrane metode obračuna troškova.
 
-Polje **Trošak je proknjižen u GK** je proknjižen u GK biće aktivno ako su svi troškovi zaliha za ovaj artikal proknjiženi u glavnoj knjizi (GK). Ako je neaktivno, to znači da postoje troškovi zaliha koji su evidentirani u stavkama knjige artikala i stavkama vrednosti, ali još nisu proknjiženi u GK.
+Polje **Trošak je proknjižen u GK** biće aktivno ako su svi troškovi zaliha za ovaj artikal proknjiženi u glavnoj knjizi (GK). Ako je neaktivno, 
+to znači da postoje troškovi zaliha koji su evidentirani u stavkama knjige artikala i stavkama vrednosti, ali još nisu proknjiženi u GK.
 
 Polje **Poslednji direktni trošak** prikazuje poslednji evidentirani trošak nabavke za dati artikal.
 
-U polju **Opšta grupa knjiženja proizvoda** bira se odgovarajuća knjižna grupa proizvoda kojoj artikal pripada. Prilikom knjiženja transakcija koje uključuju ovaj artikal, program koristi ovu šifru u kombinaciji sa šifrom opšte knjižne grupe tržišta iz prozora Podešavanje opšteg knjiženja. Prozor „Podešavanje opšteg knjiženja“ određuje konta na koja će program knjižiti prodaju, nabavku, popuste i druge iznose.
+U polju **Opšta grupa knjiženja proizvoda** bira se odgovarajuća knjižna grupa proizvoda kojoj artikal pripada. Prilikom knjiženja 
+transakcija koje uključuju ovaj artikal, program koristi ovu šifru u kombinaciji sa šifrom opšte knjižne grupe tržišta iz prozora Podešavanje opšteg knjiženja. 
+Prozor „Podešavanje opšteg knjiženja“ određuje konta na koja će program knjižiti prodaju, nabavku, popuste i druge iznose.
 
-Polje **Šifra poreske grupe** sadrži pripadajuću knjižnu grupu proizvoda za PDV. Program koristi ovu šifru u kombinaciji sa šifrom knjižne grupe tržišta za PDV iz prozora Podešavanje knjiženja za PDV, čime se određuju konta PDV-a na koja će transakcije biti knjižene.
+Polje **Šifra poreske grupe** sadrži pripadajuću knjižnu grupu proizvoda za PDV. Program koristi ovu šifru u kombinaciji sa šifrom knjižne grupe 
+tržišta za PDV iz prozora Podešavanje knjiženja za PDV, čime se određuju konta PDV-a na koja će transakcije biti knjižene.
 
-U polju **Grupa knjiženja zaliha** određuje se šifra knjižne grupe zaliha kojoj artikal pripada. Ova grupa definiše na koji konto zaliha u GK će program knjižiti transakcije vezane za artikal.
+U polju **Grupa knjiženja zaliha** određuje se šifra knjižne grupe zaliha kojoj artikal pripada. Ova grupa definiše na koji konto zaliha u GK će 
+program knjižiti transakcije vezane za artikal.
 
 _Napomena: Tačno popunjavanje ovih polja je neophodno, jer u suprotnom knjiženje artikla neće biti moguće._
 
@@ -138,7 +150,8 @@ Ova kartica sadrži informacije o cenama, marži, popustima i jedinici mere u ko
 
 U polju **Jedinična cena** unosi se prodajna cena artikla, koja će se automatski preuzimati u prodajne dokumente (cenu je moguće promeniti na samom dokumentu).
 
-Moguće je da se artikal nabavlja u jednoj jedinici mere, prodaje u drugoj, a vodi zaliha u trećoj. U polju **JM za prodaju** definiše se jedinica mere u kojoj će se artikal prodavati.
+Moguće je da se artikal nabavlja u jednoj jedinici mere, prodaje u drugoj, a vodi na zalihama u trećoj. U polju **JM za prodaju** definiše se 
+jedinica mere u kojoj će se artikal prodavati.
 
 Aktiviranjem opcije **Dozvoli popust na fakturu** omogućava se primena popusta na prodajnom dokumentu. Ako je ovo polje neaktivno, popust neće biti dostupan na fakturi.
 
@@ -146,16 +159,17 @@ Opcija **Prodaja blokirana** sprečava prodaju artikla i njegov izbor u prodajni
 
 ## 5. Dopunjavanje zaliha
 
-Ova sekcija sadrži informacije o metodama popunjavanja zaliha (nabavka, radni nalog, montaža). U zavisnosti od izabrane opcije, dostupni su dodatni parametri za popunjavanje zaliha.
+Ova sekcija sadrži informacije o metodama popunjavanja zaliha (nabavka, radni nalog, montaža). U zavisnosti od izabrane opcije, 
+dostupni su dodatni parametri za popunjavanje zaliha.
 
 ![slika](assets/Artikli/DopZaliha.png)
 
-- **Sistem popunjavanja zaliha** – određuje način dopunjavanja zaliha.
-- **Računanje vremena pripreme** – unosi se formula koja određuje potrebno vreme za dopunjavanje artikla.
-- **Br. dobavljača** – omogućava izbor dobavljača klikom na strelicu.
-- **Dobavljačev broj artikla** - unosi se broj pod kojim dobavljač vodi artikal (do 50 znakova, brojeva ili slova).
-- **JM za nabavku** – jedinica mere koja se koristi prilikom nabavke (podrazumevano je ista kao osnovna JM).
-- **Nabavka blokirana** – ako je aktivirana, onemogućava izbor artikla u nabavnim dokumentima.
+- **Sistem popunjavanja zaliha** – Određuje način dopunjavanja zaliha.
+- **Računanje vremena pripreme** – Unosi se formula koja određuje potrebno vreme za dopunjavanje artikla.
+- **Br. dobavljača** – Omogućava izbor dobavljača klikom na strelicu.
+- **Dobavljačev broj artikla** - Unosi se broj pod kojim dobavljač vodi artikal (do 50 znakova, brojeva ili slova).
+- **JM za nabavku** – Jedinica mere koja se koristi prilikom nabavke (podrazumevano je ista kao osnovna JM).
+- **Nabavka blokirana** – Ako je aktivirana, onemogućava izbor artikla u nabavnim dokumentima.
 
 ## 6. Planiranje
 Ova kartica sadrži informacije o planiranju zaliha, uključujući načela naručivanja i parametre definisane u polju **Načelo naručivanja**, koji određuju pravila naručivanja u sistemu.
@@ -172,7 +186,8 @@ U zavisnosti od postavki, artikli se mogu pratiti prema serijskim brojevima ili 
 Ova sekcija sadrži informacije o skladištu, uključujući šifru klase magacina i šifru jedinice mere za skladištenje.
 ![slika](assets/Artikli/Magacin.png)
 
-Da bi proces nabavke i prodaje bio što efikasniji, u Microsoft Dynamics 365 Business Central moguće je koristiti dodatne funkcionalnosti kao što su zamenski artikli, unakrsne reference, neskladišteni artikli, atributi artikala i varijante artikala.
+Da bi proces nabavke i prodaje bio što efikasniji, u Microsoft Dynamics 365 Business Central moguće je koristiti dodatne funkcionalnosti kao što su zamenski artikli, 
+neskladišteni artikli, atributi artikala i varijante artikala.
 
 ## **Zamenski artikal**
 
@@ -190,7 +205,7 @@ Kada se artikal doda na red naloga za prodaju, u okviru Detalji artikla biće pr
 ![slika](assets/Artikli/Zamena2.png)
 Moguće je dodati i uslove za zamenski artikal, ali oni imaju isključivo informativnu svrhu i ne utiču na automatsku zamenu artikala.
 
-## **Neskladišteni artikli – Kataloški artikli**
+## **Neskladišteni artikli**
 
 Ova funkcionalnost se koristi za artikle koji nisu deo redovnog skladišta, ali se prodaju kupcima.
 
@@ -202,22 +217,20 @@ Kartica neskladištenog artikla sadrži manje podataka od standardne kartice art
 
 Neskladišteni artikli mogu se pretvoriti u artikle koji se drže na zalihama na dva načina:
 
-- Sa kartice neskladištenog artikla – Klikom na Kreiraj artikl, sistem kreira novi artikal na osnovu podataka sa neskladištenog artikla.
-- Sa reda naloga za prodaju – Izborom opcije Red -> Funkcije -> Izaberi kataloški artikal, sistem automatski kreira skladišteni artikal iz neskladištenog.
+- Sa kartice neskladištenog artikla – Klikom na **Kreiraj artikal**, sistem kreira novi artikal na osnovu podataka sa neskladištenog artikla.
+- Sa reda naloga za prodaju – Izborom **Red -> Funkcije -> Izaberi kataloški artikal**, sistem automatski kreira skladišteni artikal iz neskladištenog.
 Kada se neskladišteni artikal konvertuje, na kartici novog artikla u sekciji Zalihe biće označeno polje Kreiran iz neskladištenog artikla.
 
 ![slika](assets/Artikli/Katalog.png)
 
 _Napomena: Neskladišteni artikli ne mogu se direktno koristiti na izlaznim fakturama, već samo u prodajnim ponudama i nalozima za prodaju._
 
-# proveriti
-
 **Šifra kategorije artikla**
+
 Budući da kartica neskladištenog artikla ne sadrži polja za knjižne grupe i metode obračuna troškova, važno je uneti Šifru kategorije artikla.
 
 Ova šifra služi kao šablon za kasnije kreiranje skladištenog artikla i sadrži podatke o knjižnim grupama, metodama obračuna troškova i drugim relevantnim informacijama.
 Neskladišteni artikal ostaje takav dok se ne unese u prodajni dokument – tada se automatski konvertuje u standardni artikal.
-
 
 ## Atribut artikala
 
@@ -225,16 +238,15 @@ Atributi artikala, omogućavaju definisanje dodatnih karakteristika artikla, št
 
 Atribut može biti proizvođač, boja, širina, dužina, visina,  materijal, masa itd. Mogu se kreirati ručno, kao i njihove vrednosti. 
 
-Dodavanje atributa artiklu
 Atributi se dodaju putem kartice artikla izborom **Artikal -> Atributi**.
 
 ![slika](assets/Artikli/Atributi.png)
 
-Atributi i vrednosti se dodaju klikom na prazan red ili na akciju **Novi red**.
+Klikom na prazan red ili na akciju **Novi red** dodeljuju se novi atributi i vrednosti.
 
 ![slika](assets/Artikli/VrAtributa.png)
 
-Sa polja Atribut može se pogledati popis svih dostupnih atributa koji su već definisani. Novi atribut može se kreirati klikom na akciju **Novo**.
+Sa polja Atribut može se pogledati lista svih dostupnih atributa koji su već definisani. Novi atribut može se kreirati klikom na akciju **Novo**.
 
 ![slika](assets/Artikli/NoviAtr.png)
 
@@ -244,11 +256,11 @@ U otvorenom prozoru unosi se naziv atributa i bira se vrsta atributa.
 
 Pri definisanju atributa moguće je izabrati jednu od sledećih vrsta:
 
-- Opcija – izbor između unapred definisanih opcija.
-- Tekst – unos slobodnog teksta.
-- Ceo broj – unos celobrojne vrednosti.
-- Decimalni broj – unos decimalnog broja.
-- Datum – unos datuma.
+- Opcija – Izbor između unapred definisanih opcija.
+- Tekst – Unos slobodnog teksta.
+- Ceo broj – Unos celobrojne vrednosti.
+- Decimalni broj – Unos decimalnog broja.
+- Datum – Unos datuma.
 
 Nova vrednost kreira se klikom na polje Vrednost i odabirom akcije **Novo**.
 
@@ -258,13 +270,13 @@ Kreirani autribut i vrednost se potom dodeli atriklu.
 
 ![slika](assets/Artikli/DodelaAtr.png)
 
-Nakon što se kreirani i postavljeni atribut artikla doda artiklu, moguće je videti ga na kartici artikla u sekciji **Atribut artikla**.
+Nakon što se kreirani i postavljeni atribut doda artiklu, moguće je videti ga na kartici artikla u sekciji **Atribut artikla**.
 
 ![slika](assets/Artikli/Prikaz.png)
 
 Atributi se mogu dodeliti i kategorijama artikala, čime se automatski primenjuju na sve artikle unutar te kategorije.
 
-Na kartici artikla potrebno je izabrati **Šifra kategorije artikla**, pronaći željenu kategoriju i kliknuti Uredi.
+Na kartici artikla potrebno je izabrati **Šifra kategorije artikla**, pronaći željenu kategoriju i kliknuti **Prikaži detalje**.
 
 ![slika](assets/Artikli/Sifra.png)
 
@@ -272,7 +284,7 @@ U otvorenom prozoru moguće je dodati atribute koji će se primeniti na sve proi
 
 ![slika](assets/Artikli/SifraNovo.png)
 
-Kako bi se artikli filtrirali prema atributu, potrebno je na listi artikala koristiti opcija Atributi -> Filtriraj po atributima.
+Kako bi se artikli filtrirali prema atributu, potrebno je na listi artikala koristiti putanju **Atributi -> Filtriraj prema atributima**.
 
 ![slika](assets/Artikli/Filter.png)
 
@@ -286,19 +298,20 @@ Filteri se uklanjaju klikom na **Ukloni filter atributa**.
 
 ## Varijante artikla
 
-U Microsoft Dynamics 365 Business Central moguće je definisati različite varijante za jedan artikal, čime se olakšava upravljanje artiklima koji imaju varijacije, poput različitih boja ili veličina. Umesto kreiranja svakog varijantnog artikla kao zasebnog unosa, varijante se postavljaju unutar jednog artikla.
+U Microsoft Dynamics 365 Business Central moguće je definisati različite varijante za jedan artikal, čime se olakšava upravljanje artiklima 
+koji imaju varijacije, poput različitih boja ili veličina. Umesto kreiranja svakog varijantnog artikla kao zasebnog unosa, varijante se postavljaju unutar jednog artikla.
 
-Kako bi se za artikal postavile različite varijante, potrebno je na kartici artikla izabrati Povezano -> Artikal -> Varijante.
+Kako bi se za artikal postavile različite varijante, potrebno je na kartici artikla izabrati **Povezano -> Artikal -> Varijante**.
 
 ![slika](assets/Artikli/Varijante.png)
 
-Otvoriće se stranica na kojoj se za svaku varijantu unose Šifra i Opis.
+Otvoriće se stranica na kojoj se za svaku varijantu unose **Šifra** i **Opis**.
 
 ![slika](assets/Artikli/VarijanteBoje.png)
 
-Moguće je dodati prevode varijanti na druge jezike putem Prikaži ostalo -> Prevodi.
+Moguće je dodati prevode varijanti na druge jezike putem **Prikaži ostalo -> Prevodi**.
 
-Prilikom unosa na nabavnim i prodajnim dokumentima potrebno je uneti i Šifru varijante. Ako ova kolona nije prikazana, može se dodati na redove dokumenata.
+Prilikom unosa na nabavnim i prodajnim dokumentima potrebno je uneti i **Šifru varijante**. Ako ova kolona nije prikazana, može se dodati na redove dokumenata.
 Kada se artikal primi sa unetom šifrom varijante, knjiženjem se u stavkama analitike artikla transakcije razlikuju prema varijantama.
 
 Za artikle koji imaju definisane varijante, moguće je proveriti raspoloživost po varijantama putem **Artikial -> Raspoloživost artikla po -> Varijanta**.
