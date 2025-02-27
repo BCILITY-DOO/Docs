@@ -8,7 +8,7 @@ Kreirana dokumentacija se odnosi na unos dinarskog izvoda Halkbank banke i dinar
 
 U pretrazi je potrebno pronaći **„Definicije za razmenu podataka“** i u zaglavlju izabrati **Novo**.
 
-![novo](assets/halk/Picture2.png)
+![novo](../assets/halk/Picture2.png)
 
 Kreiraće se dokument u kom je potrebno uneti osnovne podatke o računu:
 
@@ -23,7 +23,7 @@ Zatim popuniti sledeće podatke:
 - **XML port za čitanje/pisanje**: `1220`
 - **Codeunit za rukovanje eksternim podacima**: `1240`
 
-![novo](assets/halk/Picture3.png)
+![novo](../assets/halk/Picture3.png)
 
 
 ### 1.2 Popunjavanje sekcija *Definicije redova* i *Definicije kolona*
@@ -42,7 +42,7 @@ Iz XML fajla koji se nalazi na dnu dokumenta potrebno je posmatrati čvorove i n
 
 Nakon unetih podataka, sekcija **Definicije redova** treba da izgleda kao na sledećoj slici.
 
-![def.red.](assets/halk/Picture4.png)
+![def.red.](../assets/halk/Picture4.png)
 
 #### Definicije kolona
 
@@ -54,23 +54,23 @@ Nakon unetih podataka, sekcija **Definicije redova** treba da izgleda kao na sle
 
 Nakon unetih podataka, sekcija **Definicije kolona** treba da izgleda kao na sledećim slikama.
 
-![def.kol.1](assets/halk/Picture5.png)
+![def.kol.1](../assets/halk/Picture5.png)
 
-![def.kol.2](assets/halk/Picture6.png)
+![def.kol.2](../assets/halk/Picture6.png)
 
 
 ### 1.3 Mapiranje polja
 
 Naredni korak je odlazak na opciju **„Mapiranje polja“**, koje se nalazi u zaglavlju sekcije *Definicije redova*.
 
-![map.polja1](assets/halk/Picture7.png)
+![map.polja1](../assets/halk/Picture7.png)
 
 U otvorenom dokumentu potrebno je popuniti sledeća polja:
 
 - **ID tabele**: `274`
 - **Codeunit za mapiranje**: `1248`
 
-![map.polja2](assets/halk/Picture8.png)
+![map.polja2](../assets/halk/Picture8.png)
 
 #### Definicija mapiranja
 
@@ -82,7 +82,7 @@ U otvorenom dokumentu potrebno je popuniti sledeća polja:
 
 Nakon unetih podataka, sekcija **Mapiranje polja** treba da izgleda kao na sledećoj slici.
 
-![map.polja3](assets/halk/Picture9.png)
+![map.polja3](../assets/halk/Picture9.png)
 
 
 ### 1.4 Podešavanje bankovnog izvoza/uvoza
@@ -100,7 +100,7 @@ U otvorenom prozoru kreirati novi zapis klikom na **Novo** i popuniti sledeće p
   
 Prikaz je na sledećoj slici:
 
-![izvoz-uvoz](assets/halk/Picture10.png)
+![izvoz-uvoz](../assets/halk/Picture10.png)
 
 ### 1.5 Povezivanje sa računom
 
@@ -108,28 +108,28 @@ U pretrazi pronaći **„Računi u banci“** i ući na račun **Halk Dinarski**
 
 Na kartici kreiranog računa, u delu **Prenos**, u polju **Format uvoza izvoda iz banke**, iz padajuće liste bira se: **HALK_DINARSKI**
 
-![halk-din](assets/halk/Picture11.png)
+![halk-din](../assets/halk/Picture11.png)
 
 ### 1.6 Uvoz izvoda
 
 U pretrazi pronaći **„Sravnjenje bankovnog računa“** i u sekciji **Banka** odabrati akciju **Uvoz izvoda iz banke**.
 
-![halk-din-izvod](assets/halk/Picture12.png)
+![halk-din-izvod](../assets/halk/Picture12.png)
 
 U otvoreni prozor prevući ili odabrati izvode koje treba dodati (fajl se nalazi na dnu dokumenta).
 
-![halk-din-izvod2](assets/halk/Picture13.png)
+![halk-din-izvod2](../assets/halk/Picture13.png)
 
 ### 1.7 Pregled transakcija
 
 Sada su bankovni izvodi uneti, a ostvarene transakcije i njihovi detalji mogu se pregledati u sekciji **Redovi izvoda iz banke**, gde se mogu uporediti sa transakcijama knjiženim u sistemu.
 
-![sravnjenje-bank-rac](assets/halk/Picture14.png)
+![sravnjenje-bank-rac](../assets/halk/Picture14.png)
 ---
 
 ### 1.8 XML šablon za dinarske izvode
 
-[Otvorite XML šablon za **dinarske izvode** Halkbank banke](assets/halk/[338222@ibank][155-88160-49][22].xml)
+[Otvorite XML šablon za **dinarske izvode** Halkbank banke](../assets/halk/[338222@ibank][155-88160-49][22].xml)
 
 ## 2. **Raiffeisen banka**
 
@@ -137,15 +137,15 @@ Sada su bankovni izvodi uneti, a ostvarene transakcije i njihovi detalji mogu se
 
 U pretrazi je potrebno pronaći **„Definicije za razmenu podataka“** i u zaglavlju izabrati **Uvoz/Izvoz**, a potom opciju **Uvoz definicije za razmenu podataka**.
 
-![def-razm-pod](assets/raiff/Picture15.png)
+![def-razm-pod](../assets/raiff/Picture15.png)
 
 Kada se opcija odabere potrebno je izabrati fajl kojim će se kreirati šablon za uvoz podataka. Moguće je izabrati željeni fajl ili ga prevući u otvoreni prozor.
 
-![def-razm-pod-1](assets/raiff/Picture16.png)
+![def-razm-pod-1](../assets/raiff/Picture16.png)
 
 Kreiraće se dokument kao na sledećoj slici.
 
-![def-razm-pod-2](assets/raiff/Picture17.png)
+![def-razm-pod-2](../assets/raiff/Picture17.png)
 
 ### 2.2 Definicije redova i kolona
 
@@ -153,7 +153,7 @@ U sekciji **Definicije redova** potrebno je kliknuti na red **Detalj** da bi se 
 
 U datoj sekciji potrebno je čekirati polje u koloni pod nazivom **„Importuj negativno“**, za red `/Stavke[@Duguje]`.
 
-![def-red-kol](assets/raiff/Picture18.png)
+![def-red-kol](../assets/raiff/Picture18.png)
 
 ---
 
@@ -170,19 +170,19 @@ U otvorenom prozoru potrebno je kreirati novi zapis klikom na **Novo**, a potom 
 - **ID XMLport-a za obradu** (automatski će se popuniti kolona **Ime XML port-a za obradu**)
 - **Šifra definicije za razmenu podataka**
 
-![bank-racun](assets/raiff/Picture19.png)
+![bank-racun](../assets/raiff/Picture19.png)
 
 Nakon toga je potrebno u pretrazi pronaći **„Računi u banci“** i kreirati novi račun klikom na opciju **Novo** u zaglavlju.
 
-![podaci-racun](assets/raiff/Picture20.png)
+![podaci-racun](../assets/raiff/Picture20.png)
 
 Popuniti opšte podatke o računu.
 
-![podaci-racun-1](assets/raiff/Picture21.png)
+![podaci-racun-1](../assets/raiff/Picture21.png)
 
 Na kartici računa, na delu **Prenos**, u polju **Format uvoza izvoda iz banke**, iz padajuće liste bira se kreirani šablon: **RAIF_RSD**.
 
-![raif-rsd](assets/raiff/Picture22.png)
+![raif-rsd](../assets/raiff/Picture22.png)
 
 ---
 
@@ -190,23 +190,23 @@ Na kartici računa, na delu **Prenos**, u polju **Format uvoza izvoda iz banke**
 
 Naredni korak je pronaći **„Sravnjenje bankovnog računa“**, ući na račun **Raiffeisen Dinarski** i u sekciji **Banka** odabrati akciju **Uvoz izvoda iz banke**.
 
-![sravnjenje-bank-rac](assets/raiff/Picture23.png)
+![sravnjenje-bank-rac](../assets/raiff/Picture23.png)
 
 U otvoreni prozor potrebno je prevući ili odabrati izvode koje treba dodati.
 
-![datot-uvoz](assets/raiff/Picture24.png)
+![datot-uvoz](../assets/raiff/Picture24.png)
 
 Sada su bankovni izvodi uneti, a ostvarene transakcije i njihovi detalji se mogu pregledati u sekciji **Redovi izvoda iz banke** i mogu se uporediti sa transakcijama koje su knjižene u sistemu.
 
-![redovi-izvoda](assets/raiff/Picture25.png)
+![redovi-izvoda](../assets/raiff/Picture25.png)
 ---
 
 ## 2.5 XML šabloni za dinarske i devizne izvode
 
 - Sledeći objekat predstavlja **.xml fajl sa podacima za DEVIZNE izvode Raiffeisen Bank**, koji se ubacuje u **Definicije za razmenu podataka**.  
    
-  [Otvorite XML šablon za **devizne izvode** Raiffeisen banke](assets/raiff/DEVIZNI Data Exch. Def. import template.xml)
+  [Otvorite XML šablon za **devizne izvode** Raiffeisen banke](../assets/raiff/DEVIZNI Data Exch. Def. import template.xml)
 
 - Sledeći objekat predstavlja **.xml fajl sa podacima za DINARSKE izvode Raiffeisen Bank**, koji se ubacuje u **Definicije za razmenu podataka**.  
   
-  [Otvorite XML šablon za **dinarske izvode** Raiffeisen banke](assets/raiff/RSD Data Exch. Def. import template.xml)
+  [Otvorite XML šablon za **dinarske izvode** Raiffeisen banke](../assets/raiff/RSD Data Exch. Def. import template.xml)
