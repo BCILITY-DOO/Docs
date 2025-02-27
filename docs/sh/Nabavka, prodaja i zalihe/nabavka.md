@@ -1,14 +1,14 @@
-#Modul nabavke
+#**Modul nabavke**
 
 Modul nabavke u Microsoft Dynamics 365 Business Central omogućava upravljanje celokupnim procesom nabavke robe od dobavljača. Omogućava praćenje informacija o artiklima, dobavljačima i njihovim kontaktima, kao i rad s nabavnim dokumentima poput narudžbenica, ulaznih faktura i odobrenja. Pored toga, modul podržava planiranje nabavke, analize, izveštaje i praćenje neskladištenih artikala. Kako bi sistem precizno beležio sve relevantne podatke o nabavci, neophodno je izvršiti odgovarajuća podešavanja.
 
-## 1. Podešavanje nabavki i dugovanja
+## **1. Podešavanje nabavki i dugovanja**
 
 Kartica **Podešavanje nabavke i dugovanja** u Microsoft Dynamics 365 Business Central sadrži ključna podešavanja potrebna za pravilno funkcionisanje procesa nabavke. Slično karticama artikla, kupca i dobavljača, i ova kartica je organizovana u nekoliko brzih kartica, gde su podešavanja grupisana radi bolje preglednosti. Detaljan prikaz možete videti na slici ispod.
 
 ![pod-nabav](../assets/nabavka/Nabavka1.png)
 
-### 1.1 Opšte  
+### **1.1 Opšte**  
 Ova brza kartica omogućava podešavanje osnovnih parametara za nabavku, uključujući:  
 
 - **Knjiženje popusta** – određuje način knjiženja popusta:  
@@ -32,21 +32,21 @@ Ova brza kartica omogućava podešavanje osnovnih parametara za nabavku, uključ
 - **Podrazumevana količina za prijem** – automatski postavlja količinu prijema na dokumentima.  
 - **Kopiraj opis reda u stavke glavne knjige (DA/NE)** – opis iz dokumenta se prenosi u stavke glavne knjige.  
 
-### 1.2 Brojčane serije  
+### **1.2 Brojčane serije**  
 Omogućava definisanje brojčanih serija koje će se koristiti za matične podatke i dokumente unutar modula nabavke.  
 
-### 1.3 Knjiženje u pozadini  
+### **1.3 Knjiženje u pozadini**  
 Ako poslovni procesi zahtevaju automatsko knjiženje, ovde se može aktivirati za nabavne dokumente.  
 
-### 1.4 Arhiviranje  
+### **1.4 Arhiviranje**  
 Definiše koji nabavni dokumenti će biti sačuvani u arhivi.  
 
-### 1.5 Razmena podataka  
+### **1.5 Razmena podataka**  
 Omogućava podešavanje podrazumevanih potražnih i dugovnih računa za stavke bez artikla na ulaznom odobrenju.  
 
 Ova podešavanja omogućavaju efikasno praćenje i upravljanje procesima nabavke u sistemu.
 
-## 2. Proces nabavke
+## 2. **Proces nabavke**
 
 Sledeći dokumenti se koriste za evidentiranje nabavnih transakcija u Microsoft Dynamics 365 Business Central programu:
 
@@ -63,7 +63,7 @@ U sistemu, na redovima dokumenata nabavke, u polje **Vrsta** moguće je odabrati
 
 U narednom tekstu biće detaljnije objašnjeni dokumenti u procesu nabavke.
 
-### 2.1 Ponuda za nabavku
+### **2.1 Ponuda za nabavku**
 
 **Ponuda za nabavku** je dokument koji inicira proces nabavke. Ako korisnik ima postavljen centar uloga **Business Manager**, ponudi za nabavku može pristupiti direktno sa početne stranice, jer je među dostupnim akcijama. Takođe, ponuda za nabavku može biti pronađena i putem pretraživača.
 
@@ -84,7 +84,7 @@ Klikom na ovu opciju u okviru liste **"Ponuda za nabavku"**, dokument ponude se 
 
 Nabavna porudžbina kreirana na ovaj način preuzima sve podatke iz zaglavlja i stavki iz originalne ponude za nabavku.
 
-### 2.2 Okvirna nabavna porudžbina
+### **2.2 Okvirna nabavna porudžbina**
 
 Pored **Ponude za nabavku**, proces nabavke može započeti i putem **Okvirne nabavne porudžbine**.  
 
@@ -104,13 +104,13 @@ Knjiženjem **Nabavne porudžbine** nastalih iz **Okvirne nabavne porudžbine**,
 
 Provera polja **"Kol. za prijem"**, **"Primljena količina"** i **"Fakturisana količina"** na redovima okvirne porudžbine omogućava uvid u trenutno stanje realizacije dogovorene nabavke.
 
-### 2.3 Nabavna porudžbina
+### **2.3 Nabavna porudžbina**
 
 **Nabavna porudžbina** predstavlja ključni dokument u upravljanju procesom nabavke unutar sistema **Microsoft Dynamics 365 Business Central**. Koristi se za evidenciju troškova nabavke i praćenje obaveza prema dobavljačima.  
 
 Nabavne porudžbine su neophodne u slučaju **delimičnih prijema**, kada celokupna količina naručenih artikala nije odmah dostupna kod dobavljača.  
 
-#### 2.3.1 Kreiranje nabavne porudžbine  
+#### **2.3.1 Kreiranje nabavne porudžbine**  
 
 Nabavna porudžbina može se kreirati na nekoliko načina:  
 - **Iz ponude za nabavku**  
@@ -147,7 +147,7 @@ Sistem ne dozvoljava:
 
 Moguće je primiti **manju količinu** od unete u polju **"Količina"**, čime dolazi do **delimičnog prijema**, a preostala količina može se kasnije knjižiti kada je dobavljač isporuči.  
 
-#### 2.3.2 Knjiženje nabavne porudžbine  
+#### **2.3.2 Knjiženje nabavne porudžbine**  
 
 Knjiženje nabavne porudžbine vrši se izborom opcije **"Proknjiži"**, nakon čega se otvara prozor sa sledećim opcijama:  
 
@@ -172,7 +172,7 @@ Knjiženje prijema i fakturisanja takođe generiše:
 
 Ako su prijem i fakturisanje celokupne količine završeni, **Nabavna porudžbina se automatski briše**, a dokaz o primljenoj i fakturisanoj količini ostaju **Proknjižena prijemnica nabavke** i **Proknjižena ulazna faktura**.  
 
-#### 2.3.3 Kreiranje nabavne porudžbine iz prodajne porudžbine  
+#### **2.3.3 Kreiranje nabavne porudžbine iz prodajne porudžbine**  
 
 **Nabavna porudžbina** može se kreirati direktno iz **Prodajne porudžbine**, kada na prodajnoj porudžbini postoji artikal kojeg nema dovoljno na zalihama.  
 
@@ -189,9 +189,9 @@ Pojaviće se prozor na kom je potrebno uneti željenog dobavljača i količinu 
 
 U dnu prozora nalazi se dugme **U redu**, klikom na to dugme biće kreirana ***Nabavna porudžbina***.
 
-### 2.4 Nabavna faktura 
+### **2.4 Nabavna faktura** 
 
-#### 2.4.1 Kreiranje nabavne fakture  
+#### **2.4.1 Kreiranje nabavne fakture**  
 
 Proces kreiranja **Nabavne fakture** veoma je sličan kreiranju **Nabavne porudžbine**.  
 
@@ -204,13 +204,13 @@ Za dodavanje stavki iz više prijemnica koristi se funkcija:
 
 ![pod-nabav](../assets/nabavka/Nabavka8.png)
 
-#### 2.4.2 Fakturisanje sa nabavne porudžbine  
+#### **2.4.2 Fakturisanje sa nabavne porudžbine**  
 
 Fakturisanjem direktno sa **Nabavne porudžbine** moguće je fakturisati **samo artikle iz te porudžbine**.  
 
 Međutim, ako dobavljač na jednoj fakturi navodi stavke iz **više nabavnih porudžbina i prijemnica**, tada fakturisanje sa pojedinačne porudžbine **nije opcija**.  
 
-#### 2.4.3 Kreiranje nabavne fakture za više porudžbina  
+#### **2.4.3 Kreiranje nabavne fakture za više porudžbina**  
 
 U takvim slučajevima potrebno je kreirati **novu Nabavnu fakturu**, koja se sastoji od **zaglavlja** i **redova** i veoma je slična Nabavnoj porudžbini.  
 
@@ -218,7 +218,7 @@ Postupak kreiranja:
 1. **Popuniti podatke u zaglavlju** – ovo se radi ručno.  
 2. **Ne unositi redove ručno** – iako je to moguće, ručni unos može dovesti do **duplog prijema artikala**, jer su oni već primljeni knjiženjem prijemnice opcijom **"Primi"** na porudžbini.  
 
-#### 2.4.4 Automatsko dodavanje redova iz prijemnica  
+#### **2.4.4 Automatsko dodavanje redova iz prijemnica**  
 
 Za pravilan unos redova koristi se funkcija:  
 **Red > Funkcije > Učitaj redove prijemnice…**  
@@ -231,13 +231,13 @@ Potrebno je označiti sve one redove proknjiženih prijemnica nabavke za koje je
 
 Potvrdom na dugme U redu, automatski se popunjavaju redovi na ulaznoj fakturi s referencama na broj proknjižene prijemnice nabavke. 
 
-#### 2.4.5 Obrada podataka u redovima nabavne fakture  
+#### **2.4.5 Obrada podataka u redovima nabavne fakture**  
 
 Nakon učitavanja redova iz prijemnice, moguće je **naknadno urediti podatke**, kao što su:  
 - **Količina**  
 - **Popust na red**  
 
-#### 2.4.6 Knjiženje nabavne fakture  
+#### **2.4.6 Knjiženje nabavne fakture**  
 
 Nabavna faktura se knjiži akcijom **"Proknjiži"**.  
 
@@ -250,7 +250,7 @@ Ako se na proknjiženoj fakturi klikne na **Idi do**, moguće je pregledati krei
 - **Detaljne stavke analitike dobavljača**  
 - **Stavke vrednosti**  
 
-#### 2.4.7 Razlika između knjiženja direktno s porudžbine i knjiženja preko nabavne fakture  
+#### **2.4.7 Razlika između knjiženja direktno s porudžbine i knjiženja preko nabavne fakture**  
 
 Knjiženjem nabavne fakture ažuriraju se vrednosti u polju **Fakturisana količina** na redovima **Nabavne porudžbine**.  
 
@@ -258,20 +258,20 @@ Ključna razlika:
 - **Kod knjiženja direktno sa porudžbine** – ako su sve količine primljene i fakturisane, porudžbina se **briše automatski**.  
 - **Kod knjiženja preko nabavne fakture** – čak i kada je cela količina primljena i fakturisana, **Nabavna porudžbina ostaje vidljiva**, omogućavajući dodatne provere i analize.  
 
-### 2.5 Povrati u nabavci
+### 2.5 **Povrati u nabavci**
 
-#### 2.5.1 Proces povrata u nabavci  
+#### **2.5.1 Proces povrata u nabavci**  
 
 Proces povrata u nabavci započinje kreiranjem **Naloga za povrat nabavljenog**.  
 
-#### 2.5.2 Knjiženje isporuke povrata  
+#### **2.5.2 Knjiženje isporuke povrata**  
 
 Knjiženjem isporuke povrata preko **Naloga za povrat nabavljenog** nastaje dokument:  
 - **Proknjižena povratna isporuka nabavljenog**  
 
 Ovim postupkom **smanjuje se količina artikla na zalihi**.  
 
-#### 2.5.3 Knjiženje odobrenja  
+#### **2.5.3 Knjiženje odobrenja**  
 
 Knjiženjem odobrenja nastaje dokument:  
 - **Proknjiženo ulazno odobrenje**  
@@ -281,7 +281,7 @@ Nakon knjiženja, ažuriraju se sledeći podaci:
 - **Stanje artikla**  
 - **Račun glavne knjige (GK)**  
 
-#### 2.5.4 Nalog za povraćaj nabavljenog
+#### **2.5.4 Nalog za povraćaj nabavljenog**
 
 **Kreiranje i knjiženje naloga za povrat nabavljenog**  
 
@@ -319,7 +319,7 @@ Potrebno je označiti sve one redove koje je potrebno stornirati, odnosno za koj
 
 ![pod-nabav](../assets/nabavka/Nabavka11.png)
 
-#### 2.5.5 Nabavno odobrenje
+#### **2.5.5 Nabavno odobrenje**
 
 ***Upotreba nabavnog odobrenja u procesu povrata***  
 
@@ -365,7 +365,7 @@ Ručno kreiranje novog ulaznog odobrenja moguće je klikom na **Novo** na listi 
 
 ![pod-nabav](../assets/nabavka/Nabavka13.png)
 
-## 3. Nabavne cene
+## **3. Nabavne cene**
 
 Postavljanje nabavnih cena u Microsoft Dynamics 365 Business Central
 
@@ -381,7 +381,7 @@ Nabavna cena definiše se u polju **Direktni trošak po jedinici**.
 
 ![pod-nabav](../assets/nabavka/Nabavka14.png)
 
-### 3.1 Unos nabavnih cena
+### **3.1 Unos nabavnih cena**
 
 Nabavne cene mogu se uneti sa liste artikala za označeni artikl ili sa kartice artikla. Potrebno je kliknuti na traci akcija na Cene i popusti -> Nabavne cene.
 
@@ -400,7 +400,7 @@ Polazna tačka za postavku nabavnih cena je **Poslednji direktni trošak** na ka
   - Ne postoji postavljena nabavna cena za tog dobavljača, ili  
   - Ako postoji nabavna cena, ali kriterijumi za korišćenje postavljene nabavne cene nisu ispunjeni.
 
-### 3.2 Upotreba nabavnih cena
+### **3.2 Upotreba nabavnih cena**
 
 Ako za dobavljača postoji više postavljenih nabavnih cena, program **Microsoft Dynamics 365 Business Central** uvek uzima **najbolju cenu** koja zadovoljava uslove upisane u redu nabavne cene i koristi je na nabavnom dokumentu kao relevantnu.  
 
@@ -410,9 +410,9 @@ Nakon unosa artikla u red nabavnog dokumenta za dobavljača koji ima postavljenu
 
 Kada je vrednost polja "nabavna cena" jednak 1 ili više, možemo klikom na taj broj otvoriti prozor sa poljima Br. dobavljača, Br. artikla, Direktan trošak po jedinici, tako da na ovaj način referent nabavke može da proveri sve nabavne cene za dobavljača, može sačekati nekoliko dana ako primeti da će tada cena biti niža, ili može nabaviti veću količinu ako je za bolju nabavnu cenu definisana minimalna količina koju je potrebno nabaviti da bi vredela niža cena. 
 
-### 3.3 Popusti u nabavci
+### **3.3 Popusti u nabavci**
 
-#### 3.3.1 Postavljanje popusta u nabavci u Microsoft Dynamics 365 Business Central
+#### **3.3.1 Postavljanje popusta u nabavci u Microsoft Dynamics 365 Business Central**
 
 Popusti u nabavci mogu se postaviti na sličan način kao nabavne cene. Da bi se popusti primenili kod nabavke artikla od dobavljača, moraju biti zadovoljeni određeni uslovi i pravila. Dve vrste popusta u nabavci su:
 
@@ -421,11 +421,11 @@ Popusti u nabavci mogu se postaviti na sličan način kao nabavne cene. Da bi se
 
 Kao kod nabavnih cena, program uzima **najbolji popust** za dobavljača, ukoliko su zadovoljeni potrebni uslovi definisani za popuste.
 
-#### 3.3.2 Popusti na red
+#### **3.3.2 Popusti na red**
 
 Popust na red biće upisan u redove nabavke ako postoji određena kombinacija dobavljača, artikla, minimalne količine, jedinice mere ili početnog/krajnjeg datuma.
 
-#### 3.3.3 Podešavanje popusta na red
+#### **3.3.3 Podešavanje popusta na red**
 
 Podešavanje popusta na red je vrlo slično podešavanju nabavnih cena. Može se postaviti preko kartice artikla, klikom na **Cene i popusti -> Pregled nabavnih cena i popusta/Nabavni popusti**.
 
@@ -447,7 +447,7 @@ Na slici iznad vidljivo je da za ovu kombinaciju artikla i dobavljača postoji d
 
 ![pod-nabav](../assets/nabavka/Nabavka21.png)
 
-#### 3.3.4 Popusti na fakturu
+#### **3.3.4 Popusti na fakturu**
 
 Druga vrsta popusta u nabavci je popust na fakturu. Kod popusta na fakturu procenat popusta oduzima se od ukupnog iznosa dokumenta, ako ukupan iznos svih redova na nabavnom dokumentu prelazi određeni minimum.  
 
@@ -469,11 +469,11 @@ Dodavanjem artikala u nabavni dokument povećava se ukupan iznos fakture. Ako je
 
 ![pod-nabav](../assets/nabavka/Nabavka24.png)
 
-## 4. Troškovi artikla u nabavci 
+## **4. Troškovi artikla u nabavci** 
 
 Troškovi povezani s artiklima obuhvataju špediciju, carinu, transport, ambalažu, kao i troškove utovara i istovara robe, zajedno s ostalim relevantnim izdacima. Ovi troškovi mogu biti prisutni ne samo na nabavnim dokumentima, već i na prodajnim, gde doprinose preciznijem obračunu direktnog troška artikla.
 
-### 4.1 Podešavanje troška artikla
+### **4.1 Podešavanje troška artikla**
 
 Kada su troškovi povezani s nabavkom artikala, potrebno ih je uključiti u vrednovanje zaliha i obračun troškova prodate robe. Moguće je definisati različite vrste troškova artikala kako bi se preciznije razlikovali troškovni elementi, što poboljšava analizu troškova i statistiku prodaje.
 
@@ -481,7 +481,7 @@ Kada su troškovi povezani s nabavkom artikala, potrebno ih je uključiti u vred
 
 Poput artikla, trošak artikla takođe mora imati Opštu knjižnu grupu proizvoda i Grupa knjiženja proizvoda za PDV. Njihova kombinacija određuje račun glavne knjige na koji se knjiži trošak artikla. Nakon što se postave troškovi artikla, mogu se koristiti na redovima nabavnih i prodajnih dokumenata. 
 
-### 4.2 Dodela troška artikla
+### **4.2 Dodela troška artikla**
 
 Trošak artikla može se dodeliti na dva načina:  
 
