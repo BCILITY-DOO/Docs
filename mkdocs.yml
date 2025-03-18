@@ -9,12 +9,16 @@ plugins:
         - locale: en
           name: English
           build: true
+          docs_dir: docs/en  # Engleski fajlovi se učitavaju iz `docs/en`
         - locale: sh
           name: Srpski
           default: true
           build: true
+          docs_dir: docs/sh  # Srpski fajlovi se učitavaju iz `docs/sh`
+
 theme:
   name: material
+  custom_dir: overrides
   logo: /assets/logo.png
   favicon: assets/favicon.ico
   features:
@@ -49,7 +53,8 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
 extra_css:
-  - overrides/extra.css     
+  - overrides/extra.css  
+ 
 extra:
   alternate:
     - name: English
@@ -71,6 +76,8 @@ extra:
       link: https://www.instagram.com/bcility/
     - icon: fontawesome/brands/linkedin
       link: https://rs.linkedin.com/company/bcility
+
+use_directory_urls: false
 
 copyright: |
   &copy; 2025 <a href="https://bcility.com/"  target="_blank" rel="noopener">BCILITY</a>
