@@ -4,15 +4,15 @@
 
 Podešavanja važe za određivanje konta na kojima će biti evidentirane avansne uplate i PDV, koji se obračunava na osnovu datih avansnih uplata.
 
-### **1.1 Customer Posting Setup**
+### **1.1 Grupe knjiženja kupaca**
 
-Podešavanjem knjižnih grupa kupaca određuje se konto na koji će biti evidentirane sve avansne uplate primljene od kupca, što se definiše u koloni *Prepayment Account*. Kada se određena knjižna grupa dodeli kartici kupca, sve poslovne promene tog kupca biće knjižene na kontima povezanim s tom grupom.
+Podešavanjem knjižnih grupa kupaca određuje se konto na koji će biti evidentirane sve avansne uplate primljene od kupca, što se definiše u koloni *Poslovni kontakt akontacije/avansne uplate*. Kada se određena knjižna grupa dodeli kartici kupca, sve poslovne promene tog kupca biće knjižene na kontima povezanim s tom grupom.
 
 ![avans](../assets/AvansiProdaja/Avans1.png)
 
-### **1.2 General Posting Setup**
+### **1.2 Opšte podešavanje knjiženja**
 
-Da bi iznos na avansnom računu prikazivao samo PDV sadržan u avansnoj uplati prilikom knjiženja, potrebno je evidentirati konto za knjiženje PDV-a iz avansnog računa u polju *Sales Prepayment Account*. Ovaj konto će biti prikazan i na samom avansnom računu u sistemu.
+Da bi iznos na avansnom računu prikazivao samo PDV sadržan u avansnoj uplati prilikom knjiženja, potrebno je evidentirati konto za knjiženje PDV-a iz avansnog računa u polju *Konto akontacija/avansnih uplata u prodaji*. Ovaj konto će biti prikazan i na samom avansnom računu u sistemu.
 
 ![avans](../assets/AvansiProdaja/Avans2.png)
 
@@ -22,15 +22,15 @@ Da bi iznos na avansnom računu prikazivao samo PDV sadržan u avansnoj uplati p
 
 #### **2.1.1 Promet uplata**
 
-Pretragom *Payment Journal-a* pristupa se stranici na kojoj se evidentiraju izvodi. Ukoliko postoji više bankovnih računa, moguće je odvojiti grupe za knjiženje izvoda. Kada se knjiženje odnosi na bankovni račun, potrebno je promeniti tip balansiranja na *Bank Account* i odabrati odgovarajući bankovni račun na osnovu prethodno definisanih podešavanja.
+Pretragom *Nalozi plaćanja* pristupa se stranici na kojoj se evidentiraju izvodi. Ukoliko postoji više bankovnih računa, moguće je odvojiti grupe za knjiženje izvoda. Kada se knjiženje odnosi na bankovni račun, potrebno je promeniti tip balansiranja (Vrsta protivkonta) na *Bankovni račun* i odabrati odgovarajući bankovni račun na osnovu prethodno definisanih podešavanja.
 
 ![avans](../assets/AvansiProdaja/Avans3.png)
 
-Kako bi se uplata smatrala avansnom, prilikom knjiženja te uplate kroz dnevnik, neophodno je čekirati *Prepayment* na liniji knjiženja.
+Kako bi se uplata smatrala avansnom, prilikom knjiženja te uplate kroz dnevnik, neophodno je čekirati *Akontacija/avansna uplata* na liniji knjiženja.
 
 ![avans](../assets/AvansiProdaja/Avans4.png)
 
-Zatim upisati i iznos *(Amount)* i to u negativnom obliku.
+Zatim upisati i iznos *(Iznos)* i to u negativnom obliku.
 
 ![avans](../assets/AvansiProdaja/Avans5.png)
 
@@ -40,7 +40,7 @@ Dokument refundacije se automatski kreira u trenutku izdavanja konačnog računa
 
 ### **2.2 Porudžbenica**
 
-Dodeljivanje avansne uplate poručenim artiklima vrši se putem porudžbenice, što omogućava parcijalno isporučivanje i knjiženje prodaje na osnovu avansne uplate. Iznos avansa unosi se u polje *Prepayment* na porudžbenici, na osnovu čega se može izdati avansni račun. Polje *Applies-to Bank Entry* koristi se za unos iznosa sa izvoda koji je označen kao avansna uplata *(Prepayment)*.
+Dodeljivanje avansne uplate poručenim artiklima vrši se putem porudžbenice, što omogućava parcijalno isporučivanje i knjiženje prodaje na osnovu avansne uplate. Iznos avansa unosi se u polje *Akontacija/avansna uplata* na porudžbenici, na osnovu čega se može izdati avansni račun. Polje *Stavka aplikacije za zatvaranje u bankama* koristi se za unos iznosa sa izvoda koji je označen kao avansna uplata.
 
 ![avans](../assets/AvansiProdaja/Avans6.png)
 
@@ -58,7 +58,7 @@ Takođe, umesto fiksnog iznosa, može se uneti procenat avansne uplate, pri čem
 
 #### **2.3.1 Avansna faktura**
 
-Avansni račun se može kreirati i proknjižiti putem akcije *Posting*. Iznos na avansnom računu odgovara PDV-u iz avansnih uplata koje su prethodno obrađene kroz polje *Prepayment*, odnosno uplatu na koju se avansni račun odnosi.
+Avansni račun se može kreirati i proknjižiti putem akcije *Knjiženje*. Iznos na avansnom računu odgovara PDV-u iz avansnih uplata koje su prethodno obrađene kroz polje *Akontacija/avansna uplata*, odnosno uplatu na koju se avansni račun odnosi.
 
 ![avans](../assets/AvansiProdaja/Avans9.png)
 
