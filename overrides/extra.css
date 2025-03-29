@@ -1,0 +1,16 @@
+.md-header__button.md-logo img {
+    height: 70px; /* Podesi visinu logotipa */
+    width: auto;  /* Automatska širina da se ne iskrivi */
+    margin-right: 0px; /* Smanjuje razmak između logoa i teksta */
+    padding: 0;
+    vertical-align: middle;
+}
+
+.md-header__title {
+    padding-left: 0px !important; /* Možeš smanjiti ako je potrebno */
+    margin-left: 0px !important;
+}
+
+.md-nav__link--active {
+    color: teal !important; /* Promeni u željenu boju */
+}
