@@ -1,4 +1,4 @@
-# GitHub Integration 
+# 🚀 GitHub Integration 
 
 This guide explains how to integrate GitHub with Microsoft Dynamics 365 Business Central.  
 You'll learn how to generate a Personal Access Token (PAT), configure Business Central, manage GitHub issues, and sync everything seamlessly.
@@ -50,7 +50,6 @@ Before using GitHub features in Business Central, you must create a **Personal A
     - **Copy** the token immediately  
       ![img](..\assets/GitHubIntegration/CopyToken.jpg)  
     > ⚠️ Once you leave the page, the token cannot be retrieved again.
-
 ---
 
 ## 🔎 Where to Find the Repository Owner and Repository Name?
@@ -59,12 +58,12 @@ In the image below, you can see where to locate the values required for setting 
 
 ![img](..\assets/GitHubIntegration/GitHubSiteInformation.png)
 
-- 🟥 The **circled part** indicates the **Repository Owner** – this is your GitHub **username** or **organization name** (e.g., `Bcility`).
-- 🟥 The **highlighted rectangle** shows the **Repository Name** – the actual GitHub repository name (e.g., `BcilitySupport`).
+- 🟥 The **circled part** indicates the **Repository Owner** – this is your GitHub **username** or **organization name** (e.g., `bojanmasic`).
+- 🟥 The **highlighted rectangle** shows the **Repository Name** – the actual GitHub repository name (e.g., `NameForDocumentation`).
 
 💡 These values should be entered in **Business Central** under the **GitHub Setup** section:
-- **Repository Owner** = `Bcility`
-- **Repository Name** = `BcilitySupport`
+- **Repository Owner** = `bojanmasic`
+- **Repository Name** = `NameForDocumentation`
 
 They are used along with your **Personal Access Token (PAT)** to allow Business Central to connect and interact with your GitHub repositories.
 
@@ -77,24 +76,24 @@ Now that your GitHub is ready, you can integrate it into **Business Central**.
 ### Open GitHub Setup Page
 
 - Search for `GitHub Setup` in Business Central  
-  ![img](..\assets\GitHubIntegration\SearchBussinesCentral.png)
+  ![img](..\assets/GitHubIntegration/SearchBussinesCentral.png)
 
 ---
 
 ### GitHub Setup Page
 
-![GitHub Setup Screenshot](../assets/GitHubIntegration/GitHubSetup.png)
+![img](..\assets/GitHubIntegration/GitHubSetup.png)
 
 #### Configuration Section
 
 - **Repository Owner**  
   GitHub username or organization name.  
-  Example: `Bcility`  
+  Example: `bojanmasic`  
   **_Required_**
 
 - **Repository Name**  
   GitHub repository name.  
-  Example: `BcilitySupport`  
+  Example: `NameForDocumentation`  
   **_Required_**
 
 ---
@@ -102,31 +101,27 @@ Now that your GitHub is ready, you can integrate it into **Business Central**.
 #### Default GitHub Token Section
 
 - **GitHub Token**  
-  Paste the Personal Access Token (PAT) here.  
-  This token will be used for all GitHub API calls — **unless a user-specific token is assigned**.
+  Paste the Personal Access Token here.  
+  This token will be used for all API calls unless overridden per user.
 
 ---
 
-### GitHub Users Section (User-Specific Tokens)
+## 3. Assign User-Specific GitHub Tokens (Optional)
 
-This section lets you assign individual GitHub tokens to specific **Business Central users**.
+The **GitHub Users** page lets you assign individual tokens to specific BC users. These override the default token from the setup page.
 
-- If a token is defined here, it will **override** the default token from above **for that user only**.
-- You can add multiple user-token pairs as needed.
+- Open `GitHub Users` from the search bar, same as GitHub Setup.
+- Click **+ New**  
+  ![img](..\assets/GitHubIntegration/NewUser.jpg)
 
-#### Fields:
-  
-- **User Name**  
-  Business Central user (e.g., `Bcility`)
+- Fill in:
+    - **User Name**: Select a Business Central user from the dropdown  
+      ![img](..\assets/GitHubIntegration/BluredList.png)
+    - **GitHub Token**: Their personal token (created earlier on GitHub)  
+      ![img](..\assets/GitHubIntegration/TokenFromGit.jpg)
 
-- **GitHub Token**  
-  The personal token generated on GitHub for that specific user.
-
-> ⚠️ This is helpful when multiple users interact with GitHub from Business Central under their own credentials.
-
+> Exit the page when you're done
 ---
-
-
 
 ## 4. 🗂 GitHub Issues in Business Central
 
@@ -146,7 +141,6 @@ On this page, you can:
 If there are any new issues created directly in GitHub (but not yet in Business Central), clicking **`Fetch Issues`** will sync them into the list view.
 
 > ✅ This ensures the issue list in Business Central always stays up-to-date with GitHub.
-
 ---
 
 ## ➕ Creating a New Issue
@@ -242,7 +236,7 @@ nce you've **published an issue** to GitHub using the `Publish to Git and Sync` 
 ### How to Open/Close an Issue
 
 1. After the issue is synced with GitHub and has a valid **Issue ID**.
-   ![img](..\assets/GitHubIntegration/PublishedIssueClose.png) 
+   ![img](..\assets/GitHubIntegration/PublishedIssue.png) 
 
 2. Click:
     - **Close Issue** – to mark it as closed on GitHub.
@@ -259,25 +253,6 @@ nce you've **published an issue** to GitHub using the `Publish to Git and Sync` 
 
 ---
 
-### 🖥️ How It Looks: Business Central vs GitHub
-
-This section shows the visual difference between how issues appear in **Business Central** and **GitHub**.
-
-#### 📌 In Business Central
-
-Issues are displayed in a clean, form-based layout with grouped sections (details, comments, timestamps). You can edit everything inline and preview comments before publishing.
-
-![Business Central View](../assets/GitHubIntegration/PublishedIssue.png)
-
-#### 🌐 In GitHub
-
-The same issue appears using GitHub’s standard layout — markdown rendered, user avatars shown, and real-time updates visible.
-
-![GitHub View](../assets/GitHubIntegration/IssueOnGit.png)
-
-> 🔄 Changes stay in sync: edit in either system and sync updates with a single click.
-
----
 ### 📝 Summary
 
 This page is a fully integrated tool for managing GitHub Issues from within Business Central. It allows users to:
