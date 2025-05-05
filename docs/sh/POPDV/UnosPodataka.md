@@ -20,7 +20,7 @@ U polja koja se nalaze u delovima *Nabavka i Prodaja* bira se polje u kom će se
 
 ![popdv](../assets/POPDV/popdv3.png)
 
-### **1.2 Nabavka **
+### **1.2 Nabavka**
 
 U **Nabavka** fast tab-u unosi se podatak u koje polje za datu poziciju treba da se unese podatak o osnovici ili iznosu PDV-a u obrascu POPDV.  
 
@@ -81,3 +81,15 @@ U zavisnosti od toga da li je data mapirana šifra prepoznata na osnovu nabavke 
 ![popdv](../assets/POPDV/popdv8.png)
 
 ![popdv](../assets/POPDV/popdv9.png)
+
+### **1.5 Podešavanje knjiženja za PDV**
+
+Svaka šifra koja je kreirana preko kartice mora biti dodeljena odgovarajućoj kombinaciji *Poslovne grupe knjiženja po PDV-u* i *Grupe knjiženja proizvoda za PDV*
+
+![popdv](../assets/POPDV/popdv10.png)
+
+### **1.6 Podešavanje PDV-a**
+
+Na stranici Podešavanje PDV-a potrebno je uključiti funkciju *Uključi PDV bez odbitka*.
+
+![popdv](../assets/POPDV/popdv11.png)
