@@ -26,23 +26,23 @@ U **Nabavka** fast tab-u unosi se podatak u koje polje za datu poziciju treba da
 
 ![popdv](../assets/POPDV/popdv4.png)
 
-- **Baza plaćanja nabavke** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Baza unosa PDV-a** za **Tip dokumenta: Plaćanje**).
+- **Baza plaćanja nabavke** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Osnovica PDV-a** za **Tip dokumenta: Plaćanje**).
 
-- **Iznos plaćanja u nabavci** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Baza unosa PDV-a** za **Tip dokumenta: Plaćanje**).
+- **Iznos plaćanja u nabavci** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Iznos PDV-a** za **Tip dokumenta: Plaćanje**).
 
-- **Baza ulazne fakture** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**VAT Entry Base** za **Doc. Type: Invoice**).
+- **Baza ulazne fakture** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**Osnovica PDV-a** za **Tip dokumenta: Faktura**).
 
-- **Iznos ulazne fakture** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**VAT Entry Amount** za **Doc. Type: Invoice**).
+- **Iznos ulazne fakture** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**Iznos PDV-a** za **Tip dokumenta: Faktura**).
 
-- **Baza nabavnih odobrenja** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**VAT Entry Base** za **Doc. Type: Cr. Memo**).
+- **Baza nabavnih odobrenja** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**Osnovica PDV-a** za **Tip dokumenta: Knjižno odobrenje**).
 
-- **Iznos nabavnog odobrenja** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**VAT Entry Amount** za **Doc. Type: Cr. Memo**).
+- **Iznos nabavnog odobrenja** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**Iznos PDV-a** za **Tip dokumenta: Knjižno odobrenje**).
 
-- **Non-Deductable Base** – Osnovica PDV-a bez prava na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture.
+- **Baza neodbitnog PDV-a** – Osnovica PDV-a bez prava na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture.
 
-- **Non-Deductable Amount** – Iznos PDV-a bez prava na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture.
+- **Iznos neodbitnog PDV-a** – Iznos PDV-a bez prava na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture.
 
-- **Deductable Amount** – Iznos PDV-a sa pravom na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (evidentira se **samo** kada postoji mapping za **Non-Deductable VAT Amount**).
+- **Iznos PDV-a sa pravom na odbitak** – Iznos PDV-a sa pravom na prethodni odbitak se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (evidentira se **samo** kada postoji mapping za **Iznos neodbitnog PDV-a**).
 
 ### **1.3 Prodaja**
 
@@ -50,19 +50,19 @@ U **Prodaja** fast tab-u unosi se podatak u koje polje za datu karticu treba da 
 
 ![popdv](../assets/POPDV/popdv5.png)
 
-- **Sales Payment Base** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**VAT Entry Base** za **Doc. Type: Payment**).
+- **Baza prodajnih plaćanja** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Osnovica PDV-a** za **Tip dokumenta: Plaćanje**).
 
-- **Sales Payment Amount** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**VAT Entry Amount** za **Doc. Type: Payment**).
+- **Iznos prodajnih plaćanja** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog izvoda (**Iznos PDV-a** za **Tip dokumenta: Plaćanje**).
 
-- **Sales Invoice Base** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**VAT Entry Base** za **Doc. Type: Invoice**).
+- **Baza izlazne fakture** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**Osnovica PDV-a** za **Tip dokumenta: Faktura**).
 
-- **Sales Invoice Amount** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**VAT Entry Amount** za **Doc. Type: Invoice**).
+- **Iznos izlazne fakture** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjižene fakture (**Iznos PDV-a** za **Tip dokumenta: Faktura**).
 
-- **Sales Cr. Memo Base** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**VAT Entry Base** za **Doc. Type: Cr. Memo**).
+- **Baza prodajnih odobrenja** – Osnovica PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**Osnovica PDV-a** za **Tip dokumenta: Knjižno odobrenje**).
 
-- **Sales Cr. Memo Amount** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**VAT Entry Amount** za **Doc. Type: Cr. Memo**).
+- **Iznos prodajnog odobrenja** – Iznos PDV-a se upisuje u POPDV obrazac u odgovarajuće polje na osnovu proknjiženog knjižnog odobrenja (**Iznos PDV-a** za **Tip dokumenta: Knjižno odobrenje**).
 
-- **VAT Base Full VAT** – Iznos osnovice za evidentiranje promene samo na konta PDV-a, na osnovu proknjiženog opšteg naloga po tipu **Faktura**.
+- **Osnovica punog PDV-a za prodaju** – Iznos osnovice za evidentiranje promene samo na konta PDV-a, na osnovu proknjiženog opšteg naloga po tipu **Faktura**.
 
 ### **1.4 Knjiga dolaznih ili odlaznih faktura**
 
