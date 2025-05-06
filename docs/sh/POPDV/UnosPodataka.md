@@ -93,3 +93,53 @@ Svaka šifra koja je kreirana preko kartice mora biti dodeljena odgovarajućoj k
 Na stranici Podešavanje PDV-a potrebno je uključiti funkciju *Uključi PDV bez odbitka*.
 
 ![popdv](../assets/POPDV/popdv11.png)
+
+### **1.7 Specifični slučajevi evidencije**
+
+#### **1.7.1 Podešavanje kada poreski obveznik - primalac dobara i usluga - nema pravo na odbitak prethodnog poreza**
+
+U slučaju kada primalac dobara ili usluga **nema pravo na odbitak prethodnog PDV-a**, neophodno je kreirati **posebne knjižne grupe** koje se razlikuju od onih koje se koriste kada primalac **ima pravo na odbitak**.
+
+Takođe, u okviru **Podešavanje knjiženja za PDV** koristi se funkcionalnost **Neodbitni PDV**, pomoću koje se iznos PDV-a koji **ne može biti odbijen** automatski upisuje u odgovarajuće polje **POPDV obrasca**.
+
+![popdv](../assets/POPDV/popdv12.png)
+
+Date **knjižne grupe** unose se na kartice **dobavljača** i **artikala**.
+
+Zahtev za evidenciju je sledeći:
+- Kada postoji **pravo na odbitak PDV-a**, unos u **POPDV obrazac** vrši se u **dva polja**.
+- Kada **ne postoji pravo na odbitak PDV-a**, evidencija se vrši samo kroz **jedno polje** u obrascu.
+
+**Konto za knjiženje** PDV-a koji ne može biti odbijen unosi se kroz polje **Neodbitni PDV nalog za nabavku**.
+
+![popdv](../assets/POPDV/popdv13.png)
+
+#### **1.7.2 Podešavanje pri evidenciji samo PDV-a**
+
+U slučaju kada je potrebno **knjigovodstveno evidentirati samo PDV**, a pritom u **POPDV obrascu** treba prikazati i **PDV** i **osnovicu**, menja se **tip obračuna PDV-a** na **Puni PDV** u okviru **Podešavanje knjiženja za PDV**.
+
+Kako bi sistem obračunao i iznos **osnovice** za evidentirani PDV, neophodno je uneti **procenat** za obračun punog PDV-a kroz polje **Osnovni % za puni PDV**.
+
+![popdv](../assets/POPDV/popdv14.png)
+
+Ako se u dato polje u obrascu evidentira samo iznos PDV, mapiranje se vrši samo za polje iznosa. Ukoliko je potrebno evidentirati i osnovicu za PDV, polje za evidentiranje mapira se kroz **Osnovni puni PDV** na kartici. 
+
+![popdv](../assets/POPDV/popdv15.png)
+
+#### **1.7.3 Podešavanje pri evidenciji nerealizovanog PDV-a - evidencija carine**
+
+--------------------------------------------------------------------
+
+#### **Podešavanje za evidenciju prometa drugog lica**
+
+Iznos **osnovice po fakturi** za ovu vrstu prometa potrebno je evidentirati u:
+
+- **Sekciji 8b** – u slučaju **nabavke od domaćeg dobavljača**  
+- **Sekciji 8g** – u slučaju **nabavke od inostranog dobavljača**
+
+**PDV po ulaznim fakturama** evidentira se u polju **8e.2.**,  
+dok se **PDV po izlaznim fakturama** evidentira u **sekciji 3a**.
+
+**Knjižne grupe PDV-a** za ovu evidenciju su sledeće:
+
+
