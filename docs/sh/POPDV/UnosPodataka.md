@@ -128,9 +128,15 @@ Ako se u dato polje u obrascu evidentira samo iznos PDV, mapiranje se vrši samo
 
 #### **1.7.3 Podešavanje pri evidenciji nerealizovanog PDV-a - evidencija carine**
 
---------------------------------------------------------------------
+Za evidenciju carine, odnosno poreza plaćenog po carinskom računu, na VAT Posting Setup stranici, evidentira se tip nerealizovanog PDV-a – *Vrsta nerealizovanog PDV-a*.
 
-#### **Podešavanje za evidenciju prometa drugog lica**
+![popdv](../assets/POPDV/popdv22.png)
+
+Nakon proknjiženog izvoda za plaćen carinski račun, evidentiraće se iznos PDV-a u odgovarajuće polje.
+
+![popdv](../assets/POPDV/popdv23.png)
+
+#### **1.7.4 Podešavanje za evidenciju prometa drugog lica**
 
 Iznos **osnovice po fakturi** za ovu vrstu prometa potrebno je evidentirati u:
 
@@ -142,4 +148,52 @@ dok se **PDV po izlaznim fakturama** evidentira u **sekciji 3a**.
 
 **Knjižne grupe PDV-a** za ovu evidenciju su sledeće:
 
+![popdv](../assets/POPDV/popdv16.png)
 
+Svaka od datih knjižnih grupa za koje se obračunava PDV mora biti prikazana na zasebnom kontu PDV-a.
+
+![popdv](../assets/POPDV/popdv17.png)
+
+## **2. Šifre artikala, kupaca i dobavljača**
+
+### **2.1 Poslovne grupe knjiženja po PDV-u**
+
+Na osnovu poslovnih knjižnih grupa za PDV identifikuju se kupci i dobavljači sa kojima se vrši promet kroz kartice dobavljača i kupaca. U zavisnost od toga da li se identifikuje pravno lice ili određena interna poslovna promena, poslovne knjižne grupe za PDV dodeljuju se kupcima, dobavljačima ili kontima glavne knjige.
+
+![popdv](../assets/POPDV/popdv18.png)
+
+#### **2.1.1 Kartica kupca**
+
+Na kartici kupca u delu *Fakturisanje* se unosi, pored opštih knjižnih grupa, i knjižne grupe za obračun PDV. Na taj način se definiše da li je kupac sa domaćeg ili inostranog tržišta.
+
+![popdv](../assets/POPDV/popdv19.png)
+
+#### **2.1.2 Kartica dobavljača**
+
+Na kartici dobavljača u delu *Fakturisanje* se unosi, pored opštih knjižnih grupa, i knjižne grupe za obračun PDV. Na taj način se definiše da li je dobavljač sa domaćeg ili inostranog tržišta i da li je u sistemu PDV-a.
+
+![popdv](../assets/POPDV/popdv20.png)
+
+#### **2.1.3 Konto glavne knjige**
+
+Na kontu glavne knjige moguće je uneti i poslovnu i knjižnu grupu proizvoda za PDV, ukoliko je potrebno evidentirati neku promenu koja ne uključuje nabavku ili prodaju, a potrebno je obračunati PDV za istu. 
+
+![popdv](../assets/POPDV/popdv21.png)
+
+### **2.2 Grupe knjiženja proizvoda po PDV-u**
+
+Na osnovu knjižnih grupa proizvoda definiše se kojoj poreskoj stopi pripada dati artikal kao i kojoj poreskoj grupi pripada. Definiše se na kartici artikla ili kontu glavne knjige.
+
+![popdv](../assets/POPDV/popdv24.png)
+
+#### **2.2.1 Kartica artikla**
+
+U delu *Troškovi i knjiženje* unose se prethodno pomenute knjižne grupe, u zavisnosti od toga kojoj stopi oporezivanja podleže dati artikal.
+
+![popdv](../assets/POPDV/popdv25.png)
+
+#### **2.2.2 Konto glavne knjige**
+
+Kao i poslovna knjižna grupa, na konto glavne knjige unosi se i knjižna grupa proizvoda, u ovo slučaju na konto za evidenciju PDV-a.
+
+![popdv](../assets/POPDV/popdv26.png)
