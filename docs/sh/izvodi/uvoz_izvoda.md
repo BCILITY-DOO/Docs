@@ -4,7 +4,7 @@ Kreirana dokumentacija se odnosi na unos dinarskog izvoda Halkbank banke i dinar
 
 ## **1. Kreiranje definicije za razmenu podataka**
 
-U pretrazi je potrebno pronaći **„Definicije za razmenu podataka“** i u zaglavlju izabrati **Uvoz/Izvoz**, zatim izabrati izvod koji želimo da uvezemo. U sklopu jednog XML fajla imamo neophodne podatke za Halk dinarski, Reiffeisen dinarski i devizni račun. 
+U pretrazi je potrebno pronaći **„Definicije za razmenu podataka“** i u zaglavlju izabrati **Uvoz/Izvoz**, zatim izabrati XML fajl koji želimo da uvezemo. U sklopu jednog XML fajla imamo neophodne podatke za Halk dinarski, Reiffeisen dinarski i devizni račun. 
 
 ![def.red.](../assets/halk/uvoz-izvoda.png)
 
@@ -47,19 +47,19 @@ Prikaz je na sledećoj slici:
 
 ### **1.4 Povezivanje sa računom**
 
-U pretrazi pronaći **„Računi u banci“** i ući na račun **Halk Dinarski**.
+U pretrazi pronaći **„Računi u banci“** i ući na željeni račun.
 
-Na kartici kreiranog računa, u delu **Prenos**, u polju **Format uvoza izvoda iz banke**, iz padajuće liste bira se: **HALK_DINARSKI**
+Na kartici kreiranog računa, u delu **Prenos**, u polju **Format uvoza izvoda iz banke**, iz padajuće liste bira se račun željene banke.
 
-![halk-din](../assets/halk/Picture11.png)
+![halk-din](../assets/halk/uvoz-izvoda3.png)
 
 ### **1.5 Uvoz izvoda**
 
-U pretrazi pronaći **„Sravnjenje bankovnog računa“** i u sekciji **Banka** odabrati akciju **Uvoz izvoda iz banke**.
+U pretrazi pronaći **„Sravnjenja bankovnog računa“** i na kartici željenog računa u sekciji **Banka** odabrati akciju **Uvoz izvoda iz banke**.
 
 ![halk-din-izvod](../assets/halk/Picture12.png)
 
-U otvoreni prozor prevući ili odabrati izvode koje treba dodati (fajl se nalazi na dnu dokumenta).
+U otvoreni prozor prevući ili odabrati izvode koje treba dodati.
 
 ![halk-din-izvod2](../assets/halk/Picture13.png)
 
