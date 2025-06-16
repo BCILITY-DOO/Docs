@@ -64,7 +64,7 @@ Ukoliko imamo situaciju da želimo da neki deo iznosa platimo jednim tipom plać
 
 ### **1.3 Povrat arikala**
 
-Na linije artikala dodajemo artikal ili artikle za koje želimo da izvršimo povraćaj, a zatim izaberemo akciju *Povrat*.
+Na linije artikala dodajemo artikal ili artikle za koje želimo da izvršimo povraćaj, a zatim izaberemo akciju *Povrat*. Takođe, možemo odabrati akciju *Povrat* iako nemamo dodat proizvod na liniju artikala, u tom slučaju će nam se otvoriti prozor sa izlistanim svim izdatim računima.
 
 ![pos](../assets/POS/pos21.png)
 
@@ -72,7 +72,11 @@ Odabirom akcije otvara se prozor
 
 ![pos](../assets/POS/pos22.png)
 
-Odabirom računa na kom je taj artikal ištampaće se račun refundacije.
+Pokretanjem akcije *Br. računa* (...), otvara se prozor gde možemo pronaći sve račune, ili sve račune na kojima se nalazi odabrani artikal.
+
+![pos](../assets/POS/pos28.png)
+
+Odabirom računa na kom je željeni artikal ištampaće se račun refundacije.
 
 ### **1.4 Linija akcija**
 
