@@ -1,32 +1,40 @@
 # **License Management**
-The main purpose of this app is to help you with managing licenses for all of your different apps. This guide will show you how to use it.
-
-### **Licenses page**
+This guide explains how to use our License management application.
+# **Licenses Page**
 ![img](..\assets\Licensing\LicensesPage.png)
-This page displays data on all licenses and apps used by your customers, including some data regarding their environment. *Licenses are made to be one license per environment*.
+This page displays data on all licenses and apps used by your customers, including some data regarding their environment. *Licenses are made to be one license per environment*. You don't have to populate this data—it is automatically populated by the app when the customer tries to validate their license. The main fields you'll typically modify here are **expiration date** and **active**, because *they control whether the license is active*.
+ 
+On the right side of the page you can find a fact box that shows you more detailed data from all companies from the related environment.
 
-You don't have to populate all of this data—it is automatically populated by the app when the customer checks whether or not their license is valid. The main fields you'll typically modify here are **"expiration date"** and **"active"**, because *they control whether or not the license is active*.
+The actions at the top of the page open the Extension Setup, Customer Tenant Mapping and License Management Setup pages.
 
-If you ever need to manually populate license data you need to start with the App and Tenant guid fields at the end of the page. 
-
-### **App License Setups**
+# **Extension Setup Page**
 ![img](..\assets\Licensing\AppLicenseSetupsPage.png)
-App License Setups offers detailed information about the licenses for your created apps. You can use this section to set the free trial duration and define which environments the app can be used in for free. 
+Extension Setup offers information about the licenses for your extensions. You can use this section to set the free trial duration and define which environments the extension can be used in for free.
 
-You don't need to manually populate all the licensing data on this page before publishing your app—this information will be automatically filled in by the Licensing Management App when a customer attempts to validate their license. The default values for "Is Sandbox Free", "Free Trial Length" and "Is App Free" can be adjusted later in the License Management Setup page.
-### **Customer Tenant Mapping**
+You don't need to manually populate all the licensing data on this page before publishing your app—this information will be automatically filled in by the Licensing Management App when a customer attempts to validate their license. The default values for "Is Sandbox Free", "Free Trial Length" and "Is App Free" can be adjusted later in the License 
+Management Setup page.
+
+# **Customer Tenant Mapping Page**
 ![img](..\assets\Licensing\CustomerTenantMappingPage.png)
-This page contains necessary data about your **customers tenants**. Just like the previous 2 pages if an unknown tenant tries to validate their license their data will automatically populate this page, the only thing you will need to do is *specify which customer uses this tenant by populating the "No" field*. 
+This page contains necessary data about your **customers' tenants**. Just like the previous 2 pages if an unknown tenant tries to validate their license their data will automatically populate this page, the only thing you will need to do is *specify which customer uses this tenant by populating the "No" field*.
 
-The tenant names that are shown on the licenses page are taken from this table.
-### **License Management Setup**
+# **Tenants Page**
+![img](..\assets\Licensing\TenantsList.png)
+This page shows you data about the tenants your customers use. Just like the previous pages if an unknown tenant tries to validate their license the data will automatically 
+populate this page. You can access this page by clicking on the tenant name on the Licenses page.
+
+The action at the top of the page will open the Licenses, Environment list and Company list pages respectively. The Environment list and Company list pages show you more detailed data about your customers.
+
+# **License Management Setup Page**
 ![img](..\assets\Licensing\LicenseManagementSetupPage.png)
-On this page, you can configure the default license values that are applied when a license is first created by the app.
-## **When Licenses Are Active**
-Active licenses are those where the **"active"** field is set to true, with a few exceptions:
+In the New Extension Defaults group you can configure the default license values that are applied when a license is first created by the app.
 
-**Expired licenses** – If the license's expiration date is before today's date, it is considered inactive, even if the "active" field is true. This status will be updated the next time the customer attempts to validate the license.
+In the License List Setup group you can configure when the licenses will be colored green on the License List page.
 
-**Free apps** – If the app is marked as free in its license configuration, the license may appear active but isn't, it will be updated upon the customer's next validation attempt.
+# **When Licenses Are Active**
+The primary factor that determines whether a license is active is the **expiration date**. However, **if the expiration date is empty, the license is considered perpetual, and its status is determined by the "active"** field. There are a few exceptions to these rules:
 
-An active license with no expiration date is treated as a lifetime license.
+**Expired licenses** –  If the expiration date is in the past, the license is inactive—regardless of the "active" field value. This status is updated the next time the customer attempts to validate the license.
+
+**Free apps** – If the app is designated as free in the extension setup, the license remains active even if the expiration date has passed or the "active" field is false. This status is also refreshed upon the next validation attempt.
