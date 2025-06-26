@@ -1,5 +1,37 @@
 # **License Management Implementation**
 If you need an example of how to implement our app then you can visit our public repository [here](https://github.com/BCILITY-DOO/AppSource-License-Management-Impl).
+
+## **Setup Instructions**
+Before you can start calling our web service you need to go to the Microsoft Entra Applications page and configure the Licensing app.
+
+**Step 1:** Open the Microsoft Entra Applications page.
+
+![img](..\assets\Licensing\EntraApp.png)
+
+**Step 2:** Create a new application entry with the following details:
+
+• **Client ID:** (Enter your client ID)
+
+• **Description:** (Provide a brief description)
+
+• **State:** Set to **Enabled**
+
+After saving, your application page should reflect these changes.
+
+![img](..\assets\Licensing\AfterChanges.png)
+
+**Step 3:** Go to the User Permission Sets and add the BCY Lic. App Perms permission set to the user.
+
+![img](..\assets\Licensing\PermissionSetLookup.png)
+
+After adding the permission set.
+
+![img](..\assets\Licensing\AfterAddingPermissionSet.png)
+
+**Step 4:** Click the grant consent action at the top of the page.
+
+![img](..\assets\Licensing\GrantConsentAction.png)
+
 ## **Making the http request**
 ### **Url address**
 The format of the url address:
