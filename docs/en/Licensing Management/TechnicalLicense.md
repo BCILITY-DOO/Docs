@@ -1,12 +1,12 @@
-# **License Management Implementation**
+# **Technical License Management**
 If you need an example of how to implement our app then you can visit our public repository [here](https://github.com/BCILITY-DOO/AppSource-License-Management-Impl).
 
-## **Setup Instructions**
-Before you can start calling our web service you need to go to the Microsoft Entra Applications page and configure the Licensing app.
+## **1. Setup Instructions**
+Before you can start calling our web service you need to go to the *Microsoft Entra Applications* page and configure the ***Licensing app***.
 
 **Step 1:** Open the Microsoft Entra Applications page.
 
-![img](..\assets\Licensing\EntraApp.png)
+![img](../../assets/Licensing/EntraApp.png)
 
 **Step 2:** Create a new application entry with the following details:
 
@@ -18,22 +18,23 @@ Before you can start calling our web service you need to go to the Microsoft Ent
 
 After saving, your application page should reflect these changes.
 
-![img](..\assets\Licensing\AfterChanges.png)
+![img](../../assets/Licensing/AfterChanges.png)
 
-**Step 3:** Go to the User Permission Sets and add the BCY Lic. App Perms permission set to the user.
+**Step 3:** Go to the *User Permission Sets* and add the ***BCY Lic. App Perms*** permission set to the user.
 
-![img](..\assets\Licensing\PermissionSetLookup.png)
+![img](../../assets/Licensing/PermissionSetLookup.png)
 
-After adding the permission set.
+After adding the permission set:
 
-![img](..\assets\Licensing\AfterAddingPermissionSet.png)
+![img](../../assets/Licensing/AfterAddingPermissionSet.png)
 
-**Step 4:** Click the grant consent action at the top of the page.
+**Step 4:** Click the *Grant Consent* action at the top of the page.
 
-![img](..\assets\Licensing\GrantConsentAction.png)
+![img](../../assets/Licensing/GrantConsentAction.png)
 
-## **Making the http request**
-### **Url address**
+## **2. Making the HTTP request**
+
+### **2.1 URL address**
 The format of the url address:
 
 https://api.businesscentral.dynamics.com/v2.0 + /**Tenant GUID** + /**Environment Name** + /ODataV4/LicenseManagement_CheckLicenseData?company= + **Receiving Company GUID**
@@ -45,12 +46,12 @@ https://api.businesscentral.dynamics.com/v2.0 + /**Tenant GUID** + /**Environmen
 **Receiving Company GUID** -  The GUID of the company witch has the License Management app installed.
 
 
-### **Request Parameters**
+### **2.2 Request Parameters**
 **HTTP Method**: POST 
 
 The only things required to add to the headers is the **Content-Type** to the **Content Headers** specifying *application/json* and the **Authorization** to the **Message Headers** with the value *Bearer %1*, where %1 is your OAuth access token.
 
-### **Request JSON**
+### **2.3 Request JSON**
 <div align='center'>
 <table border='1'>
     <tbody>
@@ -118,12 +119,12 @@ The only things required to add to the headers is the **Content-Type** to the **
 </table>
 </div>
 
-#### **Example of Request JSON**
+#### **2.3.1 Example of Request JSON**
 
     "data":"{\"AppGUID\":\"116ffd23-0767-453f-a285-6489e894bf2a\",\"AppName\":\"AppSource-License-Management\",\"BCVersion\":\"26.1.33404.34999\",\"AppVersion\":1,\"TenantGUID\":\"383141b2-4480-449c-9751-a76974dcc2bd\",\"TenantName\":\"bcility.onmicrosoft.com\",\"Date\":\"2025-06-19\",\"IsEnvironmentProduction\":false,\"EnvironmentName\":\"Prod-Copy\",\"CustomerName\":\"BCILITY\"}"
 
 
-### **Response JSON**
+### **2.4 Response JSON**
 The Response JSON must be read from the *"value"* field of the response message.
 
 <div align='center'>
@@ -153,6 +154,6 @@ The Response JSON must be read from the *"value"* field of the response message.
 </table>
 </div>
 
-#### Example of Response JSON
+#### **2.4.1 Example of Response JSON**
 
     "@odata.context":"https://api.businesscentral...","value":"{\"IsLicenseValid\":true,\"ContactEmail\":\"office@bcility.com\"}"
