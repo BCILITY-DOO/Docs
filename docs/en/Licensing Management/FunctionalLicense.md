@@ -2,7 +2,15 @@
 
 This guide explains how to use our ***License management application***.
 
-## **1. App License Setup Page**
+## **1. License Management Setup Page**
+
+![img](../../assets/Licensing/LicenseManagementSetupPage.png)
+
+In the *New Extension Defaults* group you can configure the default license values that are applied when a license is first created by the app.
+
+In the *License List Setup* group you can configure when the licenses will be colored green on the *License List* page.
+
+## **2. App License Setup Page**
 
 ![img](../../assets/Licensing/AppLicenseSetupsPage.png)
 
@@ -10,27 +18,19 @@ This guide explains how to use our ***License management application***.
 
 You don't need to manually populate all the licensing data on this page before publishing your app—this information will be automatically filled in by the *Licensing Management App* when a customer attempts to validate their license. The default values for "Is Sandbox Free", "Free Trial Length" and "Is App Free" can be adjusted later in the *License Management Setup* page.
 
-## **2. Customer Tenant Mapping Page**
+## **3. Customer Tenant Mapping Page**
 
 ![img](../../assets/Licensing/CustomerTenantMappingPage.png)
 
 This page contains necessary data about your **customers' tenants**. Just like the previous 2 pages, if an unknown tenant tries to validate their license, their data will automatically populate this page, the only thing you will need to do is *specify which customer uses this tenant by populating the "No" field*.
 
-## **3. Tenants Page**
+## **4. Tenants Page**
 
 ![img](../../assets/Licensing/TenantsList.png)
 
 This page shows you data about the tenants your customers use. Just like the previous pages, if an unknown tenant tries to validate their license, the data will automatically populate this page. You can access this page by clicking on the tenant name on the *Licenses page*.
 
 The action at the top of the page will open the *Licenses*, *Environment list* and *Company list* pages respectively. The *Environment list* and *Company list* pages show you more detailed data about your customers.
-
-## **4. License Management Setup Page**
-
-![img](../../assets/Licensing/LicenseManagementSetupPage.png)
-
-In the *New Extension Defaults* group you can configure the default license values that are applied when a license is first created by the app.
-
-In the *License List Setup* group you can configure when the licenses will be colored green on the *License List* page.
 
 ## **5. When Licenses Are Active**
 
