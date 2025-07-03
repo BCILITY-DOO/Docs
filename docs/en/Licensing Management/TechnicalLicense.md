@@ -18,32 +18,25 @@ Before you can start calling our web service you need to go to the *Microsoft En
 
 After saving, your application page should reflect these changes.
 
-![img](../../assets/Licensing/AfterChanges.png)
-
 **Step 3:** Go to the *User Permission Sets* and add the ***BCY Lic. App Perms*** permission set to the user.
-
-![img](../../assets/Licensing/PermissionSetLookup.png)
-
-After adding the permission set:
-
-![img](../../assets/Licensing/AfterAddingPermissionSet.png)
 
 **Step 4:** Click the *Grant Consent* action at the top of the page.
 
-![img](../../assets/Licensing/GrantConsentAction.png)
+![img](../../assets/Licensing/Permissions.png)
 
 ## **2. Making the HTTP request**
 
 ### **2.1 URL address**
-The format of the url address:
 
-https://api.businesscentral.dynamics.com/v2.0 + /**Tenant GUID** + /**Environment Name** + /ODataV4/LicenseManagement_CheckLicenseData?company= + **Receiving Company GUID**
+Use the following URL format when sending your request in code: 
 
-**Tenant GUID** - The GUID of the tenant where the License Management app is installed.
+https://api.businesscentral.dynamics.com/v2.0/ ***{Tenant GUID}*** / ***{Environment Name}*** /ODataV4/LicenseManagement_CheckLicenseData?company= ***{Receiving Company GUID}*** 
 
-**Environment Name** - The name of the environment.
+Where:
 
-**Receiving Company GUID** -  The GUID of the company witch has the License Management app installed.
+- ***Tenant GUID***: The GUID of the tenant that will receive the HTTP request.
+- ***Environment Name***: The name of the environment that will receive the HTTP request.
+- ***Receiving Company GUID***: The GUID of the company that will receive the HTTP request.
 
 
 ### **2.2 Request Parameters**
