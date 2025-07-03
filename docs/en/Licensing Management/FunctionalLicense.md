@@ -4,11 +4,11 @@ This guide explains how to use our ***License management application***.
 
 ## **1. License Management Setup Page**
 
-![img](../../assets/Licensing/LicenseManagementSetupPage.png)
+![img](../../assets/Licensing/LicenceManagementSetupPage.png)
 
-In the *New Extension Defaults* group you can configure the default license values that are applied when a license is first created by the app.
+In the **New Extension Defaults** section, you can define the default license parameters that are automatically applied when a new license is created through the application. This ensures consistency and saves time by pre-populating key fields with standardized values.
 
-In the *License List Setup* group you can configure when the licenses will be colored green on the *License List* page.
+In the **License List Setup** section, you can configure the visual indicators—specifically, the conditions under which licenses are highlighted in green on the **License List page**. This visual cue helps users quickly identify licenses that meet specific criteria, enhancing usability and streamlining license management.
 
 ## **2. App License Setup Page**
 
