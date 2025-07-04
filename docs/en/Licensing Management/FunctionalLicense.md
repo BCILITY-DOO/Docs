@@ -10,7 +10,7 @@ In the **New Extension Defaults** section, you can define the default license pa
 
 In the **License List Setup** section, you can configure the visual indicators—specifically, the conditions under which licenses are highlighted in green on the **License List page**. This visual cue helps users quickly identify licenses that meet specific criteria, enhancing usability and streamlining license management.
 
-## **2. App License Setup Page**
+## **2. Extension Setup**
 
 ![img](../../assets/Licensing/AppLicenseSetupsPage.png)
 
@@ -49,5 +49,3 @@ This page displays data on all licenses and apps used by your customers, includi
  ***Licenses are made to be one license per environment***. You don't have to populate this data—it is automatically populated by the app when the customer tries to validate their license. The main fields you'll typically modify here are **expiration date** and **active**, because *they control whether the license is active*.
  
 On the right side of the page you can find a fact box that shows you more detailed data from all companies from the related environment.
-
-The actions at the top of the page open the *Extension Setup*, *Customer Tenant Mapping* and *License Management Setup* pages.
