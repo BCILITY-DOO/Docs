@@ -12,32 +12,32 @@ Kartica artikla sadrži detaljne informacije o konkretnom artiklu.
 Postoji nekoliko načina prikaza liste artikala:
 
 - Lista artikala – svaki red sadrži ključne podatke o artiklu, poput šifre, opisa, količine i jedinice mere.
-  ![Lista Proizvoda](../assets/Artikli/Lista.png)
+  ![Lista Proizvoda](../../assets/Artikli/Lista.png)
 - Uspravne pločice – istaknut je vizuelni prikaz artikla sa osnovnim informacijama.
-  ![Uspravne Pločice](../assets/Artikli/UPločice.png)
+  ![Uspravne Pločice](../../assets/Artikli/UPločice.png)
 - Pločice – prikazana je manja slika artikla uz pet najvažnijih polja.
-  ![Pločice](../assets/Artikli/Pločice.png)
+  ![Pločice](../../assets/Artikli/Pločice.png)
 
 Odabir načina prikaza popisa artikala dostupan je preko dugmeta **Pregledajte opcija raspodela** u 
 gornjem desnom delu ekrana prikazanom na sledećoj slici: 
 
-![Opcije raspodele](../assets/Artikli/Pregled.png)
+![Opcije raspodele](../../assets/Artikli/Pregled.png)
 
 Za svaki artikal koji se evidentira u programu potrebno je otvoriti analitičku karticu. Ova kartica sadrži osnovne podatke o artiklu. 
 Novi artikal se kreira sa liste artikala izborom opcije **Novi**.
 
-![Novi artikal](../assets/Artikli/Novo.png)
+![Novi artikal](../../assets/Artikli/Novo.png)
 
 Ako su unapred definisani obrasci sa osnovnim podacima, prikazaće se odgovarajuća lista. Potrebno je odabrati željeni obrazac i 
 potvrditi izbor klikom na U redu, nakon čega se otvara prozor za unos podataka.
 
-![Obrazci](../assets/Artikli/Obrazci.png)
+![Obrazci](../../assets/Artikli/Obrazci.png)
 
 **Struktura kartice artikla**
 
 Kartica artikla organizovana je kroz brze kartice, gde su informacije grupisane po relevantnim kategorijama.
 
-![Novi artikal](../assets/Artikli/NoviArtikal.png)
+![Novi artikal](../../assets/Artikli/NoviArtikal.png)
 
 Na desnoj strani kartice nalazi se informacioni okvir sa dodatnim podacima, uključujući:
 
@@ -58,7 +58,7 @@ Ova sekcija sadrži osnovne informacije o artiklu, uključujući:
 - **Blokiran** (opcija za privremenu ili trajnu zabranu korišćenja artikla)
 - **Vrsta** (Zaliha, Servis ili Nije zaliha)
 - **Osnovna jedinica mere** (mogućnost izbora ili kreiranja nove jedinice)
-  ![Novi artikal](../assets/Artikli/jMere.png)
+  ![Novi artikal](../../assets/Artikli/jMere.png)
 
 Ako na listi ne postoji potrebna jedinica mere, možete je kreirati. Da biste to uradili, kliknite na strelicu u polju Osnovna jedinica mere, 
 a zatim u otvorenom prozoru odaberite opciju **Novo**, kao što je prikazano na prethodnoj slici.
@@ -67,12 +67,12 @@ Svaki artikal može imati više jedinica mere, ali samo jedna od njih može biti
 Zalihe se uvek vode u osnovnoj jedinici mere. Ukoliko artikal ima više jedinica mere, potrebno je uspostaviti odnos između njih.
 Odaberete **Povezano->Artikal->Jedinice mere**.
 
-![Osnovana jedinica](../assets/Artikli/OsnJedinica.png)
+![Osnovana jedinica](../../assets/Artikli/OsnJedinica.png)
 
 Ako pretpostavimo da neki artikal vodimo u komadima, ali ga nabavljamo u paketu i da pri tome jedan 
 paket sadrži 10 komada, tada prozor treba biti popunjen na sledeći način:
 
-![slika](../assets/Artikli/komad.png)
+![slika](../../assets/Artikli/komad.png)
 
 - **Šifra kategorije artikla**
 
@@ -80,18 +80,18 @@ U polju Šifra kategorije artikla klikom na strelicu možete izabrati kategoriju
 Ukoliko ne postoji kategorija artikla u koju biste želeli staviti artikal, možete sami kreirati novu 
 kategoriju. Postupak je sličan kao kod kreiranja nove Osnovne jedinice mere.
 
-![slika](../assets/Artikli/kategorija.png)
+![slika](../../assets/Artikli/kategorija.png)
 
 - **Automatski prošireni tekstovi** 
 
 Ova akcija omogućava dodavanje dodatnog opisa na prodajne i nabavne dokumente. Prošireni tekst se dodaje praćenjem sledeće putanje: 
   **Povezano-Artikal-Prošireni tekstovi**.
   
-![slika](../assets/Artikli/PTekstovi.png)
+![slika](../../assets/Artikli/PTekstovi.png)
 
 U otvorenom prozoru potrebno je odabrati akciju **Novo** i popuniti data polja.
 
-![slika](../assets/Artikli/prTekst.png)
+![slika](../../assets/Artikli/prTekst.png)
 
 - **Zajednički broj artikla**
 
@@ -99,7 +99,7 @@ Ovo polje označava jedinstveni broj artikla unutar preduzeća ili grupacije.
 
 ## 2. Zalihe
 
-![slika](../assets/Artikli/zalihe.png)
+![slika](../../assets/Artikli/zalihe.png)
 
 U polje **Br. police** možete uneti lokaciju artikla u skladištu, što predstavlja njegovu opštu poziciju u svim skladištima.
 
@@ -115,7 +115,7 @@ Ova sekcija prikazuje:
 - Obračun troška artikla (FIFO, LIFO, Specifičan, Prosečan, Standardan)
 - Knjižne grupe
 
-![slika](../assets/Artikli/troskovi.png)
+![slika](../../assets/Artikli/troskovi.png)
 
 U polju **Način obračuna troška** potrebno je izabrati metodu koja će se primenjivati pri obračunu troškova artikla.
 
@@ -146,7 +146,7 @@ Polje **Šifra države/regiona porekla** služi za unos šifre države ili regij
 
 Ova kartica sadrži informacije o cenama, marži, popustima i jedinici mere u kojoj se artikal prodaje.
 
-![slika](../assets/Artikli/Cene.png)
+![slika](../../assets/Artikli/Cene.png)
 
 U polju **Jedinična cena** unosi se prodajna cena artikla, koja će se automatski preuzimati u prodajne dokumente (cenu je moguće promeniti na samom dokumentu).
 
@@ -162,7 +162,7 @@ Opcija **Prodaja blokirana** sprečava prodaju artikla i njegov izbor u prodajni
 Ova sekcija sadrži informacije o metodama popunjavanja zaliha (nabavka, radni nalog, montaža). U zavisnosti od izabrane opcije, 
 dostupni su dodatni parametri za popunjavanje zaliha.
 
-![slika](../assets/Artikli/DopZaliha.png)
+![slika](../../assets/Artikli/DopZaliha.png)
 
 - **Sistem popunjavanja zaliha** – Određuje način dopunjavanja zaliha.
 - **Računanje vremena pripreme** – Unosi se formula koja određuje potrebno vreme za dopunjavanje artikla.
@@ -173,18 +173,18 @@ dostupni su dodatni parametri za popunjavanje zaliha.
 
 ## 6. Planiranje
 Ova kartica sadrži informacije o planiranju zaliha, uključujući načela naručivanja i parametre definisane u polju **Načelo naručivanja**, koji određuju pravila naručivanja u sistemu.
-![slika](../assets/Artikli/Planiranje.png)
+![slika](../../assets/Artikli/Planiranje.png)
 
 ## 7. Praćenje artikla
 Omogućava praćenje artikala prema serijskom broju ili broju šarže.
-![slika](../assets/Artikli/PraćenjeArt.png)
+![slika](../../assets/Artikli/PraćenjeArt.png)
 
 Polje **Šifra praćenja artikla** određuje način na koji će program pratiti artikal u zalihama.
 U zavisnosti od postavki, artikli se mogu pratiti prema serijskim brojevima ili broju šarže. 
 
 ## 8. Magacin
 Ova sekcija sadrži informacije o skladištu, uključujući šifru klase magacina i šifru jedinice mere za skladištenje.
-![slika](../assets/Artikli/Magacin.png)
+![slika](../../assets/Artikli/Magacin.png)
 
 Da bi proces nabavke i prodaje bio što efikasniji, u Microsoft Dynamics 365 Business Central moguće je koristiti dodatne funkcionalnosti kao što su zamenski artikli, 
 neskladišteni artikli, atributi artikala i varijante artikala.
@@ -195,14 +195,14 @@ U slučaju da preduzeće prodaje slične artikle, može se koristiti opcija zame
 
 Da biste povezali artikal sa sličnim artiklima, potrebno je na kartici artikla izabrati 
 Povezano -> Artikl -> Ostalo -> Zamene.
-![slika](../assets/Artikli/Zamene.png)
+![slika](../../assets/Artikli/Zamene.png)
 
 Otvoriće se prozor u kojem možete podesiti zamenu u jednom smeru (artikl A može biti zamena za artikl B, ali ne i obrnuto) ili u oba smera (assets/artikli A i B su međusobno zamenjivi).
 Ako je zamena dvosmerna, potrebno je označiti polje Zamenjiv, a sistem će automatski kreirati unakrsnu zamenu.
-![slika](../assets/Artikli/zamenskiPr.png)
+![slika](../../assets/Artikli/zamenskiPr.png)
 
 Kada se artikal doda na red naloga za prodaju, u okviru Detalji artikla biće prikazani dostupni zamenski artikli.
-![slika](../assets/Artikli/Zamena2.png)
+![slika](../../assets/Artikli/Zamena2.png)
 
 Moguće je dodati i uslove za zamenski artikal, ali oni imaju isključivo informativnu svrhu i ne utiču na automatsku zamenu artikala.
 
@@ -214,7 +214,7 @@ Neskladišteni artikli se mogu uneti u prodajne ponude i naloge za prodaju, a bi
 
 Kartica neskladištenog artikla sadrži manje podataka od standardne kartice artikla, kao što je prikazano na sledećoj slici.
 
-![slika](../assets/Artikli/KataloskiArt.png)
+![slika](../../assets/Artikli/KataloskiArt.png)
 
 Neskladišteni artikli mogu se pretvoriti u artikle koji se drže na zalihama na dva načina:
 
@@ -222,7 +222,7 @@ Neskladišteni artikli mogu se pretvoriti u artikle koji se drže na zalihama na
 - Sa reda naloga za prodaju – Izborom **Red -> Funkcije -> Izaberi kataloški artikal**, sistem automatski kreira skladišteni artikal iz neskladištenog.
 Kada se neskladišteni artikal konvertuje, na kartici novog artikla u sekciji Zalihe biće označeno polje Kreiran iz neskladištenog artikla.
 
-![slika](../assets/Artikli/Katalog.png)
+![slika](../../assets/Artikli/Katalog.png)
 
 _Napomena: Neskladišteni artikli ne mogu se direktno koristiti na izlaznim fakturama, već samo u prodajnim ponudama i nalozima za prodaju._
 
@@ -241,19 +241,19 @@ Atribut može biti proizvođač, boja, širina, dužina, visina,  materijal, mas
 
 Atributi se dodaju putem kartice artikla izborom **Artikal -> Atributi**.
 
-![slika](../assets/Artikli/Atributi.png)
+![slika](../../assets/Artikli/Atributi.png)
 
 Klikom na prazan red ili na akciju **Novi red** dodeljuju se novi atributi i vrednosti.
 
-![slika](../assets/Artikli/VrAtributa.png)
+![slika](../../assets/Artikli/VrAtributa.png)
 
 Sa polja Atribut može se pogledati lista svih dostupnih atributa koji su već definisani. Novi atribut može se kreirati klikom na akciju **Novo**.
 
-![slika](../assets/Artikli/NoviAtr.png)
+![slika](../../assets/Artikli/NoviAtr.png)
 
 U otvorenom prozoru unosi se naziv atributa i bira se vrsta atributa.
 
-![slika](../assets/Artikli/AtrPro.png)
+![slika](../../assets/Artikli/AtrPro.png)
 
 Pri definisanju atributa moguće je izabrati jednu od sledećih vrsta:
 
@@ -265,37 +265,37 @@ Pri definisanju atributa moguće je izabrati jednu od sledećih vrsta:
 
 Nova vrednost kreira se klikom na polje Vrednost i odabirom akcije **Novo**.
 
-![slika](../assets/Artikli/NovaVr.png)
+![slika](../../assets/Artikli/NovaVr.png)
 
 Kreirani autribut i vrednost se potom dodeli atriklu.
 
-![slika](../assets/Artikli/DodelaAtr.png)
+![slika](../../assets/Artikli/DodelaAtr.png)
 
 Nakon što se kreirani i postavljeni atribut doda artiklu, moguće je videti ga na kartici artikla u sekciji **Atribut artikla**.
 
-![slika](../assets/Artikli/Prikaz.png)
+![slika](../../assets/Artikli/Prikaz.png)
 
 Atributi se mogu dodeliti i kategorijama artikala, čime se automatski primenjuju na sve artikle unutar te kategorije.
 
 Na kartici artikla potrebno je izabrati **Šifra kategorije artikla**, pronaći željenu kategoriju i kliknuti **Prikaži detalje**.
 
-![slika](../assets/Artikli/Sifra.png)
+![slika](../../assets/Artikli/Sifra.png)
 
 U otvorenom prozoru moguće je dodati atribute koji će se primeniti na sve proizvode unutar odabrane kategorije.
 
-![slika](../assets/Artikli/SifraNovo.png)
+![slika](../../assets/Artikli/SifraNovo.png)
 
 Kako bi se artikli filtrirali prema atributu, potrebno je na listi artikala koristiti putanju **Atributi -> Filtriraj prema atributima**.
 
-![slika](../assets/Artikli/Filter.png)
+![slika](../../assets/Artikli/Filter.png)
 
 Moguće je postaviti više atributa istovremeno za preciznije filtriranje.
 
-![slika](../assets/Artikli/Filter2.png)
+![slika](../../assets/Artikli/Filter2.png)
 
 Filteri se uklanjaju klikom na **Ukloni filter atributa**.
 
-![slika](../assets/Artikli/FilterUkloni.png)
+![slika](../../assets/Artikli/FilterUkloni.png)
 
 ## **Varijante artikla**
 
@@ -304,11 +304,11 @@ koji imaju varijacije, poput različitih boja ili veličina. Umesto kreiranja sv
 
 Kako bi se za artikal postavile različite varijante, potrebno je na kartici artikla izabrati **Povezano -> Artikal -> Varijante**.
 
-![slika](../assets/Artikli/Varijante.png)
+![slika](../../assets/Artikli/Varijante.png)
 
 Otvoriće se stranica na kojoj se za svaku varijantu unose **Šifra** i **Opis**.
 
-![slika](../assets/Artikli/VarijanteBoje.png)
+![slika](../../assets/Artikli/VarijanteBoje.png)
 
 Moguće je dodati prevode varijanti na druge jezike putem **Prikaži ostalo -> Prevodi**.
 
@@ -317,18 +317,18 @@ Kada se artikal primi sa unetom šifrom varijante, knjiženjem se u stavkama ana
 
 Za artikle koji imaju definisane varijante, moguće je proveriti raspoloživost po varijantama putem **Artikial -> Raspoloživost artikla po -> Varijanta**.
 
-![slika](../assets/Artikli/Raspolozivost.png)
+![slika](../../assets/Artikli/Raspolozivost.png)
 
 Pregled Raspoloživosti po varijanti : 
 
-![slika](../assets/Artikli/Raspolozivost2.png)
+![slika](../../assets/Artikli/Raspolozivost2.png)
 
 ## **Stavke**
 
 Kako biste videli sve stavke vezane za određeni artikal, potrebno je izabrati **Povezano -> Istorija -> Stavke**.
 
-![slika](../assets/Artikli/Stavke.png)
+![slika](../../assets/Artikli/Stavke.png)
 
 Ova akcija prikazuje prozor sa svim proknjiženim dokumentima povezanim sa tim artiklom, uključujući promene na zalihama, brojeve dokumenata, datume i vrednosti.
 
-![slika](../assets/Artikli/Stavke2.png)
+![slika](../../assets/Artikli/Stavke2.png)
