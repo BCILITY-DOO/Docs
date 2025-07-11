@@ -11,7 +11,7 @@ Proveru zaliha u sistemu moguće je izvršiti na nekoliko načina. U ovom uputst
 
 Jedan od načina je pregled liste artikala, gde kolona **Zalihe** prikazuje ukupnu zalihu određenog artikla u sistemu.  
 
-![zalihe](../assets/Zalihe/Zalihe1.png)
+![zalihe](../../assets/Zalihe/Zalihe1.png)
 
 Kolona **Zalihe** predstavlja sumu svih stavki analitike artikla. Pored ukupne zalihe, putem analitike možemo pristupiti i dodatnim podacima kao što su:  
 
@@ -22,7 +22,7 @@ Kolona **Zalihe** predstavlja sumu svih stavki analitike artikla. Pored ukupne z
 
 Jedan od najlakših načina za pregled stavki analitike dostupne količine je otvaranje stranice sa filterom **Otvoreno = DA**. Ovaj filter prikazuje sve stavke koje su trenutno dostupne, ali treba imati na umu da iste stavke mogu biti rezervisane, zbog čega je važno pratiti i kolonu **Rezervisana količina**.  
 
-![zalihe](../assets/Zalihe/Zalihe2.png)
+![zalihe](../../assets/Zalihe/Zalihe2.png)
 
 Ako želite saznati koliko određenog artikla imate na pojedinim dokumentima, tu informaciju možete pronaći na **kartici artikla**, u brzoj kartici **Zalihe**.  
 
@@ -30,7 +30,7 @@ Za svako od prikazanih polja moguće je dobiti detaljan pregled količine tako �
 
 Na primer, ako želite videti količinu na redovima nabavne porudžbine, klikom na broj prikazaće se dokumenti na kojima se ta zaliha nalazi.  
 
-![zalihe](../assets/Zalihe/Zalihe3.png)
+![zalihe](../../assets/Zalihe/Zalihe3.png)
 
 Još jedan način za pregled trenutne zalihe je korišćenjem alatne trake:  
 **Artikal → Raspoloživost artikla po** (sa liste ili kartice artikla).  
@@ -46,7 +46,7 @@ Ova opcija omogućava različite prikaze zalihe, uključujući:
 
 Ovi prikazi omogućavaju detaljan uvid u stanje zaliha i njihovu dostupnost u različitim kontekstima.  
 
-![zalihe](../assets/Zalihe/Zalihe4.png)
+![zalihe](../../assets/Zalihe/Zalihe4.png)
 
 ## **2. Prebacivanje zaliha na drugu lokaciju**
 
@@ -74,7 +74,7 @@ Ako se koristi tranzit, proces se odvija u dva koraka:
 
 Listu svih kreiranih naloga za prenos koji još nisu obrađeni možete pronaći unosom **"nalozi za prenos"** u pretragu. Svaki korisnik vidi samo naloge koji se odnose na magacine za koje je zadužen.  
 
-![zalihe](../assets/Zalihe/Zalihe5.png)
+![zalihe](../../assets/Zalihe/Zalihe5.png)
 
 ### **2.1 Kreiranje naloga za prenos**
 
@@ -86,7 +86,7 @@ Prilikom kreiranja **Naloga za prenos**, određena polja se automatski ili ručn
 - **Šifra u tranzitu** – Tranzitna lokacija na kojoj se artikli nalaze od trenutka isporuke sa izvorne lokacije do prijema na odredište.  
 - **Datum knjiženja** – Datum pod kojim se kreira nalog za prenos.  
 
-![zalihe](../assets/Zalihe/Zalihe6.png)
+![zalihe](../../assets/Zalihe/Zalihe6.png)
 
 U okviru redova **Naloga za prenos** unose se podaci o artiklima koji se prenose:  
 
@@ -105,15 +105,15 @@ Ove datume možete uneti direktno u redovima naloga ili u okviru brzih tabova **
 
 Kada ste popunili nalog za prenos relevantnim podacima, možete izvršiti evidentiranje istog u sistemu. U okviru komandne trake izaberite akciju *Proknjiži*, a potom *Isporuči*. 
 
-![zalihe](../assets/Zalihe/Zalihe10.png)
+![zalihe](../../assets/Zalihe/Zalihe10.png)
 
-![zalihe](../assets/Zalihe/Zalihe7.png)
+![zalihe](../../assets/Zalihe/Zalihe7.png)
 
 Pokretanjem ove akcije, polje **Status** će dobiti vrednost **Izdato**, nakon čega polja na nalogu za prenos više neće biti moguće menjati.  
 
 Takođe, primetićete da su se podaci u okviru redova naloga izmenili, kao što je prikazano na slici:  
 
-![zalihe](../assets/Zalihe/Zalihe11.png)
+![zalihe](../../assets/Zalihe/Zalihe11.png)
 
 Možemo primetiti da je planirana količina za isporuku u potpunosti realizovana, što znači da je potrebno izvršiti prijem iste količine.  
 
@@ -121,11 +121,11 @@ Da biste to uradili, ponovo izaberite akciju **Proknjiži** u okviru komandne tr
 
 > **Napomena:** Ako pokušate da izaberete opciju **Isporuči**, sistem će vas obavestiti da nema preostale količine za isporuku.  
 
-![zalihe](../assets/Zalihe/Zalihe8.png)
+![zalihe](../../assets/Zalihe/Zalihe8.png)
 
 Nakon što potvrdimo ovu akciju, pojaviće se sledeće obaveštenje:
 
-![zalihe](../assets/Zalihe/Zalihe9.png)
+![zalihe](../../assets/Zalihe/Zalihe9.png)
 
 Nakon što je **nalog za prenos** u potpunosti realizovan, on više neće biti prisutan na listi **otvorenih** i **izdatih naloga za prenos**.  
 
@@ -143,7 +143,7 @@ Još jedan način prenosa zaliha na drugu lokaciju jeste korišćenje **naloga p
 
 Za ovu vrstu prenosa potrebno je samo popuniti odgovarajuće kolone i proknjižiti nalog.  
 
-![zalihe](../assets/Zalihe/Zalihe12.png)
+![zalihe](../../assets/Zalihe/Zalihe12.png)
 
 S obzirom da se radi o nalogu, ne postoji nikakav dokument koji ćete imati nakon knjiženja, jedino stavke glavne knjige te stavke analitike artikla. 
 
@@ -155,7 +155,7 @@ Za knjiženje naloga poput naloga manjka, viška, promene šifre artikla i korek
 
 Obrasce naloga artikla možemo da otvorimo ukoliko u pretrazi ukucamo obrasci naloga artikla. Nakon otvaranja prikazaće nam se svi obrasci koje smo do sada kreirali.
 
-![zalihe](../assets/Zalihe/Zalihe13.png)
+![zalihe](../../assets/Zalihe/Zalihe13.png)
 
 1. Stanite u kolonu **Ime** i pritisnite dugme **Novo**.  
 2. U polje **Ime** unesite oznaku obrasca naloga artikla koji kreirate.  
@@ -165,7 +165,7 @@ Obrasce naloga artikla možemo da otvorimo ukoliko u pretrazi ukucamo obrasci na
 
 Nakon što popunite ova polja, budite i dalje pozicionirani u istom redu i kliknite na dugme **Grupe**, kako biste mogli da vidite koje su grupe naloga povezane sa ovim nalogom artikla.  
 
-![zalihe](../assets/Zalihe/Zalihe14.png)
+![zalihe](../../assets/Zalihe/Zalihe14.png)
 
 ### **4.2 Nalog artikla**
 
