@@ -1,4 +1,4 @@
-# Mogućnosti Business Central-a
+# Standardne funkcionalnosti
 
 **Microsoft Dynamics 365 Business Central** je integrisano poslovno rešenje posebno dizajnirano za mala i srednja preduzeća. Automatizuje i pojednostavljuje ključne poslovne procese, omogućavajući efikasno upravljanje svim segmentima poslovanja, uključujući finansije, nabavku, prodaju, skladištenje i proizvodnju, uz fleksibilnost cloud tehnologije koja omogućava lak pristup i skalabilnost.
 
