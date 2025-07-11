@@ -1,4 +1,4 @@
-# Podešavanja POS stranice
+# Podešavanja fiskalne kase
 
 ## **1. Podešavanje poreske fiskalizacije u RS**
 
