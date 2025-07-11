@@ -1,4 +1,4 @@
-# POS kasa
+# Fiskalna kasa
 
 ## **1. Uputstvo za korišćenje kase**
 
