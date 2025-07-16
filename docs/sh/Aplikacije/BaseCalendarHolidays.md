@@ -1,6 +1,6 @@
 # Base Calendar Holidays
 
-**Base Calendar Holidays** je dodatak za Dynamics 365 Business Central razvijen od strane kompanije **Bcility**, koji omogućava korisnicima jednostavan uvoz praznika u osnovne kalendare sistema. Aplikacija je namenjena firmama koje koriste kalendare za planiranje radnih dana, resursa ili proizvodnih procesa, i žele da automatski popune neradne dane (državni praznici) bez manuelnog unosa.
+**Base Calendar Holidays** je dodatak za Dynamics 365 Business Central razvijen od strane kompanije **BCILITY**, koji omogućava korisnicima jednostavan uvoz praznika u osnovne kalendare sistema. Aplikacija je namenjena firmama koje koriste kalendare za planiranje radnih dana, resursa ili proizvodnih procesa, i žele da automatski popune neradne dane (državni praznici) bez manuelnog unosa.
 
 Korišćenjem ovog dodatka, štedi se vreme i izbegavaju se greške koje mogu nastati pri ručnom kreiranju prazničnih dana u kalendarima.
 
