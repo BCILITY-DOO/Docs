@@ -11,21 +11,9 @@ Ovaj dodatak je idealan za firme koje žele da imaju brzu evidenciju važnih fin
 - Podrška za prilagođena imena priloga ili automatsko generisanje naziva
 - Jednostavan korisnički interfejs u okviru postojećih stranica kao što su „Kupci“ („Customers“)
   
-## **1. Instalacija**
+## **1. Kako se koristi?**
 
-Aplikaciju možemo preuzeti tako što pretražimo *Upravljanje ekstenzijama* -> *AppSource galerija*, gde će nam se otvoriti prozor *Microsoft AppSource aplikacije*, ili možemo direktno pretražiti *Microsoft AppSource aplikacije*. 
-
-Na toj stranici u *Search* možemo da pretražimo *Report to Attachment*.
-
-![RepToAttach](../assets/Aplikacije/RepToAttach/report1.png)
-
-Odaberemo opciju *Pogledaj na AppSource* gde će nam se otvoriti novi prozor gde odaberemo opciju *Get it now*.
-
-![RepToAttach](../assets/Aplikacije/RepToAttach/report2.png)
-
-## **2. Kako se koristi?**
-
-### **2.1 Kreiranje jednog izveštaja**
+### **1.1 Kreiranje jednog izveštaja**
 
 U Business Central okruženju otvorimo karticu *Kupci*. Sa desne strane u odeljku *Prilozi*, kliknemo na *Dokumenti* -> *Prikaži detalje*
 
@@ -41,7 +29,7 @@ Kada potvrdimo akciju, izaberemo ime nove datoteke - izveštaja i kliknemo *U re
 
 ![RepToAttach](../assets/Aplikacije/RepToAttach/report6.png)
 
-### **2.2 Kreiranje više izveštaja odjednom**
+### **1.2 Kreiranje više izveštaja odjednom**
 
 Kada odaberemo akciju **Kreiraj izveštaje kao prilog** i otvori se prozor gde biramo koje izveštaje želimo da pretvorimo u prilog, možemo izabrati više izveštaja odjednom tako što ćemo, klikom na 3 tačke na liniji izveštaja, izabrati opciju *Izaberi još*.
 
