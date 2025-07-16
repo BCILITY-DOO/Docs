@@ -2,7 +2,7 @@
 
 Dynamics 365 Business Central omogućava fleksibilno licenciranje u skladu sa različitim poslovnim potrebama. Pravilnim odabirom između Essentials, Premium, Device i Team Members licenci, kompanije mogu optimizovati troškove i efikasnost korišćenja sistema.
 
-Ovaj dokument obuhvata tri osnovna tipa licenci dostupnih u Dynamics 365 Business Central sistemu:
+Ovaj dokument obuhvata četiri osnovna tipa licenci dostupnih u Dynamics 365 Business Central sistemu:
 
 - Essentials
 - Premium
