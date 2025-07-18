@@ -21,12 +21,59 @@ To make an item available in WooCommerce:
 
 ![WooEN](../../assets/WooCommEn/wooen4.png)
 
+#### **1.1.1 Pictures**
+
+On the Item card we have a section *Pictures*, where we can open Picture URLs, and get them into order we want, so when we publish item to WooCommerce, the pictures will be shown in the wanted order. We also have the preview of the pictures right beside the URLs.
+> Pictures must be in order before publishing.
+
+![WooEN](../../assets/WooCommEn/wooen10.png)
+
+#### **1.1.2 Item Attributes**
+
+On the Item Card, there is a section called Item Attributes, which displays the specifications of the item such as manufacturer, power, model, and other relevant details. This list of attributes can be customized and modified according to your needs.
+
+![WooEN](../../assets/WooCommEn/wooen14.png)
+
+Additionally, there is a dedicated Attributes page where all item attributes are managed. At the top of this page, you will find the actions Send Attribute to WooCommerce and Send All Attributes to WooCommerce, which allow you to synchronize individual or all attributes with your WooCommerce store.
+
+![WooEN](../../assets/WooCommEn/wooen15.png)
+
+#### **1.1.3 Item Categories**
+
+For seamless integration between Business Central and WooCommerce, it is essential that every item in Business Central is assigned to a specific category. Proper categorization ensures accurate synchronization of products, improves organization, and facilitates efficient management of inventory and sales data on both platforms.
+
+We can assign a category to Item on *Item card* from a list of *Item Categories* made in advance.
+
+![WooEN](../../assets/WooCommEn/wooen11.png)
+
+List of *Item Categories* is made of *Parent* and *Child* categories, which we can manually send to WooCommerce.
+
+![WooEN](../../assets/WooCommEn/wooen16.png)
+
+#### **1.1.4 Prices**
+
+Prices of items are managed primarily in Business Central and synchronized automatically to WooCommerce to ensure consistency across both systems. Any price changes made in Business Central will be reflected in WooCommerce during the next synchronization cycle.
+
+The integration supports standard sales prices as well as special prices, discounts, and promotional pricing defined in Business Central. However, it is important to configure pricing rules correctly within Business Central to avoid conflicts or incorrect price display on the WooCommerce store.
+
+![WooEN](../../assets/WooCommEn/wooen12.png)
+
+#### **1.1.5 Inventory**
+
+The inventory synchronization between Business Central and WooCommerce is handled by an automated batch job named ***Sync Vendor Inventory on Items***. This job runs at predefined intervals, typically scheduled within the Job Queue Entries in Business Central, and ensures that stock quantities in WooCommerce accurately reflect the real-time inventory levels managed in Business Central.
+
+By running this batch job regularly, businesses can maintain up-to-date stock availability on their WooCommerce store without manual intervention, reducing the risk of overselling or stock discrepancies. Proper configuration of the job schedule is essential to meet the desired frequency of updates and ensure smooth inventory management across both systems.
+
+![WooEN](../../assets/WooCommEn/wooen13.png)
+
 Once published, the item is created or updated in WooCommerce with all mapped information, including:
+
 - Item name and description
 - Inventory quantity
-- Images (if set up)
+- Images 
 - Price (based on defined pricing rules)
 - Categories and attributes
+
 
 > If **Auto Sync** is enabled (in WooSetup), publishing can happen automatically upon changes to the item.
 
