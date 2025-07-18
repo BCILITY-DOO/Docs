@@ -351,7 +351,9 @@ This section outlines both the **setup fields** and the **available actions** fo
   Defines the default POS Unit
 
 **Additional settings:**
-
+- **Allow Update Woo ID**
+  When enabled allows WooCommerce changes manually on Item, Attributes, Categories, etc. cards.
+  
 - **Maximum weight**
   Specifies the allowed maximum weight of items published on WooCommerce.
 
