@@ -1,0 +1,83 @@
+<pmtnotification>
+  <notificationtype>ibank.payment.notification.ledger</notificationtype>
+  <status>
+    <code>0</code>
+    <severity>INFO</severity>
+    <details>
+    </details>
+  </status>
+  <curdef>RSD</curdef>
+  <acctid>155-0000000088160-49</acctid>
+  <stmtnumber>22</stmtnumber>
+  <ledgerbal>
+    <balamt>34777.63</balamt>
+    <dtasof>2024-11-21T00:00:00</dtasof>
+  </ledgerbal>
+  <availbal>
+    <balamt>209777.63</balamt>
+    <dtasof>2024-11-21T00:00:00</dtasof>
+  </availbal>
+  <extension>
+    <headercomment />
+    <footercomment>POVERLJIVO (Procedura BBI-630-102)</footercomment>
+    <headerdetails>
+      <intem order="" label="" value="" />
+    </headerdetails>
+  </extension>
+  <reservedfunds>0.00</reservedfunds>
+  <overdraftremaining>0.00</overdraftremaining>
+  <overdraftused>
+  </overdraftused>
+  <directdebitreserved>0.00</directdebitreserved>
+  <projectedavail>209777.63</projectedavail>
+  <overdraft>
+    <amount>
+    </amount>
+    <dtasof>
+    </dtasof>
+    <dtasto>
+    </dtasto>
+  </overdraft>
+  <trnlist count="1">
+    <stmttrn>
+      <trntype>ibank.payment.pp3</trntype>
+      <fitid>087004018384872</fitid>
+      <trnuid>
+      </trnuid>
+      <benefit>credit</benefit>
+      <payeeinfo>
+        <name>BCILITY DOO, 1OKTOBRA 12, 1OKTOBRA 12,</name>
+        <city>ČAČAK</city>
+      </payeeinfo>
+      <payeeaccountinfo>
+        <acctid>265-3030310001535-53</acctid>
+        <bankid>265</bankid>
+        <bankname>RAIFFEISENBANK A.D. BEOGRAD</bankname>
+      </payeeaccountinfo>
+      <dtposted>2024-11-21T00:00:00</dtposted>
+      <trnamt>175000.00</trnamt>
+      <purpose>Prenos izmedju sopstvenih racuna</purpose>
+      <purposecode>263</purposecode>
+      <curdef>RSD</curdef>
+      <payeerefnumber>
+      </payeerefnumber>
+      <trnplace>RAIFFEISENBANK A.D. BEOGRAD</trnplace>
+      <dtuser>2024-11-21T00:00:00</dtuser>
+      <dtavail>2024-11-21T00:00:00</dtavail>
+      <refnumber>
+      </refnumber>
+      <refmodel>
+      </refmodel>
+      <payeerefmodel>
+      </payeerefmodel>
+      <urgency>ACH</urgency>
+      <fee>0.00</fee>
+      <statusinfo>
+        <code>80</code>
+        <timeposted>2024-11-21T16:12:15</timeposted>
+      </statusinfo>
+    </stmttrn>
+  </trnlist>
+  <rejected count="0">
+  </rejected>
+</pmtnotification>
