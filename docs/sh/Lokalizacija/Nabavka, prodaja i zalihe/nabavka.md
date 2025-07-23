@@ -6,7 +6,7 @@ Modul nabavke u Microsoft Dynamics 365 Business Central omogućava upravljanje c
 
 Kartica **Podešavanje nabavke i dugovanja** u Microsoft Dynamics 365 Business Central sadrži ključna podešavanja potrebna za pravilno funkcionisanje procesa nabavke. Slično karticama artikla, kupca i dobavljača, i ova kartica je organizovana u nekoliko brzih kartica, gde su podešavanja grupisana radi bolje preglednosti. Detaljan prikaz možete videti na slici ispod.
 
-![pod-nabav](../assets/nabavka/Nabavka1.png)
+![pod-nabav](../../assets/nabavka/Nabavka1.png)
 
 ### **1.1 Opšte**  
 Ova brza kartica omogućava podešavanje osnovnih parametara za nabavku, uključujući:  
@@ -50,7 +50,7 @@ Ova podešavanja omogućavaju efikasno praćenje i upravljanje procesima nabavke
 
 Sledeći dokumenti se koriste za evidentiranje nabavnih transakcija u Microsoft Dynamics 365 Business Central programu:
 
-![pod-nabav](../assets/nabavka/Nabavka2.png)
+![pod-nabav](../../assets/nabavka/Nabavka2.png)
 
 Proces nabavke započinje unosom **Ponude za nabavku** ili **Okvirnih nabavnih porudžbina**, koje mogu biti pretvorene u **Nabavnu porudžbinu**. Kada se izvrši knjiženje prijema na porudžbini, nastaje *prijemnica nabavke*, čime se povećava količina artikala na zalihama. Knjiženjem *ulazne fakture* proknjižava se faktura, a ažuriraju se podaci na kartici dobavljača, informacije o artiklu i račun GK. Na kraju, knjiženjem uplate dobavljaču vrši se ažuriranje kartice dobavljača i računa GK.
 
@@ -76,7 +76,7 @@ Za odabranu vrstu u redu ponude moguće je uneti dodatne informacije kao što su
 
 U nastavku je prikazan primer ponude za nabavku sa jednim artiklom i količinom od 10 komada.
 
-![pod-nabav](../assets/nabavka/Nabavka3.png)
+![pod-nabav](../../assets/nabavka/Nabavka3.png)
 
 Kada su cena, stanje i način plaćanja usaglašeni s dobavljačem, nabavka se može konvertovati u narudžbenicu izborom akcije **"Napravi porudžbinu"**.  
 
@@ -98,7 +98,7 @@ Struktura **Okvirne nabavne porudžbine** slična je **Ponudi za nabavku**, jer 
 
 Prikaz okvirne porudžbenice:
 
-![pod-nabav](../assets/nabavka/Nabavka4.png)
+![pod-nabav](../../assets/nabavka/Nabavka4.png)
 
 Knjiženjem **Nabavne porudžbine** nastalih iz **Okvirne nabavne porudžbine**, lako se može pratiti njihov status.  
 
@@ -125,7 +125,7 @@ Za kreiranje nove nabavne porudžbine:
 
 Kartica nabavne porudžbine prikazana je na slici ispod:
 
-![pod-nabav](../assets/nabavka/Nabavka5.png)
+![pod-nabav](../../assets/nabavka/Nabavka5.png)
 
 ***Struktura nabavne porudžbine***  
 
@@ -181,11 +181,11 @@ Postupak kreiranja:
 2. U otvorenom prozoru unesite željenu količinu za nabavku.  
 3. Kliknite **"U redu"**, čime se kreira nova nabavna porudžbina.  
 
-![pod-nabav](../assets/nabavka/Nabavka6.png)
+![pod-nabav](../../assets/nabavka/Nabavka6.png)
 
 Pojaviće se prozor na kom je potrebno uneti željenog dobavljača i količinu za nabavku 
 
-![pod-nabav](../assets/nabavka/Nabavka7.png)
+![pod-nabav](../../assets/nabavka/Nabavka7.png)
 
 U dnu prozora nalazi se dugme **U redu**, klikom na to dugme biće kreirana ***Nabavna porudžbina***.
 
@@ -202,7 +202,7 @@ Osim fakturisanja pojedinačne porudžbine, nabavna faktura omogućava i fakturi
 Za dodavanje stavki iz više prijemnica koristi se funkcija:  
 **Red > Funkcije > Učitaj redove prijemnice…**  
 
-![pod-nabav](../assets/nabavka/Nabavka8.png)
+![pod-nabav](../../assets/nabavka/Nabavka8.png)
 
 #### **2.4.2 Fakturisanje sa nabavne porudžbine**  
 
@@ -225,7 +225,7 @@ Za pravilan unos redova koristi se funkcija:
 
 Klikom na ovu funkciju otvara se prozor sa prikazom **svih primljenih artikala** od dobavljača navedenog u zaglavlju fakture, koji **još nisu fakturisani**.
 
-![pod-nabav](../assets/nabavka/Nabavka9.png)
+![pod-nabav](../../assets/nabavka/Nabavka9.png)
 
 Potrebno je označiti sve one redove proknjiženih prijemnica nabavke za koje je potrebno knjižiti fakturu.
 
@@ -313,11 +313,11 @@ Klikom na akciju otvara se prozor s redovima proknjiženih dokumenata. Moguće o
 - **Proknjižene otpremnice povrata**  
 - **Proknjižena odobrenja**  
 
-![pod-nabav](../assets/nabavka/Nabavka10.png)
+![pod-nabav](../../assets/nabavka/Nabavka10.png)
 
 Potrebno je označiti sve one redove koje je potrebno stornirati, odnosno za koje će se napraviti povrat dobavljaču. Potvrdom će se popuniti redovi naloga za povrat kupljene robe s referencama na brojeve proknjiženih faktura i nabavnih prijemnica: 
 
-![pod-nabav](../assets/nabavka/Nabavka11.png)
+![pod-nabav](../../assets/nabavka/Nabavka11.png)
 
 #### **2.5.5 Nabavno odobrenje**
 
@@ -347,7 +347,7 @@ Kako bi se uključile ispravne informacije sa ulazne fakture, postoji nekoliko o
 
 Kreiranje novog ulaznog odobrenja direktno iz proknjižene ulazne fakture koja još nije plaćena moguće je klikom na akciju **"Storniraj"**. Ova akcija kreira i proknjižuje ulazno odobrenje koje će **stornirati proknjiženu ulaznu fakturu**.  
 
-![pod-nabav](../assets/nabavka/Nabavka12.png)
+![pod-nabav](../../assets/nabavka/Nabavka12.png)
 
 ***Otkazivanje i ispravljanje ulaznih faktura***
 
@@ -363,7 +363,7 @@ Ručno kreiranje novog ulaznog odobrenja moguće je klikom na **Novo** na listi 
   - **Ručno** ili
   - Koristeći neku od dostupnih funkcija
 
-![pod-nabav](../assets/nabavka/Nabavka13.png)
+![pod-nabav](../../assets/nabavka/Nabavka13.png)
 
 ## **3. Nabavne cene**
 
@@ -379,17 +379,17 @@ U programu **Microsoft Dynamics 365 Business Central** moguće je postaviti **na
 
 Nabavna cena definiše se u polju **Direktni trošak po jedinici**.
 
-![pod-nabav](../assets/nabavka/Nabavka14.png)
+![pod-nabav](../../assets/nabavka/Nabavka14.png)
 
 ### **3.1 Unos nabavnih cena**
 
 Nabavne cene mogu se uneti sa liste artikala za označeni artikl ili sa kartice artikla. Potrebno je kliknuti na traci akcija na Cene i popusti -> Nabavne cene.
 
-![pod-nabav](../assets/nabavka/Nabavka15.png)
+![pod-nabav](../../assets/nabavka/Nabavka15.png)
 
 Nabavne cene moguće je postaviti i preko kartice dobavljača (Cene i popusti -> Cene): 
 
-![pod-nabav](../assets/nabavka/Nabavka16.png)
+![pod-nabav](../../assets/nabavka/Nabavka16.png)
 
 ***Postavljanje nabavnih cena za dobavljače***
 
@@ -406,7 +406,7 @@ Ako za dobavljača postoji više postavljenih nabavnih cena, program **Microsoft
 
 Nakon unosa artikla u red nabavnog dokumenta za dobavljača koji ima postavljenu nabavnu cenu, moguće je proveriti sve nabavne cene na činjeničnom okviru u delu **Detalji reda nabavke**.
 
-![pod-nabav](../assets/nabavka/Nabavka17.png)
+![pod-nabav](../../assets/nabavka/Nabavka17.png)
 
 Kada je vrednost polja "nabavna cena" jednak 1 ili više, možemo klikom na taj broj otvoriti prozor sa poljima Br. dobavljača, Br. artikla, Direktan trošak po jedinici, tako da na ovaj način referent nabavke može da proveri sve nabavne cene za dobavljača, može sačekati nekoliko dana ako primeti da će tada cena biti niža, ili može nabaviti veću količinu ako je za bolju nabavnu cenu definisana minimalna količina koju je potrebno nabaviti da bi vredela niža cena. 
 
@@ -429,11 +429,11 @@ Popust na red biće upisan u redove nabavke ako postoji određena kombinacija do
 
 Podešavanje popusta na red je vrlo slično podešavanju nabavnih cena. Može se postaviti preko kartice artikla, klikom na **Cene i popusti -> Pregled nabavnih cena i popusta/Nabavni popusti**.
 
-![pod-nabav](../assets/nabavka/Nabavka18.png)
+![pod-nabav](../../assets/nabavka/Nabavka18.png)
 
 Takođe, na kartici "Dobavljači", klikom na *Cene i popusti* -> Popusti na redove
 
-![pod-nabav](../assets/nabavka/Nabavka19.png)
+![pod-nabav](../../assets/nabavka/Nabavka19.png)
 
 Klikom na akciju Popusti na redove otvara se prozor na kojem je za kombinaciju dobavljača i artikla moguće uneti popust na red nabavke u polje % popusta na red s dodatnim uslovima poput minimalne količine, jedinice mere ili početnog / krajnjeg datuma.  
 
@@ -441,11 +441,11 @@ Klikom na akciju Popusti na redove otvara se prozor na kojem je za kombinaciju d
 
 Kada su popusti na red postavljeni, sistem ih automatski primenjuje ako su ispunjeni uslovi, pri čemu se koristi najveći dostupni popust. Nakon unosa artikla u nabavku, popuste je moguće proveriti u činjeničnom okviru.
 
-![pod-nabav](../assets/nabavka/Nabavka20.png)
+![pod-nabav](../../assets/nabavka/Nabavka20.png)
 
 Na slici iznad vidljivo je da za ovu kombinaciju artikla i dobavljača postoji definisan 1 popusta na red nabavke. Klikom na vrednost 1, otvara se prozor s detaljnim prikazom popusta na red nabavke: 
 
-![pod-nabav](../assets/nabavka/Nabavka21.png)
+![pod-nabav](../../assets/nabavka/Nabavka21.png)
 
 #### **3.3.4 Popusti na fakturu**
 
@@ -455,11 +455,11 @@ Druga vrsta popusta u nabavci je popust na fakturu. Kod popusta na fakturu proce
 
 Popust na fakturu moguće je postaviti s kartice dobavljača (Povezano -> Nabavka -> Popusti na fakturu) i primenjuje se na fakture za dobavljača: 
 
-![pod-nabav](../assets/nabavka/Nabavka22.png)
+![pod-nabav](../../assets/nabavka/Nabavka22.png)
 
 Klikom na akciju "Popusti na fakture" otvara se prozor gde se definišu procenti popusta na fakture za dobavljače. Popust na fakturu upisuje se u polje % popusta: 
 
-![pod-nabav](../assets/nabavka/Nabavka23.png)
+![pod-nabav](../../assets/nabavka/Nabavka23.png)
 
 Prilikom kreiranja novog dobavljača, polje „Šifra popusta na fakturu“ na brzoj kartici "Fakturisanje", automatski se popunjava brojem dobavljača. Ovo omogućava brzo dodeljivanje postojećeg popusta izborom šifre drugog dobavljača sa istim uslovima.
 
@@ -467,7 +467,7 @@ Prilikom kreiranja novog dobavljača, polje „Šifra popusta na fakturu“ na b
 
 Dodavanjem artikala u nabavni dokument povećava se ukupan iznos fakture. Ako je opcija "Proračun popusta na fakturu" uključena u podešavanjima, sistem će automatski obračunati popust kada iznos dokumenta pređe definisani prag.
 
-![pod-nabav](../assets/nabavka/Nabavka24.png)
+![pod-nabav](../../assets/nabavka/Nabavka24.png)
 
 ## **4. Troškovi artikla u nabavci** 
 
@@ -477,7 +477,7 @@ Troškovi povezani s artiklima obuhvataju špediciju, carinu, transport, ambala�
 
 Kada su troškovi povezani s nabavkom artikala, potrebno ih je uključiti u vrednovanje zaliha i obračun troškova prodate robe. Moguće je definisati različite vrste troškova artikala kako bi se preciznije razlikovali troškovni elementi, što poboljšava analizu troškova i statistiku prodaje.
 
-![pod-nabav](../assets/nabavka/Nabavka25.png)
+![pod-nabav](../../assets/nabavka/Nabavka25.png)
 
 Poput artikla, trošak artikla takođe mora imati Opštu knjižnu grupu proizvoda i Grupa knjiženja proizvoda za PDV. Njihova kombinacija određuje račun glavne knjige na koji se knjiži trošak artikla. Nakon što se postave troškovi artikla, mogu se koristiti na redovima nabavnih i prodajnih dokumenata. 
 
@@ -490,11 +490,11 @@ Trošak artikla može se dodeliti na dva načina:
 
 Kada se trošak artikla dodeljuje direktno na nabavnom dokumentu, potrebno je dodati novi red i kao **Vrstu** izabrati **Trošak (artikal)**. Za ovaj red treba uneti vrednosti u polja **Količina** i **Direktni jedinični trošak**. Nakon toga, potrebno je selektovati red s troškom i izabrati opciju **Red -> Dodela troška artikla**.
 
-![pod-nabav](../assets/nabavka/Nabavka26.png)
+![pod-nabav](../../assets/nabavka/Nabavka26.png)
 
 Klikom na "Dodela troška artikla", otvara se prozor za raspodelu troškova artikala na kojoj su prikazani redovi narudžbenice s artiklima. Business Central nudi raspodelu troškova artikala na redove narudžbenice funkcijom "Predloži" dodelu troška artikla… (preko dugmeta Trošak artikla): 
 
-![pod-nabav](../assets/nabavka/Nabavka27.png)
+![pod-nabav](../../assets/nabavka/Nabavka27.png)
 
 Klikom na funkciju "Predloži dodelu troška artikla…" otvara se prozor s opcijama raspodele troška: 
 
@@ -503,7 +503,7 @@ Klikom na funkciju "Predloži dodelu troška artikla…" otvara se prozor s opci
 &nbsp;&nbsp;- Po težini – trošak artikla dodeljen je prema zbiru težina artikala definisanih na kartici svakog artikla. 
 &nbsp;&nbsp;- Po volumenu – trošak artikla dodeljen je prema zbiru volumena artikala definisanih na kartici svakog artikla. 
 
- ![pod-nabav](../assets/nabavka/Nabavka28.png)
+ ![pod-nabav](../../assets/nabavka/Nabavka28.png)
 
 Odabirom jedne od opcija, na primer "Po iznosu", sistem će na redovima popuniti polja *"Kol. za dodelu"* i *"Iznos za dodelu"*. 
 
@@ -515,15 +515,15 @@ Trošak artikla može se dodeliti i putem zasebne ***fakture***. U ovom slučaju
 
 Ako se ovako kreirana ulazna faktura pokuša proknjižiti bez prethodne dodele troška artikla, sistem će prikazati grešku. Da bi se trošak pravilno dodelio, potrebno je selektovati red s troškom, zatim iz menija odabrati Red -> Povezane informacije-> ***"Dodela troška artikla"***. 
 
-![pod-nabav](../assets/nabavka/Nabavka29.png)
+![pod-nabav](../../assets/nabavka/Nabavka29.png)
 
 Kada se otvori prozor biramo opciju ***"Učitaj redove prijemnice"***
 
-![pod-nabav](../assets/nabavka/Nabavka30.png)
+![pod-nabav](../../assets/nabavka/Nabavka30.png)
 
 Otvoriće se redovi priznanice nabavke. Potrebno je označiti sve redove za koje se želi vezati trošak artikla i kliknuti *U redu*. 
 
-![pod-nabav](../assets/nabavka/Nabavka31.png)
+![pod-nabav](../../assets/nabavka/Nabavka31.png)
 
 Nakon potvrde, na stranici za dodelu troška artikla prikazaće se samo prethodno označeni redovi. Kao i u ranijem primeru, potrebno je kliknuti na opciju Predloži dodelu troška artikla, odabrati jednu od ponuđenih metoda raspodele i potvrditi klikom na U redu. Time će se trošak ravnomerno raspodeliti po odgovarajućim redovima dokumenta.
 
