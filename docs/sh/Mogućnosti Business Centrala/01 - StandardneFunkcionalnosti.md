@@ -2,7 +2,7 @@
 
 **Microsoft Dynamics 365 Business Central** je integrisano poslovno rešenje posebno dizajnirano za mala i srednja preduzeća. Automatizuje i pojednostavljuje ključne poslovne procese, omogućavajući efikasno upravljanje svim segmentima poslovanja, uključujući finansije, nabavku, prodaju, skladištenje i proizvodnju, uz fleksibilnost cloud tehnologije koja omogućava lak pristup i skalabilnost.
 
-![slika](assets/BCmogucnosti/start.png)
+![slika](../../assets/BCmogucnosti/start.png)
 
 ## **Upravljanje finansijama** 
 
@@ -88,7 +88,7 @@ odluke na temelju konkretnih podataka.
 Modul nabavke u Business Central-u omogućava efikasno upravljanje nabavnim procesima, kao i praćenje troškova nabavke i zaduženja prema dobavljačima. 
 Pomoću ovog modula preduzeća mogu da kontrolišu zalihe, prate nabavne fakture i vrše automatske usklađivanje sa potraživanjima i obavezama prema dobavljačima.
 
-![slika](assets/BCmogucnosti/dobavljaci.png)
+![slika](../../assets/BCmogucnosti/dobavljaci.png)
 
 ### Funkcionalnosti
 
@@ -98,7 +98,7 @@ Ova funkcionalnost omogućava kreiranje i praćenje svih nabavnih narudžbina i 
 Podržava parcijalni prijem robe, što omogućava primanje proizvoda u više isporuka prema dogovoru sa dobavljačem. 
 Takođe, uključuje direktne isporuke od dobavljača do kupca (drop shipping), čime se eliminiše potreba za skladištenjem robe. 
 
-![slika](assets/BCmogucnosti/faktura.png)
+![slika](../../assets/BCmogucnosti/faktura.png)
 
 **Upravljanje povratom nabavke**
 
@@ -155,7 +155,7 @@ Praćenje interakcija sa kupcima omogućava bolje upravljanje poslovnim odnosima
 Ugrađena email integracija u Business Central omogućava lako i brzo slanje prodajnih ponuda kupcima i kontaktima putem opcije "Pošalji putem Email-a" direktno 
 sa prodajnih ponuda. Dolazni i odlazni emailovi se automatski loguju u sistemu, čime je lakše povezati ih sa relevantnim dokumentima i poslovnim procesima.
 
-![slika](assets/BCmogucnosti/kupci.png)
+![slika](../../assets/BCmogucnosti/kupci.png)
 
 **Upravljanje prodajom, isporukama i fakturisanjem**
 
@@ -183,7 +183,7 @@ U Business Central, funkcionalnosti vezane za upravljanje inventarom omogućavaj
 optimizuju proces distribucije. Ovaj modul pruža alate koji omogućavaju računanje troškova, poboljšanje tačnosti podataka o inventaru, kao i bolju 
 analizu i izveštavanje. Svi ovi aspekti omogućavaju preduzećima da efikasno upravljaju svojim resursima, smanjuju gubitke i optimizuju poslovne procese.
 
-![slika](assets/BCmogucnosti/artikli.png)
+![slika](../../assets/BCmogucnosti/artikli.png)
 
 ### Upravljanje inventarom
 
@@ -241,7 +241,7 @@ Modul upravljanja projektima u Business Central omogućava efikasno planiranje, 
 za alokaciju resursa, praćenje troškova, fakturisanje i analizu performansi. Ovaj modul olakšava rad projektnih timova i poboljšava profitabilnost projekata kroz 
 automatsko praćenje svih relevantnih podataka.
 
-![slika](assets/BCmogucnosti/projekti.png)
+![slika](../../assets/BCmogucnosti/projekti.png)
 
 ### Upravljanje resursima
 
@@ -341,7 +341,7 @@ Sistem omogućava fleksibilnu konfiguraciju skladišnih procesa u skladu sa potr
 - Automatsko ažuriranje bin sadržaja putem dokumenata.
 - Podešavanje podrazumevanih ili fiksnih binova za bržu obradu.
 
-![slika](assets/BCmogucnosti/skladiste.png)
+![slika](../../assets/BCmogucnosti/skladiste.png)
 
 **Podešavanje binova**
 
