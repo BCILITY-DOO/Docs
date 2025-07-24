@@ -92,6 +92,8 @@ Ukoliko aktiviramo ovu opciju, nakon što proknjižimo pretplatu, možemo da otv
 
 ![subs](../../assets/SubscriptionBilling/subscription10.png)
 
+Mesečne naknade ostaju nerealizovane, sve dok mi ne pokrenemo realizaciju. To možemo da postignemo pokretanjem **Subscription Contract Deferrals Release**, gde kada se otvori stranica unesemo u sekciji *Options* datume (Posting Date i Post Until Date). Nakon potvrde, mesečne naknade iz tog perioda će biti realizovane. 
+
 ---
 
 ## **6. Proširenje ugovora (Extend Subscription Contract)**
