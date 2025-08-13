@@ -50,7 +50,7 @@ Avansno odobrenje primljeno od dobavljača knjiži se putem dokumenta *Nabavno o
 
 Nakon što primimo konačni račun, knjižimo ga po standardnoj proceduri.
 
-### **2.5 Pregnjižavanje konta**
+### **2.5 Preknjižavanje konta**
 
 U zavisnosti od razlike između iznosa na konačnoj fakturi i avansne uplate, potrebno je izvršiti preknjižavanje sa konta na kojem je evidentirana avansna uplata na konto dobavljača.  
 
