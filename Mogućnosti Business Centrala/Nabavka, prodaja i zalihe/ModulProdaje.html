@@ -1,0 +1,3022 @@
+
+<!doctype html>
+<html lang="sh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="Kupci.html">
+      
+      
+        <link rel="next" href="Zalihe.html">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>Modul prodaje - BCILITY DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../overrides/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modul-prodaje" class="md-skip">
+          Idi na tekst
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
+    <a href="../../index.html" title="BCILITY DOCS" class="md-header__button md-logo" aria-label="BCILITY DOCS" data-md-component="logo">
+      
+  <img src="/assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BCILITY DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modul prodaje
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Izaberi jezik">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="ModulProdaje.html" hreflang="sh" class="md-select__link">
+              Srpski
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Pretraga" placeholder="Pretraga" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pretraga">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Očisti" aria-label="Očisti" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicijalizujem pretragu
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabovi" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dobrodošli u BCILITY dokumentaciju
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Aplikacije/01%20-%20BcilityAplikacije.html" class="md-tabs__link">
+          
+  
+  
+  Aplikacije
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Lokalizacija/FiskalniNF.html" class="md-tabs__link">
+          
+  
+  
+  Lokalizacija
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Maloprodaja/01%20-%20Bizerba.html" class="md-tabs__link">
+          
+  
+  
+  Maloprodaja
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01%20-%20StandardneFunkcionalnosti.html" class="md-tabs__link">
+          
+  
+  
+  Mogućnosti Business Centrala
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Webshop/Woo-BC-funkcionalnost.html" class="md-tabs__link">
+          
+  
+  
+  Webshop
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigacija" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="BCILITY DOCS" class="md-nav__button md-logo" aria-label="BCILITY DOCS" data-md-component="logo">
+      
+  <img src="/assets/logo.png" alt="logo">
+
+    </a>
+    BCILITY DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dobrodošli u BCILITY dokumentaciju
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Aplikacije
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Aplikacije
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/01%20-%20BcilityAplikacije.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BCILITY aplikacije za Dynamics 365 Business Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/BaseCalendarHolidays.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Base Calendar Holidays
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/DragDrop.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Drag and Drop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/LicenseManagement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/MadatoryFields.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mandatory Fields
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/PDFAttachMerge.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PDF Attachment Merge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/PDFView.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PDF Viewer Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/PriceHistory.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Price History
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Aplikacije/RepToAttach.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Report to Attachment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lokalizacija
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lokalizacija
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/FiskalniNF.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fiskalni URL za ulaznu fakturu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Avansi
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Avansi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/Avansi/AvansNabavka.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avansi u nabavci (dati avansi)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/Avansi/AvansProdaja.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avansi u prodaji (primljeni avansi)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Banke
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Banke
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/Banke/NBS.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integracija sa Narodnom Bankom Srbije
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/Banke/NalogPlacanjeRaiff.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nalog za plaćanje Raiffeisen banka
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/Banke/uvoz_izvoda.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Uvoz bankovnih izvoda
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    POPDV
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            POPDV
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/POPDV/DokumentaKnjizenje.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dokumenta i nalog knjiženja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Lokalizacija/POPDV/UnosPodataka.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Unos podataka u POPDV obrazac
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Maloprodaja
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Maloprodaja
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Maloprodaja/01%20-%20Bizerba.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integracija sa vagama u maloprodaji
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Maloprodaja/02%20-%20PopisArtikala.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Popis inventara
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fiskalna kasa
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fiskalna kasa
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Maloprodaja/Fiskalna%20kasa/00%20-%20FiskalnaKasa.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fiskalna kasa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Maloprodaja/Fiskalna%20kasa/01%20-%20PodesavanjaFiskalneKase.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Podešavanja fiskalne kase
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mogućnosti Business Centrala
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mogućnosti Business Centrala
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01%20-%20StandardneFunkcionalnosti.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Standardne funkcionalnosti
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02%20-%20licencebc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipovi licenci
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03%20-%20Odsustvo.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Odsustvo zaposlenih
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Kurirske Službe
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Kurirske Službe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kurirske%20Slu%C5%BEbe/cityexpress.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    City Express integracija
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kurirske%20Slu%C5%BEbe/dexpress.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DExpress Integracija
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Nabavka, prodaja i zalihe
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Nabavka, prodaja i zalihe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Artikli.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artikli
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dobavljaci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dobavljači
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Kupci.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kupci
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Modul prodaje
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ModulProdaje.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modul prodaje
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-podesavanje-prodaje-i-potrazivanje" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Podešavanje prodaje i potraživanje
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rezervacija-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Rezervacija artikla
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Rezervacija artikla">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-alokacija-zaliha-i-rezervacija-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Alokacija zaliha i rezervacija artikla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-opcije-u-polju-rezervisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Opcije u polju "Rezerviši"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proces-prodaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Proces prodaje
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Proces prodaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-proces-prodaje-u-dynamics-365-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Proces prodaje u Dynamics 365 Business Central
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-okvirna-prodajna-porudzbina" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Okvirna prodajna porudžbina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-prodajna-ponuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Prodajna ponuda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-prodajna-porudzbina" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Prodajna porudžbina
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Prodajna porudžbina">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-direktna-isporuka" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 Direktna isporuka
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-prodajna-faktura" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Prodajna faktura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-povrati-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Povrati u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Povrati u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-nalog-za-povracaj-prodatog" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6.1 Nalog za povraćaj prodatog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-prodajno-odobrenje" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6.2 Prodajno odobrenje
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-opoziv-isporuke" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Opoziv isporuke
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-prodajne-cene" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Prodajne cene
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Prodajne cene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-podesavanje-prodajnih-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Podešavanje prodajnih cena
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-upotreba-prodajnih-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Upotreba prodajnih cena
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-popusti-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Popusti u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Popusti u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-popusti-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Popusti na red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Popusti na red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-postavka-popusta-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Postavka popusta na red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-upotreba-popusta-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Upotreba popusta na red
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-popusti-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Popusti na fakturu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Popusti na fakturu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-podesavanje-popusta-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Podešavanje popusta na fakturu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-upotreba-popusta-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Upotreba popusta na fakturu
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-troskovi-artikla-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Troškovi artikla u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Troškovi artikla u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-podesavanje-troska-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Podešavanje troška artikla
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dodela-troska-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dodela troška artikla
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Zalihe.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modul zaliha
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="nabavka.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modul nabavke
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Webshop
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Webshop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Webshop/Woo-BC-funkcionalnost.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Korisničko uputstvo za funcionalnu integraciju WooCommerce i Business Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-podesavanje-prodaje-i-potrazivanje" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Podešavanje prodaje i potraživanje
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-rezervacija-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Rezervacija artikla
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Rezervacija artikla">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-alokacija-zaliha-i-rezervacija-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Alokacija zaliha i rezervacija artikla
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-opcije-u-polju-rezervisi" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Opcije u polju "Rezerviši"
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-proces-prodaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Proces prodaje
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Proces prodaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-proces-prodaje-u-dynamics-365-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Proces prodaje u Dynamics 365 Business Central
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-okvirna-prodajna-porudzbina" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Okvirna prodajna porudžbina
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-prodajna-ponuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Prodajna ponuda
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-prodajna-porudzbina" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Prodajna porudžbina
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Prodajna porudžbina">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-direktna-isporuka" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 Direktna isporuka
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-prodajna-faktura" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Prodajna faktura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-povrati-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Povrati u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.6 Povrati u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#361-nalog-za-povracaj-prodatog" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6.1 Nalog za povraćaj prodatog
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#362-prodajno-odobrenje" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6.2 Prodajno odobrenje
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-opoziv-isporuke" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Opoziv isporuke
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-prodajne-cene" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Prodajne cene
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Prodajne cene">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-podesavanje-prodajnih-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Podešavanje prodajnih cena
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-upotreba-prodajnih-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Upotreba prodajnih cena
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-popusti-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Popusti u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Popusti u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-popusti-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Popusti na red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.1 Popusti na red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#511-postavka-popusta-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.1 Postavka popusta na red
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#512-upotreba-popusta-na-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1.2 Upotreba popusta na red
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-popusti-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 Popusti na fakturu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Popusti na fakturu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-podesavanje-popusta-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Podešavanje popusta na fakturu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-upotreba-popusta-na-fakturu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Upotreba popusta na fakturu
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-troskovi-artikla-u-prodaji" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Troškovi artikla u prodaji
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Troškovi artikla u prodaji">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-podesavanje-troska-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Podešavanje troška artikla
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-dodela-troska-artikla" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Dodela troška artikla
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="modul-prodaje"><strong>Modul prodaje</strong></h1>
+<p>Modul prodaje u programu Microsoft Dynamics 365 Business Central omogućava praćenje celokupnog procesa prodaje robe kupcima. Ovaj modul obuhvata upravljanje informacijama o artiklima, kupcima, kontaktima i različitim prodajnim dokumentima, uključujući prodajne ponude, naloge za prodaju, izlazne fakture i odobrenja.</p>
+<p>Pored osnovnih funkcionalnosti, modul omogućava i praćenje prodajnih naloga, analiza prodaje i izveštaja, čime se obezbeđuje potpuna kontrola nad procesom prodaje. Da bi sistem ispravno pratio sve relevantne informacije, neophodno je unapred definisati odgovarajuće postavke, uključujući konfiguraciju kupaca, uslove prodaje, načine plaćanja i pravila knjiženja.</p>
+<h2 id="1-podesavanje-prodaje-i-potrazivanje"><strong>1. Podešavanje prodaje i potraživanje</strong></h2>
+<p>Na kartici <strong>Postavka prodaje i potraživanja</strong> nalaze se ključne postavke potrebne za ispravno funkcionisanje procesa prodaje u programu <strong>Microsoft Dynamics 365 Business Central</strong>. Ova kartica, slično karticama <strong>artikla, kupca i dobavljača</strong>, organizovana je u više <strong>brzih kartica</strong> koje grupišu srodne postavke radi lakšeg pregleda i podešavanja.</p>
+<p><strong>Brze kartice i njihove funkcije</strong>  </p>
+<p>Brze kartice sadrže postavke koje utiču na različite aspekte prodaje, uključujući:</p>
+<ul>
+<li><strong>Opšte postavke</strong> – osnovni parametri prodaje i potraživanja  </li>
+<li><strong>Plaćanja i uslovi prodaje</strong> – definisanje načina i rokova plaćanja  </li>
+<li><strong>Knjiženje i računi</strong> – pravila knjiženja i povezivanje s finansijskim kontima  </li>
+<li><strong>Odobrenja i limiti kredita</strong> – kontrola dugovanja kupaca i proces odobravanja prodajnih dokumenata  </li>
+</ul>
+<p>Ove postavke omogućavaju precizno prilagođavanje sistema poslovnim potrebama, osiguravajući tačnost i doslednost u prodajnim transakcijama.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja1.png" /></p>
+<p>Brze kartice i polja na Podešavanju prodaje i potraživanja detaljnije su opisane u nastavku.</p>
+<p><strong><em>Opšte</em></strong></p>
+<p>Na brzoj kartici "Opšte" mogu se postaviti sledeća polja:</p>
+<ul>
+<li><strong>Knjiženje popusta</strong> – određuje vrstu popusta nabavke za zasebno knjiženje:</li>
+<li><strong>Bez popusta</strong>: popusti se neće zasebno knjižiti, oduzeće se pre knjiženja (na računskom planu se neće videti iznos popusta).</li>
+<li><strong>Popust na fakturu</strong>: istovremeno će se knjižiti popust na fakturu i iznos fakture (na računskom planu će se videti iznos popusta).</li>
+<li><strong>Popust na red</strong>: istovremeno će se knjižiti popust na red i iznos fakture (na računskom planu će se videti iznos popusta).</li>
+<li>
+<p><strong>Svi popusti</strong>: istovremeno će se knjižiti popusti na red i fakturu, kao i iznos fakture (na računskom planu će se videti oba iznosa popusta).</p>
+</li>
+<li>
+<p><strong>Upozorenje o kreditnom limitu</strong> – određuje da li će biti upozorenje o statusu kupca prilikom izrade prodajnog naloga ili fakture:</p>
+</li>
+<li><strong>Kreditni limit</strong></li>
+<li><strong>Dospeli saldo</strong></li>
+<li><strong>Oba upozorenja</strong></li>
+<li>
+<p><strong>Bez upozorenja</strong></p>
+</li>
+<li>
+<p><strong>Otpremnica uz fakturu (DA/NE)</strong> – određuje da li se knjiženjem fakture automatski kreiraju proknjižena otpremnica i proknjižena faktura.</p>
+</li>
+<li>
+<p><strong>Zaokruživanje iznosa fakture (DA/NE)</strong> – određuje da li se iznosi zaokružuju za izlazne fakture.</p>
+</li>
+<li>
+<p><strong>Kopiraj ime kupca u stavke (DA/NE)</strong> – određuje da li će ime kupca sa kartice biti kopirano prilikom knjiženja na stavke analitike kupaca.</p>
+</li>
+<li>
+<p><strong>Obavezan broj spoljnog dokumenta (DA/NE)</strong> – određuje da li je obavezno uneti broj spoljnog dokumenta na zaglavlju prodaje.</p>
+</li>
+<li>
+<p><strong>Zatvaranje valuta</strong> – određuje u kojoj meri je dopušteno zatvaranje uplata kupca u različitim valutama:</p>
+</li>
+<li><strong>Nema</strong> – sve stavke uključene u zatvaranje moraju biti u istoj valuti.</li>
+<li><strong>EMU</strong> – mogu se zatvoriti stavke u eurima, kao i u nekim od starih nacionalnih valuta (za države u kojima je euro).</li>
+<li>
+<p><strong>Sve</strong> – mogu se međusobno zatvarati stavke u različitim valutama.</p>
+</li>
+<li>
+<p><strong>Obavezni tačni troškovi provračaja (DA/NE)</strong> – označava da se povratna transakcija ne može knjižiti osim ako polje Izvorna stavka artikla za zatvaranje na redu prodajne porudžbine sadrži stavku.</p>
+</li>
+<li>
+<p><strong>Provera akontacije/avansa kod knjiženja (DA/NE)</strong> – označava da se ne može otpremiti ili fakturisati nalog koji ima neplaćeni iznos avansa.</p>
+</li>
+<li>
+<p><strong>Podrazumevani datum knjiženja</strong> – određuje kako se koristi Datum knjiženja na prodajnim dokumentima:</p>
+</li>
+<li><strong>Datum obrade</strong> – u polju Datum knjiženja biće zadat Datum obrade.</li>
+<li>
+<p><strong>Nema datuma</strong> – polje Datum knjiženja biće prazno i biće ručno uneseno pre knjiženja.</p>
+</li>
+<li>
+<p><strong>Podrazumevana količina za otpremu</strong> – označava zadatu vrednost koja je unesena u polje Količina za otpremu u redu naloga za prodaju.</p>
+</li>
+<li>
+<p><strong>Kopiraj opis reda u stavke GK</strong> – određuje da li će se kopirati opis sa redova dokumenta vrste Račun GK na stavke GK.</p>
+</li>
+</ul>
+<p><strong><em>Dimenzije</em></strong></p>
+<p>Na brzoj kartici "Dimenzije" moguće je definisati dimenzije koje će se koristiti za grupe kupaca i za prodavce u izveštajima analize prodaje.</p>
+<p><strong><em>Brojčane serije</em></strong></p>
+<p>Na brzoj kartici "Brojčane serije" moguće je postaviti brojčane serije koje će se koristiti za matične podatke i dokumente unutar modula prodaje.</p>
+<p><strong><em>Pozadina knjiženja</em></strong></p>
+<p>Ako poslovni procesi zahtevaju pozadinsko knjiženje, na ovoj brzoj kartici može se postaviti za prodajne dokumente.</p>
+<p><strong><em>Arhiviranje</em></strong></p>
+<p>Na brzoj kartici "Arhiviranje" moguće je postaviti koji prodajni dokumenti će se arhivirati.</p>
+<h2 id="2-rezervacija-artikla"><strong>2. Rezervacija artikla</strong></h2>
+<h3 id="21-alokacija-zaliha-i-rezervacija-artikla"><strong>2.1 Alokacija zaliha i rezervacija artikla</strong></h3>
+<p>Kada je nabavka artikla ograničena, potrebno je alocirati postojeću ili buduću zalihu za određeni red naloga za prodaju. Alokacijom artikla moguće je sprečiti upotrebu zaliha u druge svrhe i osigurati da se porudžbina kupca može otpremiti na planirani datum otpreme.</p>
+<p>U programu <strong>Microsoft Dynamics 365 Business Central</strong>, ova se alokacija vrši kroz <strong>rezervacije artikla</strong>. Od svih vrsta prodaje na redovima prodaje, moguće je rezervisati samo artikle.</p>
+<p>Opcija rezervacije artikla zavisi pre svega od podešavanja u polju <strong>Rezerviši</strong> na kartici artikla (brza kartica "Planiranje") i na kartici kupca, gde je moguće odrediti pravila na osnovu artikla ili određenog kupca.</p>
+<p>Postavka na kartici artikla:</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja2.png" /></p>
+<p>Postavka na kartici kupca:</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja3.png" /></p>
+<h3 id="22-opcije-u-polju-rezervisi"><strong>2.2 Opcije u polju "Rezerviši"</strong></h3>
+<p>Opcije koje je moguće odabrati u polju <strong>Rezerviši</strong> su:</p>
+<ul>
+<li><strong>Nikad</strong>: artikal se ne može rezervisati.</li>
+<li><strong>Po izboru</strong>: sistem ne rezerviše stavku automatski, ali se može rezervisati ručno.</li>
+<li><strong>Uvek</strong>: artikal se uvek rezerviše.</li>
+</ul>
+<p>U procesu prodaje moguće je rezervisati artikle za naloge za prodaju, ali ih je moguće rezervisati i u <strong>Nabavnim porudžbinama</strong>, <strong>servisnim nalozima</strong>, <strong>nalogima za montažu</strong> i <strong>radnim nalozima</strong>.</p>
+<p>Moguće je rezervisati artikle na zalihama ili očekivane ulazne artikle na otvorenim redovima dokumenata ili naloga. </p>
+<p>Za rezervaciju artikala potrebno je otvoriti stranicu <strong>Rezervacija</strong>. To se može uraditi s prodajne porudžbine na sledeći način:</p>
+<ol>
+<li>Kliknite na <strong>Red</strong>.</li>
+<li>Zatim odaberite <strong>Funkcije</strong>.</li>
+<li>Izaberite <strong>Rezerviši</strong>.</li>
+</ol>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja4.png" /></p>
+<p>Svaki red na stranici <em>Rezervacija</em> prikazuje podatke o jednoj vrsti reda (prodaja, nabavka, naloga) ili stavke artikla. Redovi opisuju koliko artikala je dostupno za rezervisanje za svaku vrstu reda ili stavke. Stranica <em>Rezervacija</em> omogućuje rezervaciju, izmenu ili otkazivanje rezervacije. </p>
+<p>Prikaz stranice <em>Rezervacija</em>: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja5.png" /></p>
+<h2 id="3-proces-prodaje"><strong>3. Proces prodaje</strong></h2>
+<p>Dokumenti za evidenciju prodajnih transakcija u Dynamics 365 Business Central</p>
+<p>U programu <strong>Microsoft Dynamics 365 Business Central</strong> u modulu prodaje koriste se sledeći dokumenti za evidentiranje prodajnih transakcija:</p>
+<ul>
+<li><strong>Prodajna ponuda</strong></li>
+<li><strong>Okvirna prodajna porudžbina</strong></li>
+<li><strong>Prodajna porudžbina</strong></li>
+<li><strong>Izlazna faktura</strong></li>
+<li><strong>Proknjižena izlazna faktura</strong></li>
+<li><strong>Proknjižena isporuka</strong></li>
+<li><strong>Izlazno odobrenje</strong></li>
+<li><strong>Nalog za povrat prodatog</strong></li>
+<li><strong>Proknjiženo izlazno odobrenje</strong></li>
+<li><strong>Proknjižena prijemnica povrata</strong></li>
+</ul>
+<h3 id="31-proces-prodaje-u-dynamics-365-business-central"><strong>3.1 Proces prodaje u Dynamics 365 Business Central</strong></h3>
+<p>Proces prodaje može početi od <strong>prodajne ponude</strong> ili <strong>okvirne prodajne porudžbine</strong>, koje se mogu pretvoriti u <strong>Prodajnu porudžbinu</strong>.</p>
+<ol>
+<li><strong>Knjiženje isporuke</strong> na prodajnoj porudžbini rezultira <strong>proknjiženom isporukom</strong>, čime se smanjuje količina artikla na zalihi.</li>
+<li><strong>Knjiženje fakture</strong> stvara <strong>proknjiženu izlaznu fakturu</strong>, koja ažurira podatke na kartici kupca, ažurira artikle i ažurira račun GK.</li>
+<li><strong>Knjiženje uplate kupca</strong> ažurira karticu kupca i račun GK.</li>
+</ol>
+<p>Na redove dokumenata prodaje u sistemu, u polje <strong>Vrsta</strong>, mogu se odabrati sledeći entiteti za koje se knjiži prodaja:</p>
+<ul>
+<li><strong>Artikal</strong> – standardni artikli poput robe, sirovina, gotovih proizvoda ili usluga poput konsultacija.</li>
+<li><strong>Resurs</strong> – osoba ili mašina.</li>
+<li><strong>Osnovna sredstva</strong> – za prodaju osnovnih sredstava i sitnog inventara.</li>
+<li><strong>Trošak (artikal)</strong> – dodatni troškovi u prodajnom procesu radi ispravnog vrednovanja zaliha, poput troška prevoza.</li>
+<li><strong>Račun GK</strong> – za knjiženje svih drugih nerazvrstanih ishoda.</li>
+</ul>
+<p>Iako je moguće odabrati pet vrsta prodaje, najčešće se koriste <strong>artikli</strong> i <strong>resursi</strong>.</p>
+<p>U nastavku su detaljnije pojašnjeni dokumenti u prodaji.</p>
+<h3 id="32-okvirna-prodajna-porudzbina"><strong>3.2 Okvirna prodajna porudžbina</strong></h3>
+<p><strong>Okvirna prodajna porudžbina</strong> je dokument koji ne utiče na proračun raspoloživosti artikala. Često se koristi u svrhu <strong>ugovora</strong>, gde se sa kupcem dogovore određeni artikli i količina, a potom se, zavisno od uslova, vrši isporuka tih artikala.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja6.png" /></p>
+<p>Kada iz okvirnog naloga za prodaju kreiramo nalog za prodaju, potrebno je u polje Kol. za isporuku uneti podatak za koju količinu želite kreirati dokument (u ovom primer 1 komada), što se radi na alatnoj traci Početak -&gt; Napravi porudžbinu.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja7.png" /></p>
+<p>Kreirana prodajna porudžbina se dalje po redovnoj proceduri isporučuje i fakturiše. Nakon završenog knjiženja na okvirnoj prodajnoj porudžbini se u polju <em>Isporučena količina</em> može videti informacija o tome koliko je već isporučeno i preostalo: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja8.png" /></p>
+<h3 id="33-prodajna-ponuda"><strong>3.3 Prodajna ponuda</strong></h3>
+<p>Osim <strong>okvirne prodajne porudžbine</strong>, moguće je kreirati <strong>prodajnu ponudu</strong> kao informativni dokument kupcu koji je zainteresovan za određene artikle.</p>
+<p>U redove prodajne ponude upisuju se:</p>
+<ul>
+<li>Artikli</li>
+<li>Osnovna sredstva</li>
+<li>Računi GK</li>
+<li>Resursi</li>
+<li>Troškovi artikla</li>
+</ul>
+<p>Za odabranu vrstu u redu moguće je uneti dodatne podatke, kao što su:</p>
+<ul>
+<li>Količina</li>
+<li>Šifra lokacije s koje će se knjižiti otprema</li>
+<li>Jedinica mere</li>
+<li>Jedinični trošak</li>
+<li>Popust na red, itd.</li>
+</ul>
+<p>Ako kupac pristane na prodajnu ponudu i uslove koji su na njoj, a koji se još uvek mogu promeniti, dokument se prebacuje iz ponude u nalog klikom na akciju <strong>Napravi porudžbinu</strong>. Celi dokument se zatim prebacuje u <strong>Prodajnu porudžbinu</strong>, koja se potom može knjižiti.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja9.png" /></p>
+<h3 id="34-prodajna-porudzbina"><strong>3.4 Prodajna porudžbina</strong></h3>
+<p>Kao i prethodna dva dokumenta, <strong>prodajna porudžbina</strong> se sastoji od <strong>zaglavlja</strong> i <strong>redova</strong>, gde je zaglavlje podeljeno na više brzih kartica unutar kojih su polja relevantna za svaku karticu. Na brzoj kartici moguće je prikazati više polja klikom na <strong>Prikaži više</strong> i po potrebi popuniti podatke u tim poljima.</p>
+<p>Ako je proces započet iz prodajne ponude i ista prebačena u naloge za prodaju, potrebno je proveriti da li su svi podaci ispravni ili je potrebno nešto promeniti (npr. način plaćanja, uslov plaćanja itd.). U redovima se može promeniti količina ili, ako želimo delimičnu isporuku, možemo promeniti polje <strong>Kol. za isporuku</strong> ili <strong>Kol. za fakturisanje</strong> ako se radi o fakturisanju.</p>
+<p><strong>Nalog za prodaju</strong> je moguće knjižiti jednom od tri ponuđene opcije, klikom na akciju <strong>Proknjiži</strong> (ili <strong>Proknjiži i ispiši</strong>), a zatim se pojavljuje prozor sa sledećim opcijama:</p>
+<ul>
+<li>
+<p><strong>Isporuči</strong> – knjiži se samo isporuka artikla i to one količine definisane u polju <strong>Kol. za isporuku</strong>. Odabirom ove opcije na redovima se ažuriraju vrednosti u poljima <strong>Kol. za isporuku</strong> i <strong>Isporučena količina</strong>.</p>
+</li>
+<li>
+<p><strong>Fakturiši</strong> – knjiži se samo fakturisanje i to one količine definisane u polju <strong>Kol. za fakturisanje</strong>. Odabirom ove opcije na redovima se ažuriraju vrednosti u poljima <strong>Kol. za fakturisanje</strong> i <strong>Fakturisana količina</strong>. Nije moguće fakturisati veću količinu od one definisane u polju <strong>Isporučena količina</strong> i već fakturisane količine.</p>
+</li>
+<li>
+<p><strong>Isporuči i fakturiši</strong> – knjiži se i isporuka i fakturisanje. Odabirom ove opcije na redovima se ažuriraju vrednosti u poljima <strong>Kol. za isporuku</strong>, <strong>Isporučena količina</strong>, <strong>Kol. za fakturisanje</strong> i <strong>Fakturisana količina</strong>.</p>
+</li>
+</ul>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja10.png" /></p>
+<p>Knjiženjem <strong>otpreme</strong> nastaje dokument <strong>Proknjižena isporuka</strong>, dok knjiženjem <strong>fakturisanja</strong> nastaje dokument <strong>Proknjižena izlazna faktura</strong>, o čemu ćemo detaljnije govoriti u nastavku. </p>
+<p>Takođe, knjiženjem isporuka nastale su <strong>stavke analitike artikla</strong> i <strong>stavke vrednosti</strong>. Knjiženjem fakturisanja ažurira se stavka analitike artikla i nastaje nova stavka vrednosti sa stvarnim troškom. Isto tako, nastale su <strong>stavke GK</strong>, <strong>stavka PDV-a</strong>, i <strong>stavke analitike kupaca</strong>.</p>
+<p>Ako je knjiženjem isporuke i fakturisana celokupna količina sa prodajne porudžbine, isti dokument se smatra <strong>završenim</strong>. Sistem automatski briše dokument i arhivira ga ako je uključena opcija arhiviranja.</p>
+<h4 id="341-direktna-isporuka"><strong>3.4.1 Direktna isporuka</strong></h4>
+<p>Jedna od dodatnih mogućnosti knjiženja isporuke u sistemu je <strong>Direktna isporuka</strong>, gde se zapravo porudžbinom kupca kreira porudžbina od dobavljača. Taj isti dobavljač zatim isporučuje robu direktno kupcu.</p>
+<p>Nakon što se kreira <strong>prodajna porudžbina</strong> i unesu artikli, potrebno je artiklu za koji se vrši direktna isporuka označiti polje <strong>Direktna isporuka = DA</strong>.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja11.png" /></p>
+<p>Nakon toga se kreira <em>Nabavna porudžbina</em> te osim popunjavanja standardnih polja na zaglavlju (redove ne popunjavamo), potrebno je sledeće:<br />
+Na brzoj kartici <em>Isporuka i Plaćanje</em>, u polju <em>Isporuka</em> odabrati vrednost <em>Adresa kupca</em>, čime se prikazuje polje <em>Kupac</em> i u kojem je potrebno odabrati kupca za kojeg se radi isporuka. U ovom slučaju se radi o preduzeću kao kupcu.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja12.png" /></p>
+<p>Ako kupac ima definisanu <strong>šifru za isporuku</strong>, ona se može izabrati u polju <strong>Šifra primaoca isporuke</strong>. Ovaj podatak se takođe može uneti direktno na <strong>porudžbinu</strong>. </p>
+<p>Ako šifra primaoca nije definisana, koristiće se adresa koja je postavljena na <strong>kartici kupca</strong>.</p>
+<p>Nakon što se popune šifra kupca i adresa, potrebno je preko <strong>alatne trake</strong> učitati <strong>prodajnu porudžbinu</strong> za koju se vrši <strong>direktna isporuka</strong>.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja13.png" /></p>
+<p>Klikom na akciju <strong>Učitaj prodajnu porudžbinu</strong> prikazuju se sve otvorene prodajne porudžbine za definisanog kupca. Potrebno je odabrati onu za koju se vrši <strong>direktna isporuka</strong>. </p>
+<p>Ako nije jasno koji je broj porudžbine, preko akcije <strong>Kartica</strong> moguće je otvoriti dokument i proveriti njegove detalje.</p>
+<p>Takođe, ako u redovima prodajne porudžbine ne postoji artikal sa označenim poljem <strong>Direktna isporuka = DA</strong>, taj dokument neće moći da se odabere za direktnu isporuku.</p>
+<p>Odabirom dokumenta, popunjavaju se redovi na <em>Nabavnoj porudžbini</em> i za istu je onda moguće knjižiti prijem, što automatski knjiži i isporuku na <em>Prodajnoj porudžbini</em>. <em>Direktna isporuka</em> sa porudžbine ne može se istovremeno primiti i fakturisati. </p>
+<p>Fakturisanje se vrši iz Prodajne porudžbine, nakon što je fakturisana u potpunosti ona količina za koju se radila direktna isporuka, tek onda je moguće knjižiti ulaznu fakturu za povezanu porudžbinu.    </p>
+<h3 id="35-prodajna-faktura"><strong>3.5 Prodajna faktura</strong></h3>
+<p>Prodajna faktura se kreira na gotovo identičan način kao i <strong>Prodajna porudžbina</strong>. Koristi se u sledećim slučajevima:  </p>
+<ul>
+<li>Fakturisanje proknjiženih isporuka  </li>
+<li>Finansijsko knjiženje stavki koristeći <strong>Konto GK</strong> ili <strong>Osnovno sredstvo</strong> u redovima  </li>
+<li>Direktno knjiženje artikala sa izlazne fakture (u tom slučaju ne nastaje proknjižena izlazna otpremnica, osim ako nije drugačije podešeno u <strong>Podešavanju prodaje i potraživanja</strong>)  </li>
+<li>Zbirno fakturisanje, odnosno fakturisanje više isporuka  </li>
+</ul>
+<p><strong><em>Postupak kreiranja prodajne fakture</em></strong>  </p>
+<ol>
+<li><strong>Kreirati prodajnu fakturu</strong> i popuniti sva potrebna polja na zaglavlju fakture.  </li>
+<li><strong>Učitati redove isporuke</strong> klikom na opciju <strong>Učitaj redove isporuke</strong> u alatnoj traci redova.  </li>
+</ol>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja14.png" /></p>
+<p>Klikom na akciju, otvara se zasebna stranica s listom redova proknjiženih izlaznih otpremnica, gde je moguće odabrati za koji red se želi kreirati faktura.</p>
+<p>Ostatak procesa je identičan, gde je potrebno proveriti da li je sve u redu, eventualno promeniti cenu ili popust te knjižiti fakturu. 
+Osim što je izlaznu fakturu moguće kreirati na gore prikazan način, fakturu je moguće napraviti i direktno sa <em>Prodajne porudžbine</em> tako da se odabere opcija <em>Fakturiši</em> ili <em>Isporuči i fakturiši</em>, gde će se prema poljima <em>Kol. za isporuku</em> i <em>Kol. za fakturisanje</em> fakturisati količine. </p>
+<h3 id="36-povrati-u-prodaji"><strong>3.6 Povrati u prodaji</strong></h3>
+<p>Proces povrata u prodaji započinje kreiranjem <strong>Naloga za povrat prodate robe</strong>.  </p>
+<p><em>Koraci u procesu povrata</em>:  </p>
+<p><strong>Knjiženje zaprimanja povrata</strong><br />
+   - Nakon što se roba vrati, knjiži se prijem robe putem <strong>Naloga za povrat prodate robe</strong>.<br />
+   - Time nastaje <strong>Proknjižena prijemnica povrata</strong>.<br />
+   - Količina artikla na zalihama se povećava.  </p>
+<p><strong>Knjiženje odobrenja</strong><br />
+   - Nakon obrade povrata, izdaje se <strong>Proknjiženo izlazno odobrenje</strong>.<br />
+   - Ažuriraju se sledeći podaci:<br />
+    &nbsp;&nbsp; - Kartica kupca<br />
+    &nbsp;&nbsp; - Stanje artikla<br />
+    &nbsp;&nbsp; - Račun glavne knjige (GK)  </p>
+<p><strong>Knjiženje povrata novca kupcu</strong><br />
+   - Kada se izvrši povrat novca, sistem ažurira:<br />
+    &nbsp;&nbsp; - Karticu kupca<br />
+    &nbsp;&nbsp; - Račun GK  </p>
+<h4 id="361-nalog-za-povracaj-prodatog"><strong>3.6.1 Nalog za povraćaj prodatog</strong></h4>
+<p>U slučaju da kupac vraća artikle, taj poslovni događaj se registruje kreiranjem i knjiženjem <strong>Prodajnog povraćaja</strong>.  </p>
+<p><strong>Kreiranje Naloga za povrat prodate robe</strong><br />
+   - Dokument se kreira kako bi se evidentirao povrat artikala od kupca.  </p>
+<p><strong>Knjiženje Naloga za povrat prodate robe</strong><br />
+   - Knjiženjem ovog naloga nastaju:<br />
+    &nbsp;&nbsp; - <strong>Proknjiženo izlazno odobrenje</strong><br />
+    &nbsp;&nbsp; - <strong>Proknjižena prijemnica povrata</strong><br />
+   - Količina artikala na zalihama se povećava.  </p>
+<p><strong>Očuvanje originalnog troška povrata</strong><br />
+   - Kako bi se osiguralo da se povrat knjiži sa istim troškom, koristi se funkcija:<br />
+    &nbsp;&nbsp; - <strong>Učitaj redove proknjiženog dokumenta za obrtanje</strong><br />
+   - Ova funkcija omogućava učitavanje originalnih redova iz proknjiženog dokumenta prodaje, čime se osigurava da se vrednosti i troškovi povrata poklapaju sa originalnom prodajom.  </p>
+<p><strong>Knjiženje povrata novca kupcu</strong><br />
+   - Kada se izvrši povrat novca, sistem automatski ažurira:<br />
+    &nbsp;&nbsp; - <strong>Karticu kupca</strong><br />
+    &nbsp;&nbsp; - <strong>Račun glavne knjige (GK)</strong>  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja15.png" /></p>
+<p>Ova funkcija kopira redove s jednog ili više proknjiženih dokumenata kupca definisanog na zaglavlju. Klikom na akciju, otvara se prozor s redovima proknjiženih dokumenata one vrste koja se odabere u filteru. Moguće opcije su <em>Proknjižene otpremnice</em>, <em>Proknjižene fakture</em>, <em>Proknjižene prijemnice povrata</em> i <em>Proknjižena odobrenja</em>: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja16.png" /></p>
+<p>Na taj način, u redovima se popuni polje <em>Izvorna stavka artikla za zatvaranje</em>, čime se osigurava ispravan trošak artikla. Nakon toga, knjiži se prijem ili se prima i fakturiše, čime nastane i proknjiženo izlazno odobrenje. </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja17.png" /></p>
+<p>Ukoliko se vrši paćenja artikla ( po serijskom broju ili šarži ) taj podatak će biti vidljiv na redovima praćenja artikla.  </p>
+<h4 id="362-prodajno-odobrenje"><strong>3.6.2 Prodajno odobrenje</strong></h4>
+<p>Prodajno odobrenje se obično kreira u slučajevima kada kupcu želimo naknadno odobriti određeni popust zbog različitih razloga, kao što su:<br />
+- Oštećenje robe<br />
+- Nezadovoljstvo rokom isporuke<br />
+- Drugi opravdani razlozi  </p>
+<p><strong><em>Kreiranje prodajnog odobrenja</em></strong>  </p>
+<p><strong>Odabir vrste stavke u redovima odobrenja</strong><br />
+   - Ako je stavka <strong>artikal</strong>, tada će se artikal vratiti na stanje.<br />
+   - Ako se želi kupcu odobriti popust bez povrata artikla, koristi se:<br />
+     &nbsp;&nbsp; - <strong>Trošak (artikal)</strong> – ažurira se trošak artikla<br />
+     &nbsp;&nbsp; - <strong>Račun glavne knjige (GK)</strong>  </p>
+<p><strong>Metode kreiranja prodajnog odobrenja</strong><br />
+   - <strong>Direktno sa <em>Naloga za povrat prodate robe</em></strong><br />
+   - <strong>Korišćenjem funkcije <em>Učitaj redove prijemnica povraćaja</em></strong><br />
+     &nbsp;&nbsp; - Ova opcija je korisna kada postoji više prijemnica povraćaja i želi se napraviti jedno &nbsp;&nbsp;objedinjeno prodajno odobrenje.  </p>
+<p><strong>Knjiženje prodajnog odobrenja</strong><br />
+   - Nakon knjiženja, sistem automatski ažurira:<br />
+     &nbsp;&nbsp;- <strong>Karticu kupca</strong><br />
+     &nbsp;&nbsp;- <strong>Račun glavne knjige (GK)</strong><br />
+     &nbsp;&nbsp;- <strong>Stanje zaliha (ako je uključen artikal u odobrenju)</strong>  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja18.png" /></p>
+<p>Kao i kod naloga za povrat prodate robe, popunjavaju se redovi izlaznog odobrenja koje je onda potrebno knjižiti, čime će nastati proknjiženo izlazno odobrenje.   </p>
+<p>Osim toga, moguće je direktno sa same proknjižene izlazne fakture napraviti odobrenje tako što se koriste akcije na alatnoj traci pod trakom Ispravi &gt; Kreiraj korekciju odobrenja. </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja19.png" /></p>
+<h3 id="37-opoziv-isporuke"><strong>3.7 Opoziv isporuke</strong></h3>
+<p>Osim što se povrat može knjižiti koristeći gore navedene dokumente, u slučaju da ste određenu isporuku knjižili pogrešno a niste je još uvek fakturisali, istu možete stornirati na vrlo jednostavan način koristeći akciju Opozovi isporuku.  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja20.png" /></p>
+<p>Navedena akcija opoziva odabrani red , tako da ako se hoće poništiti cela isporuka, potrebno je označiti sve redove. Nakon što se proknjiži storno isporuke, u redovima iste otpremnice dodaće se novi red s negativnom količinom. </p>
+<h2 id="4-prodajne-cene"><strong>4. Prodajne cene</strong></h2>
+<p>U programu <strong>Microsoft Dynamics 365 Business Central</strong> moguće je definisati prodajne cene na nekoliko načina. Prodajne cene predstavljaju alternativne cene artikala na osnovu kombinacije <strong>broja artikla</strong> i <strong>dobavljača</strong>, uz sledeće kriterijume:  </p>
+<p><strong>Kriterijumi za određivanje prodajne cene</strong>  </p>
+<p>Svaka prodajna cena može biti definisana na osnovu:<br />
+- <strong>Šifre varijante</strong> – varijanta artikla u kojoj se prodaje<br />
+- <strong>Šifre JM (jedinica mere)</strong> – jedinica mere u kojoj se prodaje artikal<br />
+- <strong>Minimalne količine</strong> – najmanja količina potrebna za određenu cenu<br />
+- <strong>Početnog datuma</strong> – datum od kojeg cena postaje važeća<br />
+- <strong>Krajnjeg datuma</strong> – datum do kojeg cena važi<br />
+- <strong>Šifre valute</strong> – valuta u kojoj je cena izražena  </p>
+<p><strong>Unos prodajne cene</strong>  </p>
+<p>Prodajna cena artikla definiše se u polju <strong>Jedinična cena</strong>, koje određuje iznos po jedinici mere u izabranoj valuti.  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja21.png" /></p>
+<p><strong>Dodatne napomene</strong>  </p>
+<ul>
+<li>Sistem automatski primenjuje najpovoljniju cenu za kupca na osnovu definisanih kriterijuma.  </li>
+<li>Prodajne cene mogu se postaviti i kroz <strong>cenovne liste</strong> ili prilagođene <strong>cena ugovore</strong> sa kupcima.  </li>
+</ul>
+<h3 id="41-podesavanje-prodajnih-cena"><strong>4.1 Podešavanje prodajnih cena</strong></h3>
+<p>Prodajne cene mogu se postaviti s liste artikala za označeni artikal ili s kartice artikala. Potrebno je kliknuti na traci akcija na Cene i popusti -&gt; Prodajne cene.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja22.png" /></p>
+<p>Prodajne cene je moguće postaviti i preko kartice kupca. Na traci akcija kliknuti na Cene i popusti -&gt; Cene.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja23.png" /></p>
+<p>U Business Central-u prodajne cene mogu se definisati po kupcu, grupi kupaca, svim kupcima ili u okviru kampanje. Cena se određuje prema artiklu, varijanti, jedinici mere, minimalnoj količini, datumu važenja i valuti.  </p>
+<p>Ako se cena odnosi na grupu kupaca, potrebno je prvo kreirati cenovnu grupu i dodeliti je kupcima. Sistem automatski primenjuje najpovoljniju cenu, a cene se mogu postaviti i kroz cenovne liste ili ugovore.  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja24.png" /></p>
+<p>Zatim se redovi cena unose za navedeni cenovnik i artikle: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/prodaja25.png" /></p>
+<h3 id="42-upotreba-prodajnih-cena"><strong>4.2 Upotreba prodajnih cena</strong></h3>
+<p>Ako kupac ima više definisanih prodajnih cena, Microsoft Dynamics 365 Business Central automatski primenjuje najpovoljniju cenu, pod uslovom da su ispunjeni definisani kriterijumi.</p>
+<p>Napomena: Microsoft planira uvođenje nove funkcionalnosti koja će omogućiti izbor metode obračuna cene, pored trenutno važeće opcije "Najniža cena".</p>
+<p>Nakon unosa artikla u red prodajnog dokumenta za kupca koji ima postavljenu prodajnu cenu, moguće je proveriti sve prodajne cene na informacionom okviru pod <em>Detalji reda prodaje</em>: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja26.png" /></p>
+<p>Na slici iznad vidljivo je da za označeni red prodajnoj porudžbini postoji dve prodajna cena za tog kupca. Klikom na vrednost 2, otvara se prozor s redovima prodajnih cena: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja27.png" /></p>
+<p>Na ovaj način referent prodaje može proveriti sve prodajne cene za kupca, može pričekati nekoliko dana, može predložiti kupcu kupovinu veće količine ako će biti povoljnija cena.</p>
+<h2 id="5-popusti-u-prodaji"><strong>5. Popusti u prodaji</strong></h2>
+<p>U programu <strong>Microsoft Dynamics 365 Business Central</strong> popusti u prodaji funkcionišu slično kao prodajne cene i primenjuju se samo ako su ispunjeni određeni uslovi.  </p>
+<p>Postoje dve vrste popusta:  </p>
+<ul>
+<li><strong>Popusti na red</strong> – primenjuju se na pojedinačne stavke u prodajnom dokumentu.  </li>
+<li><strong>Popusti na fakturu</strong> – obračunavaju se na ukupnu vrednost fakture.  </li>
+</ul>
+<p>Kao i kod cena, sistem automatski bira najpovoljniju opciju za kupca na osnovu definisanih uslova.  </p>
+<h3 id="51-popusti-na-red"><strong>5.1 Popusti na red</strong></h3>
+<p><strong>Popusti na red</strong> primenjuju se na pojedinačne stavke u prodajnom dokumentu.  </p>
+<p>Iznos popusta biće automatski upisan u redove prodaje ako su ispunjeni sledeći uslovi:  </p>
+<ul>
+<li>Kupac odgovara definisanom popustu  </li>
+<li>Artikal je obuhvaćen popustom  </li>
+<li>Minimalna količina artikla je dostignuta  </li>
+<li>Odgovara jedinica mere  </li>
+<li>Valuta je ispravna  </li>
+<li>Datum transakcije je u okviru početnog i završnog datuma popusta  </li>
+</ul>
+<p>Sistem automatski bira i primenjuje najpovoljniji popust za kupca.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja28.png" /></p>
+<h4 id="511-postavka-popusta-na-red"><strong>5.1.1 Postavka popusta na red</strong></h4>
+<p>Postavku popusta na red moguće je napraviti koristeći pretraživač ili direktno preko kartice artikla, tako da se klikne na Cene i popusti -&gt; Popusti na prodaju.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja29.png" /></p>
+<p>Takođe, istu postavku moguće je napraviti preko kartice kupca, klikom na Cene i popusti -&gt; Popusti na redove:</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja30.png" /></p>
+<p>Klikom na akciju <strong>"Popusti na redove"</strong>, otvara se prozor u kojem je moguće definisati popust za određenu kombinaciju kupaca i artikala.  </p>
+<p>U okviru ovog prozora, popust se unosi u polje <strong>"% popusta na red"</strong>, uz mogućnost dodavanja sledećih dodatnih uslova:  </p>
+<ul>
+<li><strong>Minimalna količina</strong> – minimalna količina artikala potrebna za ostvarivanje popusta  </li>
+<li><strong>Jedinica mere</strong> – određuje u kojoj meri se primenjuje popust  </li>
+<li><strong>Šifra valute</strong> – definiše valutu u kojoj se obračunava popust  </li>
+<li><strong>Početni datum</strong> – datum od kojeg popust postaje aktivan  </li>
+<li><strong>Završni datum</strong> – datum do kojeg popust važi  </li>
+</ul>
+<p>Sistem automatski primenjuje popust na prodajni dokument ako su ispunjeni definisani uslovi.  </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja31.png" /></p>
+<h4 id="512-upotreba-popusta-na-red"><strong>5.1.2 Upotreba popusta na red</strong></h4>
+<p>Nakon postavljanja popusta na red prodaje, oni se primenjuju u prodajnim dokumentima kao i prodajne cene. Sistem će primeniti popust na red ako su svi uslovi zadovoljeni. Ukoliko postoji više popusta koji zadovoljavaju uslove, sistem će koristiti najveći popust. Kada se artikal unese na red prodaje, u činjeničnom okviru može se proveriti da li postoje popusti na red za kombinaciju kupca i artikla.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja32.png" /></p>
+<p>Klikom na vrednost 1, otvara se prozor s detaljnim prikazom popusta na red prodaje: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja33.png" /></p>
+<h3 id="52-popusti-na-fakturu"><strong>5.2 Popusti na fakturu</strong></h3>
+<p>Drugi tip popusta u prodaji je popust na fakturu. Ovaj popust se obračunava tako što se procenat popusta oduzima od ukupnog iznosa dokumenta, pod uslovom da ukupan iznos svih redova na prodajnom dokumentu prelazi određeni minimum.</p>
+<h4 id="521-podesavanje-popusta-na-fakturu"><strong>5.2.1 Podešavanje popusta na fakturu</strong></h4>
+<p>Popust na fakturu moguće je postaviti s kartice kupca (Povezano -&gt; Cene i popusti -&gt; Popusti na fakturu) i primenjuje se na fakture za kupca: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja34.png" /></p>
+<p>Klikom na akciju <em>Popusti na fakture</em> otvara se prozor gde se definišu procenti popusta na fakture za kupce. Popust na fakturu upisuje se u polje % popusta: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja35.png" /></p>
+<p>Na kartici kupca, u brzoj kartici Fakturisanje, polje <strong>Šifra popusta na fakturu</strong> automatski se popunjava brojem kupca prilikom njegovog kreiranja i dodeljuje odgovarajuću šifru popusta na fakturu. Takođe, moguće je definisati globalnu šifru koja se koristi za više kupaca, čime se omogućava brza dodela uslova popusta različitim kupcima.</p>
+<h4 id="522-upotreba-popusta-na-fakturu"><strong>5.2.2 Upotreba popusta na fakturu</strong></h4>
+<p>Dodavanjem artikala na redove prodajnog dokumenta povećava se ukupan iznos fakture. Popust na ukupan iznos fakture neće se automatski izračunati; za to je potreban dodatni korak. Kada ukupan iznos na prodajnom dokumentu premaši neki od iznosa definisanih na stranici <strong>Popusti na fakture za kupce</strong>, popust na fakturu će se obračunati klikom na akciju <strong>Izračunaj popust na fakturu</strong>.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja36.png" /></p>
+<h2 id="6-troskovi-artikla-u-prodaji"><strong>6. Troškovi artikla u prodaji</strong></h2>
+<p>Kao i u nabavci, u prodaji se može koristiti artikal troška za povezivanje dodatnih troškova, kao što su trošak špedicije, carine, transporta, ambalaže, utovara i istovara robe, kao i drugih troškova s artiklima. Na taj način se dobija tačan uvid i proračun direktnog troška artikla.</p>
+<h3 id="61-podesavanje-troska-artikla"><strong>6.1 Podešavanje troška artikla</strong></h3>
+<p>Moguće je postaviti više različitih troškova artikla kako bi se razlikovale vrste troškova i poboljšala statistika troškova i prodaje. </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja37.png" /></p>
+<p>Poput artikla, trošak artikla takođe mora imati postavljene <em>Opštu grupu knjiženja proizvoda</em> i <em>Grupu knjiženja proizvoda za PDV</em>. Kombinacija ovih parametara određuje račun glavne knjige na koji se knjiži trošak artikla. Nakon što se postave troškovi artikla, mogu se koristiti na redovima nabavnih i prodajnih dokumenata.</p>
+<h2 id="7-dodela-troska-artikla"><strong>7. Dodela troška artikla</strong></h2>
+<p>Trošak artikla može se dodeliti na dva načina:</p>
+<ul>
+<li>Na prodajnim dokumentima koji nisu proknjiženi, a na kojima se nalaze artikli za koje je potrebno dodeliti određeni dodatni trošak.</li>
+<li>Na odvojenoj fakturi povezivanjem troška artikla s proknjiženom izlaznom otpremnicom na kojoj se nalaze artikli na koje se odnose troškovi artikla.</li>
+</ul>
+<p>Kada se dodeljuje trošak artikla na prodajnom dokumentu koji sadrži artikle, potrebno je dodati novi red i kao vrstu odabrati <strong>Trošak (artikal)</strong>. Za red s troškom treba popuniti polja <strong>Količina</strong> i <strong>Direktni jedinični trošak</strong>. Nakon toga, pozicionirajte se u red s troškom, odaberite <strong>Red -&gt; Povezane informacije -&gt; Dodela troška artikla</strong>.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja38.png" /></p>
+<p>Klikom na <em>Dodela troška artikla</em>, otvara se prozor za raspodelu troškova artikala. Potrebno je prvo preko akcije <em>Dohvati redove otpremnice</em> dohvatiti za koje artikle se želi dodeliti trošak, a onda nakon toga preko akcije <em>Predloži dodelu troška artikla</em> dodeliti trošak po artiklima: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja39.png" /></p>
+<p>Klikom na funkciju <strong>Predloži dodelu troška artikla</strong>, otvara se prozor s opcijama raspodele troška:</p>
+<ul>
+<li><strong>Jednako</strong> – trošak artikla dodeljen je jednako na sve redove na prozoru <strong>Dodela troška artikla</strong>.</li>
+<li><strong>Po iznosu</strong> – trošak artikla dodeljen je i izračunat prema iznosu svakog reda.</li>
+<li><strong>Po težini</strong> – trošak artikla dodeljen je prema zbiru težina artikala definisanih na kartici svakog artikla.</li>
+<li><strong>Po volumenu</strong> – trošak artikla dodeljen je prema zbiru volumena artikala definisanih na kartici svakog artikla.</li>
+</ul>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja40.png" /></p>
+<p>Odabirom jedne od opcija, na primer Po iznosu, sistem će na redovima popuniti polja <em>Kol. za dodelu</em> i <em>Iznos za dodelu</em>: </p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja41.png" /></p>
+<p>Trošak artikla može se ručno prilagoditi promenom <strong>Kol. za dodelu</strong>, čime se automatski ažurira polje <strong>Iznos za dodelu</strong>. Pored funkcije <strong>Učitaj redove isporuke</strong>, moguće je koristiti sledeće opcije putem dugmeta <strong>Akcije</strong>:</p>
+<ul>
+<li><strong>Učitaj redove prijemnice prenosa</strong></li>
+<li><strong>Učitaj redove otpremnice povrata</strong></li>
+<li><strong>Učitaj redove isporuke</strong></li>
+<li><strong>Dohvati redove prijemnice povrata</strong></li>
+</ul>
+<p>Nakon što se stranica za raspodelu troškova zatvori, trošak će biti raspodeljen na redove prodajnog naloga, te će dokument biti spreman za knjiženje. Knjiženjem će nastati nova stavka u analitici artikla, u kojoj će polje <strong>Iznos troška (stvarni)</strong> uključivati trošak artikla. Ovo je vidljivo na stavkama vrednosti, gde se pored direktnog troška prodaje pojavljuje još jedna stavka direktnog troška vezana za trošak artikla.</p>
+<p><img alt="pod-prodaje" src="../../assets/Prodaja/Prodaja42.png" /></p>
+<p>Dodela troška može se dodeliti i preko zasebne fakture, gde će se kao u primeru gore u redovima nalaziti samo red vrste <em>Trošak (artikal)</em>. Dodavanje stavke <em>Trošak (artikal)</em> radi se na identičan način. </p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Nazad na vrh
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Podnožje" >
+        
+          
+          <a href="Kupci.html" class="md-footer__link md-footer__link--prev" aria-label="Prethodno: Kupci">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Prethodno
+              </span>
+              <div class="md-ellipsis">
+                Kupci
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="Zalihe.html" class="md-footer__link md-footer__link--next" aria-label="Sledeće: Modul zaliha">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sledeće
+              </span>
+              <div class="md-ellipsis">
+                Modul zaliha
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2025 <a href="https://bcility.com/"  target="_blank" rel="noopener">BCILITY</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bcility.com/" target="_blank" rel="noopener" title="bcility.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM240 320h32c26.5 0 48 21.5 48 48v96H192v-96c0-26.5 21.5-48 48-48"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/bcility/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://rs.linkedin.com/company/bcility" target="_blank" rel="noopener" title="rs.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Iskopirano u klipbord", "clipboard.copy": "Kopiraj u klipbord", "search.result.more.one": "jo\u0161 1 na ovoj strani", "search.result.more.other": "jo\u0161 # na ovoj strani", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretrage", "search.result.other": "# rezultata pretrage", "search.result.placeholder": "Unesite pojam pretrage", "search.result.term.missing": "Nedostaje", "select.version": "Izaberi verziju"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>

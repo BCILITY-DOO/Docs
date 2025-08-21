@@ -1,0 +1,1766 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="ExtensionManagement.html">
+      
+      
+        <link rel="next" href="Licensing%20Management/FunctionalLicense.html">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+    
+    
+      
+        <title>GitHub Integration - BCILITY DOCS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../overrides/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-integration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="BCILITY DOCS" class="md-header__button md-logo" aria-label="BCILITY DOCS" data-md-component="logo">
+      
+  <img src="/assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BCILITY DOCS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GitHub Integration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="GitHubDocs.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/sh/" hreflang="sh" class="md-select__link">
+              Srpski
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome to the BCILITY Docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="ExtensionManagement.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Extension Management in Dynamics 365 Business Central
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="GitHubDocs.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GitHub Integration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="Licensing%20Management/FunctionalLicense.html" class="md-tabs__link">
+          
+  
+  
+  Licensing Management
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="WooCommerce/FunctionalWooBC.html" class="md-tabs__link">
+          
+  
+  
+  WooCommerce
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="BCILITY DOCS" class="md-nav__button md-logo" aria-label="BCILITY DOCS" data-md-component="logo">
+      
+  <img src="/assets/logo.png" alt="logo">
+
+    </a>
+    BCILITY DOCS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome to the BCILITY Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ExtensionManagement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Extension Management in Dynamics 365 Business Central
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    GitHub Integration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="GitHubDocs.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitHub Integration
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-generate-a-github-personal-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. How to Generate a GitHub Personal Access Token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. How to Generate a GitHub Personal Access Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-find-the-repository-owner-and-repository-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Where to Find the Repository Owner and Repository Name?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-setup-in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Setup in Business Central
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Setup in Business Central">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-github-setup-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open GitHub Setup Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-setup-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Setup Page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Setup Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-github-token-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default GitHub Token Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-users-section-user-specific-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Users Section (User-Specific Tokens)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Users Section (User-Specific Tokens)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-github-issues-in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🗂 GitHub Issues in Business Central
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-fetch-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 View &amp; Fetch Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➕ Creating a New Issue
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-issue-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 GitHub Issue Card
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗂 GitHub Issue Card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Page Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-details-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Issue Details Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comments-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 Comments Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-details-preview-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗨️ Comment Details (Preview Panel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamps-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕒 Timestamps Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Publishing to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-openclose-an-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Open/Close an Issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Example Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-looks-business-central-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ How It Looks: Business Central vs GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ How It Looks: Business Central vs GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 In Business Central
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 In GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-test-the-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Test the Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Quick Recap
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Licensing Management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Licensing Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Licensing%20Management/FunctionalLicense.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functional License Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Licensing%20Management/TechnicalLicense.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical License Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    WooCommerce
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            WooCommerce
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WooCommerce/FunctionalWooBC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide for WooCommerce &amp; Business Central Functional Integration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WooCommerce/WooCommerce.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WooCommerce Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-how-to-generate-a-github-personal-access-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. How to Generate a GitHub Personal Access Token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. How to Generate a GitHub Personal Access Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Guide
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-find-the-repository-owner-and-repository-name" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔎 Where to Find the Repository Owner and Repository Name?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-setup-in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Setup in Business Central
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Setup in Business Central">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-github-setup-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open GitHub Setup Page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-setup-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Setup Page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Setup Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-github-token-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default GitHub Token Section
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-users-section-user-specific-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Users Section (User-Specific Tokens)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Users Section (User-Specific Tokens)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-github-issues-in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 🗂 GitHub Issues in Business Central
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-fetch-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 View &amp; Fetch Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      ➕ Creating a New Issue
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-issue-card" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂 GitHub Issue Card
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗂 GitHub Issue Card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#page-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Page Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#issue-details-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Issue Details Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comments-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔸 Comments Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comment-details-preview-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗨️ Comment Details (Preview Panel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamps-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      🕒 Timestamps Section
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publishing-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Publishing to GitHub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-openclose-an-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Open/Close an Issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Example Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-looks-business-central-vs-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ How It Looks: Business Central vs GitHub
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ How It Looks: Business Central vs GitHub">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-business-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 In Business Central
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 In GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-test-the-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Test the Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-recap" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Quick Recap
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="github-integration">GitHub Integration</h1>
+<p>This guide explains how to integrate GitHub with Microsoft Dynamics 365 Business Central.<br />
+You'll learn how to generate a Personal Access Token (PAT), configure Business Central, manage GitHub issues, and sync everything seamlessly.</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Quick intro about GitHub &amp; Business Central integration, focusing on tasks like issue management, syncing, and user token control.</p>
+<hr />
+<h2 id="1-how-to-generate-a-github-personal-access-token">1. How to Generate a GitHub Personal Access Token</h2>
+<p>Before using GitHub features in Business Central, you must create a <strong>Personal Access Token (PAT)</strong> to allow Business Central to access your GitHub repositories.</p>
+<h3 id="step-by-step-guide">Step-by-Step Guide</h3>
+<ol>
+<li>
+<p><strong>Log in to GitHub</strong><br />
+   Go to <a href="https://github.com">https://github.com</a> and sign in.</p>
+</li>
+<li>
+<p><strong>Go to Developer Settings</strong>  </p>
+<ul>
+<li>Click your profile picture → <strong>Settings</strong><br />
+<img alt="img" src="..\assets\GitHubIntegration\SettingsStep.png" />  </li>
+<li>Scroll down and click <strong>Developer settings</strong><br />
+<img alt="img" src="..\assets/GitHubIntegration/DeveloperSettings.png" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Create a Token</strong>  </p>
+<ul>
+<li>Click <strong>Personal access tokens</strong><br />
+<img alt="img" src="..\assets/GitHubIntegration/PersonalAccessTokens.jpg" />  </li>
+<li>Select <strong>Tokens (classic)</strong><br />
+<img alt="img" src="..\assets/GitHubIntegration/TokensClassics.jpg" />  </li>
+<li>Click <strong>Generate new token (classic)</strong><br />
+<img alt="img" src="..\assets/GitHubIntegration/GenerateNewToken.jpg" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Configure the Token</strong>  </p>
+<ul>
+<li><strong>Name</strong>: <code>Business Central Integration Token</code>  </li>
+<li><strong>Expiration</strong>: 30/90 days or <code>No expiration</code><br />
+<img alt="img" src="..\assets/GitHubIntegration/TokenConfig.jpg" />  </li>
+<li><strong>Repository access</strong>: Set to <code>All repositories</code>  </li>
+<li><strong>Permissions</strong>:<br />
+<img alt="img" src="..\assets/GitHubIntegration/RepoPermision.jpg" />  </li>
+<li><code>Contents</code>: Read and write  </li>
+<li><code>Issues</code>: Read and write</li>
+</ul>
+</li>
+<li>
+<p><strong>Generate &amp; Save the Token</strong>  </p>
+<ul>
+<li>Click <strong>Generate token</strong><br />
+<img alt="img" src="..\assets/GitHubIntegration/GenerateToken.jpg" />  </li>
+<li><strong>Copy</strong> the token immediately<br />
+<img alt="img" src="..\assets/GitHubIntegration/CopyToken.jpg" />  <blockquote>
+<p>⚠️ Once you leave the page, the token cannot be retrieved again.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="where-to-find-the-repository-owner-and-repository-name">🔎 Where to Find the Repository Owner and Repository Name?</h2>
+<p>In the image below, you can see where to locate the values required for setting up GitHub integration in Business Central:</p>
+<p><img alt="img" src="..\assets/GitHubIntegration/GitHubSiteInformation.png" /></p>
+<ul>
+<li>🟥 The <strong>circled part</strong> indicates the <strong>Repository Owner</strong> – this is your GitHub <strong>username</strong> or <strong>organization name</strong> (e.g., <code>Bcility</code>).</li>
+<li>🟥 The <strong>highlighted rectangle</strong> shows the <strong>Repository Name</strong> – the actual GitHub repository name (e.g., <code>BcilitySupport</code>).</li>
+</ul>
+<p>💡 These values should be entered in <strong>Business Central</strong> under the <strong>GitHub Setup</strong> section:
+- <strong>Repository Owner</strong> = <code>Bcility</code>
+- <strong>Repository Name</strong> = <code>BcilitySupport</code></p>
+<p>They are used along with your <strong>Personal Access Token (PAT)</strong> to allow Business Central to connect and interact with your GitHub repositories.</p>
+<hr />
+<h2 id="2-setup-in-business-central">2. Setup in Business Central</h2>
+<p>Now that your GitHub is ready, you can integrate it into <strong>Business Central</strong>.</p>
+<h3 id="open-github-setup-page">Open GitHub Setup Page</h3>
+<ul>
+<li>Search for <code>GitHub Setup</code> in Business Central<br />
+<img alt="img" src="..\assets\GitHubIntegration\SearchBussinesCentral.png" /></li>
+</ul>
+<hr />
+<h3 id="github-setup-page">GitHub Setup Page</h3>
+<p><img alt="GitHub Setup Screenshot" src="../assets/GitHubIntegration/GitHubSetup.png" /></p>
+<h4 id="configuration-section">Configuration Section</h4>
+<ul>
+<li>
+<p><strong>Repository Owner</strong><br />
+  GitHub username or organization name.<br />
+  Example: <code>Bcility</code><br />
+<strong><em>Required</em></strong></p>
+</li>
+<li>
+<p><strong>Repository Name</strong><br />
+  GitHub repository name.<br />
+  Example: <code>BcilitySupport</code><br />
+<strong><em>Required</em></strong></p>
+</li>
+</ul>
+<hr />
+<h4 id="default-github-token-section">Default GitHub Token Section</h4>
+<ul>
+<li><strong>GitHub Token</strong><br />
+  Paste the Personal Access Token (PAT) here.<br />
+  This token will be used for all GitHub API calls — <strong>unless a user-specific token is assigned</strong>.</li>
+</ul>
+<hr />
+<h3 id="github-users-section-user-specific-tokens">GitHub Users Section (User-Specific Tokens)</h3>
+<p>This section lets you assign individual GitHub tokens to specific <strong>Business Central users</strong>.</p>
+<ul>
+<li>If a token is defined here, it will <strong>override</strong> the default token from above <strong>for that user only</strong>.</li>
+<li>You can add multiple user-token pairs as needed.</li>
+</ul>
+<h4 id="fields">Fields:</h4>
+<ul>
+<li>
+<p><strong>User Name</strong><br />
+  Business Central user (e.g., <code>Bcility</code>)</p>
+</li>
+<li>
+<p><strong>GitHub Token</strong><br />
+  The personal token generated on GitHub for that specific user.</p>
+</li>
+</ul>
+<blockquote>
+<p>⚠️ This is helpful when multiple users interact with GitHub from Business Central under their own credentials.</p>
+</blockquote>
+<hr />
+<h2 id="4-github-issues-in-business-central">4. 🗂 GitHub Issues in Business Central</h2>
+<p>The <strong>GitHub Issues</strong> page in Microsoft Dynamics 365 Business Central helps you manage issues from your connected GitHub repository — all in one place.</p>
+<p><img alt="img" src="..\assets/GitHubIntegration/ListGitHubIssues.png" /></p>
+<hr />
+<h2 id="view-fetch-issues">📋 View &amp; Fetch Issues</h2>
+<p>On this page, you can:</p>
+<ul>
+<li>🔎 <strong>See all existing issues</strong> from the connected GitHub repository</li>
+<li>🔄 <strong>Fetch</strong> issues from GitHub using the <strong><code>Fetch Issues</code></strong> button</li>
+</ul>
+<p>If there are any new issues created directly in GitHub (but not yet in Business Central), clicking <strong><code>Fetch Issues</code></strong> will sync them into the list view.</p>
+<blockquote>
+<p>✅ This ensures the issue list in Business Central always stays up-to-date with GitHub.</p>
+</blockquote>
+<hr />
+<h2 id="creating-a-new-issue">➕ Creating a New Issue</h2>
+<p>To create a new GitHub issue, click the <strong><code>+ New</code></strong> button:</p>
+<p><img alt="img" src="..\assets/GitHubIntegration/AddGitHubIssue.jpg" /></p>
+<p>This action opens the <strong>GitHub Issue Card</strong>, where you can enter all the issue details.</p>
+<hr />
+<h2 id="github-issue-card">🗂 GitHub Issue Card</h2>
+<p>This page is used to create and manage GitHub Issues directly from Business Central.<br />
+It allows you to draft issues, write comments, and sync everything with GitHub.</p>
+<p><img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/GitHubIssueCard.jpg" /></p>
+<hr />
+<h3 id="page-overview">🔍 Page Overview</h3>
+<p>GitHub Issue Page in Business Central is divided into several sections to manage issues efficiently:</p>
+<hr />
+<h3 id="issue-details-section">🔹 Issue Details Section</h3>
+<p>This section contains fields related to the GitHub Issue itself:
+<img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/GitHubIssueSection.jpg" /></p>
+<ul>
+<li><strong>Title</strong> – Title of the issue you are creating.</li>
+<li><strong>Description</strong> – A short or detailed explanation of the issue. Clicking the <code>...</code> button opens a larger editor for easier input.</li>
+<li><strong>State</strong> – Shows the current state (e.g., Draft, Open, Closed).</li>
+<li><strong>Assignee</strong> – The GitHub username assigned to handle the issue.</li>
+<li><strong>Comments Count</strong> – Automatically updates based on the number of published comments.</li>
+<li><strong>Issue ID</strong> – A unique identifier assigned once the issue is created and synchronized with GitHub. When you click the three dots (...) next to this field, it opens the corresponding GitHub issue in a new browser tab.</li>
+</ul>
+<hr />
+<h3 id="comments-section">🔸 Comments Section</h3>
+<p>Here you can view and manage GitHub Issue Comments.
+<img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/GitHubCommentSection.jpg" /></p>
+<ul>
+<li><strong>Body</strong> – The actual comment text.</li>
+<li><strong>Status</strong> – Indicates whether the comment is <em>Unpublished</em> (local only) or already published to GitHub.</li>
+<li><strong>Created At</strong> – Timestamp when the comment was created.</li>
+</ul>
+<p>💡 When you click on body a comment row, a rich text editor opens
+  <img alt="Rich Text Editor" src="../assets/GitHubIntegration/RichTextEditor.png" /></p>
+<p>In this editor, you can:</p>
+<ul>
+<li><strong>Include images</strong></li>
+<li><strong>Write detailed explanations</strong></li>
+</ul>
+<h3 id="comment-details-preview-panel">🗨️ Comment Details (Preview Panel)</h3>
+<p>The panel on the right provides a live preview of the selected comment — just like on GitHub.
+<img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/GitHubCommentDetails.jpg" /></p>
+<p>In this preview you can:</p>
+<ul>
+<li>View <strong>text</strong> </li>
+<li>Display <strong>embedded</strong> images</li>
+<li>See a <strong>fully rendered</strong> version of the comment </li>
+</ul>
+<hr />
+<h3 id="timestamps-section">🕒 Timestamps Section</h3>
+<p>Tracks when the issue was created, updated, or closed.
+<img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/TimeStampSection.jpg" /></p>
+<ul>
+<li><strong>Created At / Updated At</strong> – Dates for issue creation and last edit.</li>
+<li><strong>Closed At / Closed By</strong> – If the issue is closed, these fields indicate when and by whom.</li>
+</ul>
+<hr />
+<h3 id="publishing-to-github">🚀 Publishing to GitHub</h3>
+<p>To send your new or updated issue to GitHub, use the <strong>Publish to Git and Sync</strong> button at the top.
+<img alt="GitHubIssuePage" src="..\assets/GitHubIntegration/GitHubPublish.png" /></p>
+<p>This action:</p>
+<ul>
+<li>Publishes the issue with its description, assignee, and state</li>
+<li>Publishes all unpublished comments</li>
+<li>Syncs issue status back from GitHub</li>
+</ul>
+<p>nce you've <strong>published an issue</strong> to GitHub using the <code>Publish to Git and Sync</code> button, you can manage its <strong>status</strong> directly within Business Central — without switching back to GitHub.</p>
+<h3 id="how-to-openclose-an-issue">How to Open/Close an Issue</h3>
+<ol>
+<li>
+<p>After the issue is synced with GitHub and has a valid <strong>Issue ID</strong>.
+   <img alt="img" src="..\assets/GitHubIntegration/PublishedIssueClose.png" /> </p>
+</li>
+<li>
+<p>Click:</p>
+<ul>
+<li><strong>Close Issue</strong> – to mark it as closed on GitHub.</li>
+<li><strong>Open Issue</strong> – to reopen a previously closed issue.</li>
+</ul>
+</li>
+<li>
+<p>After performing either action, click <strong><code>Publish to Git and Sync</code></strong> again to synchronize the change with GitHub.</p>
+</li>
+</ol>
+<h3 id="example-workflow">✅ Example Workflow</h3>
+<ol>
+<li>Create an issue → Click <code>Publish to Git and Sync</code></li>
+<li>Click <code>Close Issue</code></li>
+<li>Click <code>Publish to Git and Sync</code> again<br />
+   → Status is updated to <strong>Closed</strong> on GitHub automatically.</li>
+</ol>
+<hr />
+<h3 id="how-it-looks-business-central-vs-github">🖥️ How It Looks: Business Central vs GitHub</h3>
+<p>This section shows the visual difference between how issues appear in <strong>Business Central</strong> and <strong>GitHub</strong>.</p>
+<h4 id="in-business-central">📌 In Business Central</h4>
+<p>Issues are displayed in a clean, form-based layout with grouped sections (details, comments, timestamps). You can edit everything inline and preview comments before publishing.</p>
+<p><img alt="Business Central View" src="../assets/GitHubIntegration/PublishedIssue.png" /></p>
+<h4 id="in-github">🌐 In GitHub</h4>
+<p>The same issue appears using GitHub’s standard layout — markdown rendered, user avatars shown, and real-time updates visible.</p>
+<p><img alt="GitHub View" src="../assets/GitHubIntegration/IssueOnGit.png" /></p>
+<blockquote>
+<p>🔄 Changes stay in sync: edit in either system and sync updates with a single click.</p>
+</blockquote>
+<hr />
+<h3 id="summary">📝 Summary</h3>
+<p>This page is a fully integrated tool for managing GitHub Issues from within Business Central. It allows users to:</p>
+<ul>
+<li>Create new issues</li>
+<li>Track and assign them</li>
+<li>Create comment</li>
+<li>Sync everything with GitHub seamlessly</li>
+</ul>
+<hr />
+<h2 id="5-test-the-integration">5. Test the Integration</h2>
+<p>After setup, test the integration with one of the following actions:</p>
+<ul>
+<li>✅ Create and publish a test issue  </li>
+<li>📝 Add and sync a comment  </li>
+<li>🔄 Use the “Sync from GitHub” action to verify access  </li>
+<li>❌ Close or reopen an issue from Business Central</li>
+</ul>
+<p>If something fails:</p>
+<ul>
+<li>🔍 Double-check <strong>Repository Owner</strong> and <strong>Repository Name</strong></li>
+<li>🔐 Ensure <strong>PAT has valid permissions</strong></li>
+<li>📅 Confirm the token <strong>is not expired</strong></li>
+<li>⚙️ Make sure <strong>required scopes</strong> (<code>repo</code>, <code>issues</code>) are enabled</li>
+</ul>
+<hr />
+<h2 id="notes">⚠️ Notes</h2>
+<ul>
+<li><strong>PATs are sensitive</strong> — do not share or expose them.</li>
+<li><strong>User tokens override</strong> the default token in GitHub Setup.</li>
+<li>Monitor <strong>token expiration dates</strong> to avoid disruptions.</li>
+</ul>
+<hr />
+<h2 id="quick-recap">✅ Quick Recap</h2>
+<ol>
+<li><strong>Create</strong> a GitHub Personal Access Token (PAT)  </li>
+<li><strong>Configure</strong> GitHub Setup in Business Central  </li>
+<li><strong>Assign</strong> per-user tokens in <strong>GitHub Users</strong>  </li>
+<li><strong>Test</strong> the connection by publishing and syncing issues and comments  </li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="ExtensionManagement.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Extension Management in Dynamics 365 Business Central">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Extension Management in Dynamics 365 Business Central
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="Licensing%20Management/FunctionalLicense.html" class="md-footer__link md-footer__link--next" aria-label="Next: Functional License Management">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Functional License Management
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2025 <a href="https://bcility.com/"  target="_blank" rel="noopener">BCILITY</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bcility.com/" target="_blank" rel="noopener" title="bcility.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M277.8 8.6c-12.3-11.4-31.3-11.4-43.5 0l-224 208c-9.6 9-12.8 22.9-8 35.1S18.8 272 32 272h16v176c0 35.3 28.7 64 64 64h288c35.3 0 64-28.7 64-64V272h16c13.2 0 25-8.1 29.8-20.3s1.6-26.2-8-35.1zM240 320h32c26.5 0 48 21.5 48 48v96H192v-96c0-26.5 21.5-48 48-48"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/bcility/" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M224.3 141a115 115 0 1 0-.6 230 115 115 0 1 0 .6-230m-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1-.6-149.2m93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1-53.6 0m129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://rs.linkedin.com/company/bcility" target="_blank" rel="noopener" title="rs.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.footer", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
