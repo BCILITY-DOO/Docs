@@ -55,8 +55,8 @@ Nakon što smo završili nalog popisa, možemo da štampamo izveštaj popisa dir
 
 ![popis](../../assets/Popis/popis9.png)
 
-![popis](assets/Popis/popis10.png)
+![popis](../../assets/Popis/popis10.png)
 
 Pretragom **Lista razlika naloga popisa** otvara se prozor na kome u filter Br. treba da upišemo, odnosno izaberemo sa liste, broj naloga popisa. Nakon toga možemo da pregledamo, šaljemo ili štampamo izveštaj.
 
-![popis](assets/Popis/popis11.png)
+![popis](../../assets/Popis/popis11.png)
